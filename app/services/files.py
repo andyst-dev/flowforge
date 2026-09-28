@@ -10,6 +10,7 @@ import pandas as pd
 
 ALLOWED_EXTENSIONS = {".csv", ".xlsx"}
 UPLOAD_ID_PATTERN = re.compile(r"^[a-f0-9]{32}\.(csv|xlsx)$")
+SPREADSHEET_FORMULA_PREFIXES = ("=", "+", "-", "@")
 
 
 class FileValidationError(ValueError):
@@ -106,4 +107,19 @@ def load_result(result_id: str, results_dir: Path) -> pd.DataFrame:
     path = results_dir / f"{result_id}.pkl"
     if not path.is_file():
         raise FileNotFoundError("This preview has expired. Run the transformation again.")
-    return pd.read_pickle(path)
+    # Only server-generated files behind validated random IDs can reach this path.
+    return pd.read_pickle(path)  # noqa: S301
+
+
+def prepare_export(frame: pd.DataFrame) -> pd.DataFrame:
+    """Prevent text cells from becoming formulas when opened in spreadsheet software."""
+    safe = frame.copy()
+    for column in safe.columns:
+        safe[column] = safe[column].map(_neutralize_formula)
+    return safe
+
+
+def _neutralize_formula(value: object) -> object:
+    if isinstance(value, str) and value.lstrip().startswith(SPREADSHEET_FORMULA_PREFIXES):
+        return f"'{value}"
+    return value

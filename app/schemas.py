@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+from datetime import datetime
 from enum import StrEnum
 from typing import Any, Literal
 
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 
 class OperationType(StrEnum):
@@ -55,10 +56,20 @@ class Operation(BaseModel):
         }
         if self.type in column_required and not self.column:
             raise ValueError(f"'{self.type}' requires a column")
-        if self.type == OperationType.RENAME_COLUMN and not self.new_name:
-            raise ValueError("'rename_column' requires a new_name")
+        if self.type == OperationType.RENAME_COLUMN:
+            new_name = self.new_name.strip() if self.new_name else ""
+            if not new_name:
+                raise ValueError("'rename_column' requires a non-empty new_name")
+            self.new_name = new_name
         if self.type == OperationType.FILTER_ROWS and not self.operator:
             raise ValueError("'filter_rows' requires an operator")
+        value_optional_operators = {"is_empty", "is_not_empty"}
+        if (
+            self.type == OperationType.FILTER_ROWS
+            and self.operator not in value_optional_operators
+            and self.value is None
+        ):
+            raise ValueError(f"'{self.operator}' requires a filter value")
         return self
 
 
@@ -67,11 +78,58 @@ class RecipeCreate(BaseModel):
     description: str = Field(default="", max_length=300)
     operations: list[Operation] = Field(min_length=1)
 
+    @field_validator("name")
+    @classmethod
+    def name_must_not_be_blank(cls, value: str) -> str:
+        value = value.strip()
+        if not value:
+            raise ValueError("Recipe name cannot be blank")
+        return value
+
 
 class RecipeResponse(RecipeCreate):
     id: int
-    created_at: str
-    updated_at: str
+    created_at: datetime
+    updated_at: datetime
+
+
+class DataPreview(BaseModel):
+    columns: list[str]
+    rows: list[dict[str, str]]
+    total_rows: int
+
+
+class UploadResponse(DataPreview):
+    upload_id: str
+    filename: str
+
+
+class ProcessingStatsResponse(BaseModel):
+    input_rows: int
+    output_rows: int
+    duplicates_removed: int
+    empty_rows_removed: int
+    invalid_rows: int
+    changed_cells: int
+
+
+class TransformResponse(BaseModel):
+    result_id: str
+    job_id: str
+    before: DataPreview
+    after: DataPreview
+    stats: ProcessingStatsResponse
+
+
+class JobResponse(BaseModel):
+    id: str
+    input_filename: str
+    output_filename: str | None
+    recipe_id: int | None
+    status: Literal["completed", "failed"]
+    stats: dict[str, int]
+    error_message: str | None
+    created_at: datetime
 
 
 class TransformRequest(BaseModel):

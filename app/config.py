@@ -16,6 +16,12 @@ class Settings:
     max_upload_mb: int = int(os.getenv("FLOWFORGE_MAX_UPLOAD_MB", "15"))
     preview_rows: int = int(os.getenv("FLOWFORGE_PREVIEW_ROWS", "12"))
 
+    def __post_init__(self) -> None:
+        if self.max_upload_mb < 1:
+            raise ValueError("FLOWFORGE_MAX_UPLOAD_MB must be at least 1")
+        if self.preview_rows < 1:
+            raise ValueError("FLOWFORGE_PREVIEW_ROWS must be at least 1")
+
     @property
     def uploads_dir(self) -> Path:
         return self.data_dir / "uploads"

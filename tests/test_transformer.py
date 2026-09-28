@@ -55,6 +55,34 @@ def test_drop_duplicates_and_empty_rows_tracks_stats() -> None:
     assert result.stats.duplicates_removed == 1
 
 
+def test_drop_rows_with_any_empty_value() -> None:
+    frame = pd.DataFrame({"name": ["Ada", "Grace", ""], "email": ["a@example.com", None, "x"]})
+    result = transform_dataframe(
+        frame,
+        operations({"type": "drop_empty_rows", "columns": ["name", "email"], "how": "any"}),
+    )
+
+    assert result.dataframe["name"].tolist() == ["Ada"]
+    assert result.stats.empty_rows_removed == 2
+
+
+def test_uppercase_and_keep_invalid_value() -> None:
+    frame = pd.DataFrame({"state": ["zh", "be"], "amount": ["12", "unknown"]})
+    result = transform_dataframe(
+        frame,
+        operations(
+            {"type": "uppercase", "columns": ["state"]},
+            {"type": "convert_numeric", "column": "amount", "invalid": "keep"},
+        ),
+    )
+
+    assert result.dataframe.to_dict(orient="list") == {
+        "state": ["ZH", "BE"],
+        "amount": [12, "unknown"],
+    }
+    assert result.stats.invalid_rows == 1
+
+
 def test_date_and_numeric_normalization_with_invalid_behaviors() -> None:
     frame = pd.DataFrame(
         {

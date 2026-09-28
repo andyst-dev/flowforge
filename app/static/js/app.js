@@ -5,7 +5,6 @@ const state = {
   resultId: null,
   preview: null,
   exportFormat: "csv",
-  loadedRecipeId: null,
 };
 
 const operations = [
@@ -20,6 +19,7 @@ const operations = [
   ["convert_numeric", "Convert to number"],
   ["filter_rows", "Filter rows"],
 ];
+const MULTI_COLUMN_SCOPE = "__flowforge_multi_column_scope__";
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -54,6 +54,7 @@ function goTo(step) {
   $$(".step").forEach((button, index) => {
     button.classList.toggle("is-active", index === active);
     button.classList.toggle("is-done", index < active);
+    button.setAttribute("aria-current", index === active ? "step" : "false");
   });
 }
 
@@ -68,6 +69,7 @@ async function handleFile(file) {
     state.filename = data.filename;
     state.columns = data.columns;
     state.resultId = null;
+    state.preview = null;
     $("#file-name").textContent = data.filename;
     $("#file-meta").textContent = `${data.total_rows.toLocaleString()} rows · ${data.columns.length} columns`;
     $("#file-type").textContent = data.filename.split(".").pop().toUpperCase();
@@ -81,17 +83,32 @@ async function handleFile(file) {
 }
 
 function optionsHtml(values, selected = "") {
-  return values.map((value) => `<option value="${escapeHtml(value)}" ${value === selected ? "selected" : ""}>${escapeHtml(value)}</option>`).join("");
+  const selectedValues = Array.isArray(selected) ? selected : [selected];
+  return values.map((value) => `<option value="${escapeHtml(value)}" ${selectedValues.includes(value) ? "selected" : ""}>${escapeHtml(value)}</option>`).join("");
 }
 
 function field(label, className, content, type = "select") {
-  return `<div class="rule-field"><label>${label}</label><${type} class="${className}">${content}</${type}></div>`;
+  if (type === "input") {
+    return `<div class="rule-field"><label>${label}</label><input class="${className}" value="${content}"></div>`;
+  }
+  return `<div class="rule-field"><label>${label}</label><select class="${className}">${content}</select></div>`;
+}
+
+function updateFilterValueVisibility(row) {
+  const operator = $(".operator-select", row)?.value;
+  const valueField = $(".value", row)?.closest(".rule-field");
+  if (valueField) valueField.hidden = ["is_empty", "is_not_empty"].includes(operator);
 }
 
 function renderRuleOptions(row, operation, values = {}) {
   const target = $(".rule-options", row);
   const columnOptions = optionsHtml(state.columns, values.column || "");
-  const allColumns = `<option value="">All compatible columns</option>${optionsHtml(state.columns, (values.columns || [])[0] || "")}`;
+  const selectedColumns = values.columns || [];
+  const multipleScope = selectedColumns.length > 1
+    ? `<option value="${MULTI_COLUMN_SCOPE}" selected>${selectedColumns.length} selected columns</option>`
+    : "";
+  const selectedColumn = selectedColumns.length === 1 ? selectedColumns : [];
+  const allColumns = `<option value="" ${selectedColumns.length ? "" : "selected"}>All compatible columns</option>${multipleScope}${optionsHtml(state.columns, selectedColumn)}`;
   const invalidOptions = optionsHtml(["empty", "drop", "keep"], values.invalid || "empty");
   let html = "";
 
@@ -111,6 +128,10 @@ function renderRuleOptions(row, operation, values = {}) {
     html += field("VALUE", "value", escapeHtml(values.value ?? ""), "input");
   }
   target.innerHTML = html;
+  const scopeSelect = $(".columns-select", row);
+  if (scopeSelect) scopeSelect.dataset.columns = JSON.stringify(selectedColumns);
+  $(".operator-select", row)?.addEventListener("change", () => updateFilterValueVisibility(row));
+  updateFilterValueVisibility(row);
 }
 
 function addRule(values = {}) {
@@ -141,7 +162,12 @@ function readRule(row) {
   const value = (selector) => $(selector, row)?.value;
   const operation = { type: value(".operation-select") };
   if (value(".column-select")) operation.column = value(".column-select");
-  if (value(".columns-select")) operation.columns = [value(".columns-select")];
+  const scopeSelect = $(".columns-select", row);
+  if (scopeSelect?.value === MULTI_COLUMN_SCOPE) {
+    operation.columns = JSON.parse(scopeSelect.dataset.columns);
+  } else if (scopeSelect?.value) {
+    operation.columns = [scopeSelect.value];
+  }
   if (value(".new-name")) operation.new_name = value(".new-name");
   if ($(".value", row) && value(".value") !== "") operation.value = value(".value");
   if (value(".invalid-select")) operation.invalid = value(".invalid-select");
@@ -164,11 +190,13 @@ async function loadRecipes() {
 }
 
 async function selectRecipe(id) {
-  state.loadedRecipeId = id ? Number(id) : null;
-  if (!id) return;
+  if (!id) {
+    $("#recipe-name").value = "";
+    setDefaultRules();
+    return;
+  }
   try {
     const recipe = await api(`/api/recipes/${id}`);
-    $("#recipe-list");
     $("#rule-list").innerHTML = "";
     recipe.operations.forEach(addRule);
     $("#recipe-name").value = recipe.name;
@@ -188,7 +216,6 @@ async function saveRecipe() {
     });
     await loadRecipes();
     $("#saved-recipes").value = recipe.id;
-    state.loadedRecipeId = recipe.id;
     toast("Recipe saved to this workspace.");
   } catch (error) { toast(error.message, true); }
 }
@@ -221,8 +248,10 @@ function renderStats(stats) {
   const items = [
     ["INPUT ROWS", stats.input_rows],
     ["OUTPUT ROWS", stats.output_rows],
-    ["DUPLICATES", `−${stats.duplicates_removed}`, "accent"],
+    ["DUPLICATES REMOVED", stats.duplicates_removed, stats.duplicates_removed ? "accent" : ""],
+    ["EMPTY ROWS REMOVED", stats.empty_rows_removed, stats.empty_rows_removed ? "accent" : ""],
     ["INVALID ROWS", stats.invalid_rows, stats.invalid_rows ? "accent" : ""],
+    ["CHANGED CELLS", stats.changed_cells],
   ];
   $("#stats-grid").innerHTML = items.map(([label, value, cls = ""]) => `<div class="stat"><span>${label}</span><strong class="${cls}">${Number.isInteger(value) ? value.toLocaleString() : value}</strong></div>`).join("");
 }
@@ -245,8 +274,10 @@ async function downloadExport() {
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
     link.download = `flowforge-${(state.filename || "export").replace(/\.[^.]+$/, "")}.${state.exportFormat}`;
+    document.body.append(link);
     link.click();
-    URL.revokeObjectURL(link.href);
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
     toast("Export downloaded.");
   } catch (error) { toast(error.message, true); }
 }
@@ -257,25 +288,42 @@ async function loadJobs() {
     $("#job-list").innerHTML = jobs.length ? jobs.map((job) => {
       const date = new Date(`${job.created_at}Z`).toLocaleString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
       const rows = job.stats.output_rows == null ? "No output" : `${job.stats.output_rows.toLocaleString()} rows out`;
-      return `<div class="job-row"><div class="job-name"><strong>${escapeHtml(job.input_filename)}</strong><small>${date}</small></div><span class="job-count">${rows}</span><span class="job-state ${job.status}">${job.status.toUpperCase()}</span></div>`;
+      return `<div class="job-row"><div class="job-name"><strong>${escapeHtml(job.input_filename)}</strong><small>${date}</small></div><span class="job-count">${rows}</span><span class="job-state ${job.status}" title="${escapeHtml(job.error_message || "")}">${job.status.toUpperCase()}</span></div>`;
     }).join("") : '<div class="empty-state">No jobs yet. Your completed runs will appear here.</div>';
   } catch (_) { /* dashboard remains usable */ }
 }
 
 function reset() {
-  Object.assign(state, { uploadId: null, filename: null, columns: [], resultId: null, preview: null, loadedRecipeId: null });
+  Object.assign(state, { uploadId: null, filename: null, columns: [], resultId: null, preview: null, exportFormat: "csv" });
   $("#file-input").value = "";
   $("#dropzone").hidden = false;
   $("#file-card").hidden = true;
   $("#to-recipe").disabled = true;
-  $("#rule-list").innerHTML = "";
-  addRule();
+  $("#recipe-name").value = "";
+  $("#saved-recipes").value = "";
+  setDefaultRules();
+  selectExportFormat("csv");
   goTo("upload");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+function setDefaultRules() {
+  $("#rule-list").innerHTML = "";
   addRule({ type: "trim_whitespace" });
   addRule({ type: "drop_duplicates" });
+}
+
+function selectExportFormat(format) {
+  state.exportFormat = format;
+  $$(".format-option").forEach((item) => {
+    const selected = item.dataset.format === format;
+    item.classList.toggle("is-selected", selected);
+    item.setAttribute("aria-pressed", String(selected));
+    $("i", item).textContent = selected ? "●" : "○";
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setDefaultRules();
   loadRecipes();
   loadJobs();
 
@@ -295,16 +343,14 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#refresh-jobs").addEventListener("click", loadJobs);
   $$('[data-back]').forEach((button) => button.addEventListener("click", () => goTo(button.dataset.back)));
   $$(".compare-tabs button").forEach((tab) => tab.addEventListener("click", () => {
-    $$(".compare-tabs button").forEach((item) => item.classList.toggle("is-active", item === tab));
+    $$(".compare-tabs button").forEach((item) => {
+      const selected = item === tab;
+      item.classList.toggle("is-active", selected);
+      item.setAttribute("aria-selected", String(selected));
+    });
     renderTable(state.preview[tab.dataset.table]);
   }));
-  $$(".format-option").forEach((option) => option.addEventListener("click", () => {
-    state.exportFormat = option.dataset.format;
-    $$(".format-option").forEach((item) => {
-      item.classList.toggle("is-selected", item === option);
-      $("i", item).textContent = item === option ? "●" : "○";
-    });
-  }));
+  $$(".format-option").forEach((option) => option.addEventListener("click", () => selectExportFormat(option.dataset.format)));
   $$(".step").forEach((button) => button.addEventListener("click", () => {
     const target = button.dataset.stepTarget;
     if (target === "upload" || (target === "recipe" && state.uploadId) || (["preview", "export"].includes(target) && state.resultId)) goTo(target);

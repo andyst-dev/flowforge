@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/actions"><img alt="CI" src="https://img.shields.io/badge/CI-pytest%20%2B%20Ruff-157f61?style=flat-square"></a>
+  <a href="https://github.com/andyst-dev/flowforge/actions/workflows/ci.yml"><img alt="CI status" src="https://github.com/andyst-dev/flowforge/actions/workflows/ci.yml/badge.svg"></a>
   <img alt="Python 3.12+" src="https://img.shields.io/badge/Python-3.12%2B-172235?style=flat-square">
   <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0.115%2B-f2542d?style=flat-square">
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-6f716b?style=flat-square"></a>
@@ -22,13 +22,15 @@
 
 ![FlowForge workflow workspace](docs/assets/dashboard.png)
 
-FlowForge is a compact, production-shaped data workflow app for the cleanup jobs that otherwise live in one-off notebooks and fragile spreadsheet macros. Upload a table, compose transformations, compare the result, save the recipe, and apply it to the next compatible export.
+FlowForge is a small web app for recurring CSV and Excel cleanup. Upload a table, compose transformations, compare the result, save the recipe, and apply it to the next compatible export.
+
+> The hosted demo has no user accounts. Saved recipes and job history are shared, storage is temporary, and sensitive data should not be uploaded. Run FlowForge locally or self-host it for private data.
 
 ## What it does
 
 - Imports `.csv` and `.xlsx` files with validation, size limits, and useful errors
-- Detects columns and renders an immediate source preview
-- Composes ten focused operations: rename, deduplicate, remove empty rows, fill missing values, trim, change casing, normalize dates, coerce numbers, and filter rows
+- Detects columns and profiles the source before recipe configuration
+- Composes ten operations: rename, deduplicate, remove empty rows, fill missing values, trim, change casing, normalize dates, coerce numbers, and filter rows
 - Shows before/after data plus row-level processing statistics
 - Saves reusable recipes in SQLite and checks compatibility when they are rerun
 - Exports processed datasets as CSV or Excel
@@ -49,7 +51,7 @@ Apply [`customer_cleanup_recipe.json`](samples/customer_cleanup_recipe.json) to 
 1,187 clean rows exported
 ```
 
-Those numbers come from the checked-in dataset and its generator—not a synthetic benchmark claim. The expected result is included as [`customer_data_clean_expected.csv`](samples/customer_data_clean_expected.csv).
+These counts are asserted by the test suite against the checked-in expected result, [`customer_data_clean_expected.csv`](samples/customer_data_clean_expected.csv).
 
 ### Before / after
 
@@ -76,7 +78,7 @@ flowchart LR
     ENGINE --> EXPORT[CSV / XLSX export]
 ```
 
-The design keeps HTTP concerns, persistence, file handling, schemas, and pure transformation logic separate. SQLite access uses the standard library—there is no ORM or background queue to operate for this deliberately small v1.
+HTTP routes, persistence, file handling, schemas, and transformation logic live in separate modules. SQLite uses the standard library; this v1 does not need an ORM or background queue.
 
 ## Stack
 
@@ -94,7 +96,7 @@ The design keeps HTTP concerns, persistence, file handling, schemas, and pure tr
 Requirements: Python 3.12 or newer.
 
 ```bash
-git clone https://github.com/your-handle/flowforge.git
+git clone https://github.com/andyst-dev/flowforge.git
 cd flowforge
 python -m venv .venv
 source .venv/bin/activate
@@ -104,7 +106,7 @@ make dev
 
 Open [http://localhost:8000](http://localhost:8000). Interactive API documentation is available at [http://localhost:8000/docs](http://localhost:8000/docs).
 
-Copy `.env.example` to `.env` to override storage paths, the upload limit, or preview size. The defaults work without configuration.
+The defaults work without configuration. To override storage paths, the upload limit, or preview size, copy `.env.example` to `.env`; `make dev` loads it automatically.
 
 ## Docker
 
@@ -164,7 +166,7 @@ pytest --cov=app           # include coverage
 make format                # format and apply safe lint fixes
 ```
 
-The transformation suite covers every operation family, invalid-value behavior, statistics, compatibility errors, filtering, and sequential recipes. API tests exercise upload, recipe reuse, preview, both export formats, history, and failure responses. CI runs lint and tests on every pull request and push to `main`.
+The transformation suite covers every operation family, invalid-value behavior, statistics, compatibility errors, filtering, and sequential recipes. API tests exercise upload limits, recipe reuse, preview, both export formats, history, security headers, and failure responses. CI runs formatting, lint, tests with a 90% coverage floor, and a container build on every pull request and push to `main`.
 
 ## Project structure
 
@@ -193,9 +195,10 @@ flowforge/
 
 - Uploaded files and generated previews are stored under `storage/` and excluded from Git.
 - Spreadsheet formulas are read as cached cell values; FlowForge does not execute macros.
+- Text beginning with a spreadsheet formula prefix is escaped during export to prevent formula injection.
 - Processing is synchronous and intentionally sized for small-to-medium files (15 MB by default).
 - Result pickles are server-generated and addressed by unguessable IDs; user-supplied pickle files are never accepted.
-- There is no authentication in v1. Deploy behind appropriate access controls if exposed beyond a trusted environment.
+- There is no authentication in v1. Recipe and job data is shared by everyone using an instance; deploy behind access controls for private use.
 
 ## Roadmap
 

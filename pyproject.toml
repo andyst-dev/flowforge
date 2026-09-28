@@ -17,7 +17,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-  "httpx>=0.28,<1.0",
+  "httpx2>=2.0,<3.0",
   "pytest>=8.3,<9.0",
   "pytest-cov>=6.0,<7.0",
   "ruff>=0.8,<1.0",
@@ -40,7 +40,7 @@ line-length = 100
 exclude = [".venv", "data", "storage"]
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+select = ["E", "F", "I", "B", "UP", "S", "SIM", "RUF"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/*" = ["S101"]

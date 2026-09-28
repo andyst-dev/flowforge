@@ -17,7 +17,7 @@
       <a class="brand" href="/" aria-label="FlowForge home">
         <img src="{{ url_for('static', path='/flowforge-wordmark.svg') }}" alt="FlowForge">
       </a>
-      <div class="topbar-status"><span class="pulse"></span> Local workspace</div>
+      <div class="topbar-status"><span class="pulse"></span> Workspace ready</div>
       <a class="docs-link" href="/docs">API docs <span>↗</span></a>
     </header>
 
@@ -49,7 +49,7 @@
           <section class="panel is-visible" id="panel-upload">
             <div class="panel-head">
               <div><span class="kicker">01 / INGEST</span><h2>Choose a source file</h2></div>
-              <span class="limit">MAX 15 MB</span>
+              <span class="limit">MAX {{ max_upload_mb }} MB</span>
             </div>
             <label class="dropzone" id="dropzone" for="file-input">
               <input id="file-input" type="file" accept=".csv,.xlsx" hidden>
@@ -63,7 +63,7 @@
               <div><strong id="file-name"></strong><small id="file-meta"></small></div>
               <span class="check">✓</span>
             </div>
-            <div class="panel-actions"><span class="hint">Your data stays in this local workspace.</span><button class="button primary" id="to-recipe" disabled>Configure recipe <span>→</span></button></div>
+            <div class="panel-actions"><span class="hint">Processed on this FlowForge instance.</span><button class="button primary" id="to-recipe" disabled>Configure recipe <span>→</span></button></div>
           </section>
 
           <section class="panel" id="panel-recipe">
@@ -87,8 +87,8 @@
             </div>
             <div class="stats-grid" id="stats-grid"></div>
             <div class="compare-tabs" role="tablist">
-              <button class="is-active" data-table="after">Clean output</button>
-              <button data-table="before">Original input</button>
+              <button class="is-active" role="tab" aria-selected="true" data-table="after">Clean output</button>
+              <button role="tab" aria-selected="false" data-table="before">Original input</button>
             </div>
             <div class="table-shell"><table><thead id="preview-head"></thead><tbody id="preview-body"></tbody></table></div>
             <div class="panel-actions"><button class="button text" data-back="recipe">← Adjust recipe</button><button class="button primary" id="to-export">Approve output <span>→</span></button></div>
@@ -103,8 +103,8 @@
               <h3>Your transformed dataset is ready.</h3>
               <p>Choose a format. The export includes every processed row and column shown in the preview.</p>
               <div class="format-grid">
-                <button class="format-option is-selected" data-format="csv"><span>CSV</span><small>Universal · lightweight</small><i>●</i></button>
-                <button class="format-option" data-format="xlsx"><span>XLSX</span><small>Excel workbook</small><i>○</i></button>
+                <button class="format-option is-selected" aria-pressed="true" data-format="csv"><span>CSV</span><small>Universal · lightweight</small><i>●</i></button>
+                <button class="format-option" aria-pressed="false" data-format="xlsx"><span>XLSX</span><small>Excel workbook</small><i>○</i></button>
               </div>
               <button class="button primary download" id="download">Download export <span>↓</span></button>
             </div>
@@ -119,9 +119,10 @@
           <div id="job-list" class="job-list"><div class="empty-state">No jobs yet. Your completed runs will appear here.</div></div>
         </div>
         <div class="principles-card">
-          <span class="kicker">BUILT FOR REPEATABILITY</span>
-          <blockquote>“Cleaning data once is a task.<br>Saving the rules is a system.”</blockquote>
-          <div class="principle-list"><span><b>01</b> Local-first</span><span><b>02</b> Inspectable</span><span><b>03</b> Reusable</span></div>
+          <span class="kicker">DATA HANDLING</span>
+          <blockquote>Files are processed on<br>this FlowForge instance.</blockquote>
+          <p class="data-note">On the public demo, saved recipes and job history are shared and temporary. Do not upload sensitive data.</p>
+          <div class="principle-list"><span><b>01</b> Inspectable</span><span><b>02</b> Reusable</span><span><b>03</b> Self-hostable</span></div>
         </div>
       </section>
     </main>
@@ -129,7 +130,6 @@
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <template id="rule-template">
       <div class="rule-row">
-        <span class="drag" aria-hidden="true">⠿</span>
         <span class="rule-number"></span>
         <div class="rule-field operation-field"><label>OPERATION</label><select class="operation-select"></select></div>
         <div class="rule-options"></div>

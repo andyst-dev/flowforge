@@ -4,17 +4,19 @@ install:
 	python -m pip install -e ".[dev]"
 
 dev:
-	uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+	@if [ -f .env ]; then set -a; . ./.env; set +a; fi; \
+		python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 test:
-	pytest
+	python -m pytest
 
 lint:
-	ruff check .
+	python -m ruff check .
+	python -m ruff format --check .
 
 format:
-	ruff format .
-	ruff check --fix .
+	python -m ruff format .
+	python -m ruff check --fix .
 
 check: lint test
 

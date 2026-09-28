@@ -23,6 +23,10 @@ def test_health_and_dashboard(client: TestClient) -> None:
     response = client.get("/")
     assert response.status_code == 200
     assert "Turn messy tables" in response.text
+    assert "MAX 2 MB" in response.text
+    assert response.headers["x-content-type-options"] == "nosniff"
+    assert response.headers["x-frame-options"] == "DENY"
+    assert "default-src 'self'" in response.headers["content-security-policy"]
 
 
 def test_upload_preview_export_and_history(client: TestClient) -> None:
@@ -137,3 +141,36 @@ def test_xlsx_upload_and_corrupt_workbook_handling(client: TestClient) -> None:
     )
     assert corrupt.status_code == 422
     assert "could not read" in corrupt.json()["detail"]
+
+
+def test_upload_limit_is_enforced(client: TestClient) -> None:
+    oversized = b"value\n" + (b"x" * (2 * 1024 * 1024))
+    response = client.post("/api/uploads", files={"file": ("oversized.csv", oversized, "text/csv")})
+
+    assert response.status_code == 422
+    assert response.json()["detail"] == "File is larger than the 2 MB limit."
+
+
+def test_exports_neutralize_spreadsheet_formulas(client: TestClient) -> None:
+    uploaded = client.post(
+        "/api/uploads",
+        files={"file": ("formulas.csv", b"name,note\nAda,=2+2\n", "text/csv")},
+    ).json()
+    preview = client.post(
+        "/api/preview",
+        json={
+            "upload_id": uploaded["upload_id"],
+            "operations": [{"type": "trim_whitespace"}],
+        },
+    ).json()
+
+    csv_export = client.post(
+        "/api/exports", json={"result_id": preview["result_id"], "format": "csv"}
+    )
+    assert "'=2+2" in csv_export.text
+
+    xlsx_export = client.post(
+        "/api/exports", json={"result_id": preview["result_id"], "format": "xlsx"}
+    )
+    frame = pd.read_excel(io.BytesIO(xlsx_export.content), dtype=object)
+    assert frame.loc[0, "note"] == "'=2+2"

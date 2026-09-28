@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+from collections.abc import Awaitable, Callable
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
@@ -33,6 +34,28 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     application.state.settings = app_settings
     application.state.database = Database(app_settings.database_path)
     application.state.templates = Jinja2Templates(directory=APP_DIR / "templates")
+
+    @application.middleware("http")
+    async def security_headers(
+        request: Request, call_next: Callable[[Request], Awaitable[Response]]
+    ) -> Response:
+        response = await call_next(request)
+        response.headers.setdefault("X-Content-Type-Options", "nosniff")
+        response.headers.setdefault("X-Frame-Options", "DENY")
+        response.headers.setdefault("Referrer-Policy", "no-referrer")
+        response.headers.setdefault(
+            "Permissions-Policy", "camera=(), microphone=(), geolocation=()"
+        )
+        if request.url.path == "/":
+            response.headers.setdefault(
+                "Content-Security-Policy",
+                "default-src 'self'; script-src 'self'; style-src 'self' "
+                "https://fonts.googleapis.com; font-src https://fonts.gstatic.com; "
+                "img-src 'self' data:; object-src 'none'; base-uri 'self'; "
+                "frame-ancestors 'none'",
+            )
+        return response
+
     application.mount("/static", StaticFiles(directory=APP_DIR / "static"), name="static")
     application.include_router(pages.router)
     application.include_router(api.router)

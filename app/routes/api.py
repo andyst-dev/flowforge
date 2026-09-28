@@ -9,13 +9,23 @@ from fastapi import APIRouter, File, HTTPException, Query, Request, Response, Up
 from fastapi.responses import StreamingResponse
 
 from app.db import Database
-from app.schemas import ExportRequest, Operation, RecipeCreate, TransformRequest
+from app.schemas import (
+    ExportRequest,
+    JobResponse,
+    Operation,
+    RecipeCreate,
+    RecipeResponse,
+    TransformRequest,
+    TransformResponse,
+    UploadResponse,
+)
 from app.services.files import (
     FileValidationError,
     dataframe_preview,
     get_upload_filename,
     load_result,
     load_upload,
+    prepare_export,
     save_result,
     validate_and_save_upload,
 )
@@ -34,12 +44,13 @@ def health() -> dict[str, str]:
     return {"status": "ok"}
 
 
-@router.post("/uploads", status_code=status.HTTP_201_CREATED)
+@router.post("/uploads", status_code=status.HTTP_201_CREATED, response_model=UploadResponse)
 async def upload_file(
     request: Request, file: Annotated[UploadFile, File(description="CSV or XLSX file")]
 ) -> dict[str, object]:
     settings = request.app.state.settings
-    content = await file.read()
+    max_bytes = settings.max_upload_mb * 1024 * 1024
+    content = await file.read(max_bytes + 1)
     try:
         upload_id, frame = validate_and_save_upload(
             file.filename, content, settings.uploads_dir, settings.max_upload_mb
@@ -50,7 +61,7 @@ async def upload_file(
     return {"upload_id": upload_id, "filename": file.filename, **preview}
 
 
-@router.post("/preview")
+@router.post("/preview", response_model=TransformResponse)
 def preview_transform(request: Request, payload: TransformRequest) -> dict[str, object]:
     settings = request.app.state.settings
     database = _db(request)
@@ -63,7 +74,8 @@ def preview_transform(request: Request, payload: TransformRequest) -> dict[str, 
             raise HTTPException(status_code=404, detail="Recipe not found.")
         operations = [Operation.model_validate(item) for item in recipe.operations]
 
-    assert operations is not None
+    if operations is None:
+        raise HTTPException(status_code=422, detail="No transformation operations were provided.")
     job_id = uuid4().hex
     input_name = get_upload_filename(payload.upload_id, settings.uploads_dir)
     try:
@@ -109,11 +121,12 @@ def export_result(request: Request, payload: ExportRequest) -> StreamingResponse
         raise HTTPException(status_code=404, detail=str(exc)) from exc
 
     buffer = io.BytesIO()
+    export_frame = prepare_export(frame)
     if payload.format == "csv":
-        frame.to_csv(buffer, index=False)
+        export_frame.to_csv(buffer, index=False)
         media_type = "text/csv"
     else:
-        frame.to_excel(buffer, index=False, engine="openpyxl")
+        export_frame.to_excel(buffer, index=False, engine="openpyxl")
         media_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     buffer.seek(0)
     return StreamingResponse(
@@ -125,12 +138,12 @@ def export_result(request: Request, payload: ExportRequest) -> StreamingResponse
     )
 
 
-@router.get("/recipes")
+@router.get("/recipes", response_model=list[RecipeResponse])
 def list_recipes(request: Request) -> list[dict[str, object]]:
     return [recipe_to_dict(recipe) for recipe in _db(request).list_recipes()]
 
 
-@router.post("/recipes", status_code=status.HTTP_201_CREATED)
+@router.post("/recipes", status_code=status.HTTP_201_CREATED, response_model=RecipeResponse)
 def create_recipe(request: Request, payload: RecipeCreate) -> dict[str, object]:
     try:
         recipe = _db(request).create_recipe(
@@ -143,7 +156,7 @@ def create_recipe(request: Request, payload: RecipeCreate) -> dict[str, object]:
     return recipe_to_dict(recipe)
 
 
-@router.get("/recipes/{recipe_id}")
+@router.get("/recipes/{recipe_id}", response_model=RecipeResponse)
 def get_recipe(request: Request, recipe_id: int) -> dict[str, object]:
     recipe = _db(request).get_recipe(recipe_id)
     if recipe is None:
@@ -160,7 +173,7 @@ def delete_recipe(request: Request, recipe_id: int) -> Response:
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
-@router.get("/jobs")
+@router.get("/jobs", response_model=list[JobResponse])
 def list_jobs(
     request: Request, limit: Annotated[int, Query(ge=1, le=100)] = 20
 ) -> list[dict[str, object]]:
