@@ -1,0 +1,17 @@
+sku,product_name,category,supplier,stock_quantity,unit_cost
+SKU-1001,  Arc Desk Lamp  ,lighting, NORTHSTAR SUPPLY ,24,39.95
+SKU-1002,Contour Chair,FURNITURE,Oakline Goods,12,149.00
+SKU-1003, Grid Cable Tray ,accessories,Metro Components, 48 ,18.5
+SKU-1004,Studio Monitor Stand,ACCESSORIES, Northstar Supply ,,64.00
+SKU-1005,Portable SSD 1TB,storage,ByteWorks,15,"1,099.00"
+SKU-1006,Mechanical Keyboard,PERIPHERALS,Keyline,twenty,89.00
+SKU-1007,Ergonomic Mouse,peripherals,KEYLINE,30,unknown
+SKU-1008,Standing Desk,FURNITURE,Oakline Goods,6,549
+SKU-1009,USB-C Dock,connectivity,Metro Components,18,129.5
+SKU-1010, Felt Desk Mat ,ACCESSORIES,Northstar Supply,40,29.9
+SKU-1011,Webcam 4K,peripherals,ByteWorks,10,189.00
+SKU-1012,Monitor Arm,furniture,Oakline Goods,8,119
+ sku-1003 ,GRID CABLE TRAY,ACCESSORIES, metro components ,48,18.50
+sku-1008, standing desk ,furniture,OAKLINE GOODS,6,549.00
+SKU-1013,Task Light,Lighting,,14,52.00
+SKU-1014,HDMI Cable 2m,CONNECTIVITY,Metro Components,75,

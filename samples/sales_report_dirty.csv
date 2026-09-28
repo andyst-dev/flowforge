@@ -1,0 +1,19 @@
+transaction_id,order_date,customer_name,region,sales_channel,sales_rep,units,unit_price,status
+T-24001,2025-01-03,  Northwind Studio  ,north, Online ,  Avery Chen  ,2,"1,250.00",completed
+T-24002,01/05/2025,Alpine Retail,SOUTH,partner,Maya Rossi,5,89.50,COMPLETED
+T-24003,"Jan 08, 2025",  Harbor & Pine,east,ONLINE,,3,240,completed
+T-24004,2025/01/11,Orbit Works,west, Retail ,Jonas Silva,1,780.00,completed
+T-24005,01/14/2025,Kite & Co,NORTH,online,Elena Patel,4,125,cancelled
+T-24006,"Jan 17, 2025",Brightline Labs,east,partner,Noah Brown,three,199,completed
+T-24007,2025-01-20,Moss House,south,retail,Amara Martin,6,unknown,completed
+T-24008,not-a-date,Redwood Market,west,online,Luca Müller,2,315,completed
+T-24009,01/23/2025,City Cycle,NORTH,partner,,7,75.25,completed
+T-24010,"Jan 26, 2025",Paper & Grain,east,RETAIL,Sofia Okafor,1,"1,499.00",completed
+T-24011,2025/01/29,Studio Forma,south,online,Avery Chen,8,54.5,completed
+T-24012,2025-02-01,Northwind Studio,north,partner,Maya Rossi,2,450,returned
+T-24013,02/03/2025,Oak General,west,online,Jonas Silva,12,19.95,completed
+T-24014,"Feb 06, 2025",Lumen Supply,east,retail,Elena Patel,3,280,completed
+T-24003,"Jan 08, 2025",Harbor & Pine,east,online,,3,240,completed
+T-24010,01/26/2025, Paper & Grain ,EAST,retail,Sofia Okafor,1,"1,499.00",completed
+T-24015,2025-02-09,Field Office,north,partner,,9,42,completed
+T-24016,02/12/2025,Common Goods,west, Online ,Noah Brown,2,325.75,completed

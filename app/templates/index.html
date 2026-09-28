@@ -59,17 +59,41 @@
               <small>.CSV &nbsp;·&nbsp; .XLSX</small>
             </label>
             <div class="demo-strip" id="demo-strip">
-              <div>
-                <span>NO FILE READY?</span>
-                <strong>Explore the complete customer cleanup</strong>
-                <small>1,253 rows · 7-step recipe · under one minute</small>
+              <div class="demo-copy">
+                <span>DEMO WORKFLOWS</span>
+                <strong id="demo-title">Customer cleanup</strong>
+                <small id="demo-meta">1,253 rows · 7-step recipe · CRM export</small>
               </div>
-              <button
-                class="button demo-button"
-                id="try-demo"
-                data-sample-url="{{ url_for('samples', path='/customer_data_dirty.csv') }}"
-                data-recipe-url="{{ url_for('samples', path='/customer_cleanup_recipe.json') }}"
-              >Try demo data <span>→</span></button>
+              <div class="demo-controls">
+                <label class="sr-only" for="demo-picker">Choose a demo workflow</label>
+                <select id="demo-picker" aria-describedby="demo-meta">
+                  <option
+                    value="customers"
+                    data-title="Customer cleanup"
+                    data-meta="1,253 rows · 7-step recipe · CRM export"
+                    data-filename="customer_data_dirty.csv"
+                    data-sample-url="{{ url_for('samples', path='/customer_data_dirty.csv') }}"
+                    data-recipe-url="{{ url_for('samples', path='/customer_cleanup_recipe.json') }}"
+                  >Customer data</option>
+                  <option
+                    value="sales"
+                    data-title="Sales report cleanup"
+                    data-meta="18 rows · 9-step recipe · transaction report"
+                    data-filename="sales_report_dirty.csv"
+                    data-sample-url="{{ url_for('samples', path='/sales_report_dirty.csv') }}"
+                    data-recipe-url="{{ url_for('samples', path='/sales_report_recipe.json') }}"
+                  >Sales report</option>
+                  <option
+                    value="inventory"
+                    data-title="Inventory catalog cleanup"
+                    data-meta="16 rows · 10-step recipe · product catalog"
+                    data-filename="inventory_dirty.csv"
+                    data-sample-url="{{ url_for('samples', path='/inventory_dirty.csv') }}"
+                    data-recipe-url="{{ url_for('samples', path='/inventory_cleanup_recipe.json') }}"
+                  >Inventory</option>
+                </select>
+                <button class="button demo-button" id="try-demo">Try demo data <span>→</span></button>
+              </div>
             </div>
             <div class="file-card" id="file-card" hidden>
               <div class="file-badge" id="file-type">CSV</div>

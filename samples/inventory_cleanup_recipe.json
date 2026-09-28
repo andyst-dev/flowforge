@@ -1,0 +1,16 @@
+{
+  "name": "Inventory catalog cleanup",
+  "description": "Normalizes catalog fields, resolves missing values, converts stock data, and keeps one row per SKU.",
+  "operations": [
+    {"type": "trim_whitespace"},
+    {"type": "uppercase", "columns": ["sku"]},
+    {"type": "lowercase", "columns": ["product_name", "category", "supplier"]},
+    {"type": "fill_missing", "column": "supplier", "value": "unknown supplier"},
+    {"type": "fill_missing", "column": "stock_quantity", "value": "0"},
+    {"type": "fill_missing", "column": "unit_cost", "value": "0"},
+    {"type": "convert_numeric", "column": "stock_quantity", "invalid": "empty"},
+    {"type": "convert_numeric", "column": "unit_cost", "invalid": "empty"},
+    {"type": "drop_duplicates", "columns": ["sku"]},
+    {"type": "rename_column", "column": "stock_quantity", "new_name": "quantity_on_hand"}
+  ]
+}

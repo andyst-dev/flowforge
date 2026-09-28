@@ -30,16 +30,20 @@ FlowForge is a small web app for recurring CSV and Excel cleanup. Upload a table
 
 - Imports `.csv` and `.xlsx` files with validation, size limits, and useful errors
 - Detects columns and profiles the source before recipe configuration
-- Composes ten operations: rename, deduplicate, remove empty rows, fill missing values, trim, change casing, normalize dates, coerce numbers, and filter rows
+- Composes ten operations: rename, deduplicate, remove empty rows, fill missing values, trim, lowercase, uppercase, normalize dates, coerce numbers, and filter rows
 - Shows before/after data plus row-level processing statistics
 - Saves reusable recipes in SQLite and checks compatibility when they are rerun
 - Exports processed datasets as CSV or Excel
 - Records completed and failed jobs for a lightweight audit trail
 - Runs locally, in Docker, or behind any ASGI-compatible deployment
 
-## A real, reproducible demo
+## Reproducible demos
 
-The repository includes [`customer_data_dirty.csv`](samples/customer_data_dirty.csv), a deterministic CRM-style export with mixed date formats, missing phone numbers, inconsistent casing, padded whitespace, invalid currency values, and duplicates.
+The live interface includes three one-click workflows. Each uses a deterministic dataset and its matching reusable recipe:
+
+- **Customer cleanup** ([dataset](samples/customer_data_dirty.csv), [recipe](samples/customer_cleanup_recipe.json)) — `1,253 → 1,187` rows from a CRM export with mixed dates, missing phone numbers, inconsistent casing, padded whitespace, invalid currency values, and duplicates
+- **Sales report cleanup** ([dataset](samples/sales_report_dirty.csv), [recipe](samples/sales_report_recipe.json)) — `18 → 11` rows after normalizing transaction data and removing invalid, cancelled, returned, and duplicate records
+- **Inventory catalog cleanup** ([dataset](samples/inventory_dirty.csv), [recipe](samples/inventory_cleanup_recipe.json)) — `16 → 14` rows after resolving duplicate SKUs, missing values, inconsistent casing, and invalid stock or cost fields
 
 Apply [`customer_cleanup_recipe.json`](samples/customer_cleanup_recipe.json) to reproduce this exact run:
 
@@ -128,11 +132,11 @@ job history can reset between visits. Use a paid persistent disk for durable pro
 
 ## Example workflow
 
-1. Upload `samples/customer_data_dirty.csv`.
-2. Add the operations shown in `samples/customer_cleanup_recipe.json` or save them once through the interface.
-3. Run the preview and inspect the counts plus clean/original table tabs.
+1. Choose Customer, Sales, or Inventory under **Demo workflows**, then select **Try demo data**. You can also upload your own CSV or XLSX file.
+2. FlowForge loads the matching sample and recipe, then opens the before/after report automatically.
+3. Inspect the counts plus the clean/original table tabs.
 4. Approve the output and download CSV or XLSX.
-5. Upload the next customer export and select the saved recipe. If a required column is missing, FlowForge identifies it before producing an output.
+5. Upload the next compatible export and select the saved recipe. If a required column is missing, FlowForge identifies it before producing an output.
 
 ## API examples
 
@@ -185,7 +189,7 @@ flowforge/
 │   ├── models.py         # Domain records
 │   ├── schemas.py        # Typed API and recipe contracts
 │   └── main.py           # Application factory
-├── samples/              # Dirty input, expected output, demo recipe
+├── samples/              # Demo datasets, reusable recipes, expected customer output
 ├── scripts/              # Deterministic sample generator
 ├── tests/                # Unit and API coverage
 ├── Dockerfile

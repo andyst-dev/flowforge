@@ -1,4 +1,4 @@
-"""Generate FlowForge's deterministic portfolio demo datasets."""
+"""Generate FlowForge's deterministic customer demo dataset."""
 
 from __future__ import annotations
 

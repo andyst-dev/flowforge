@@ -5,6 +5,7 @@ import tomllib
 from pathlib import Path
 
 import pandas as pd
+import pytest
 from fastapi.testclient import TestClient
 
 from app import __version__
@@ -29,20 +30,89 @@ def test_health_and_dashboard(client: TestClient) -> None:
     assert "Turn messy tables" in response.text
     assert "MAX 2 MB" in response.text
     assert "Try demo data" in response.text
+    assert "Sales report cleanup" in response.text
+    assert "Inventory catalog cleanup" in response.text
+    assert response.text.count("data-sample-url") == 3
     assert response.headers["x-content-type-options"] == "nosniff"
     assert response.headers["x-frame-options"] == "DENY"
     assert "default-src 'self'" in response.headers["content-security-policy"]
 
 
-def test_demo_assets_are_served_from_the_existing_samples(client: TestClient) -> None:
-    dataset = client.get("/samples/customer_data_dirty.csv")
-    recipe = client.get("/samples/customer_cleanup_recipe.json")
+@pytest.mark.parametrize(
+    ("dataset_name", "recipe_name", "expected_recipe", "expected_stats"),
+    [
+        (
+            "customer_data_dirty.csv",
+            "customer_cleanup_recipe.json",
+            "Customer export cleanup",
+            {
+                "input_rows": 1_253,
+                "output_rows": 1_187,
+                "duplicates_removed": 41,
+                "empty_rows_removed": 0,
+                "invalid_rows": 25,
+                "changed_cells": 6_776,
+            },
+        ),
+        (
+            "sales_report_dirty.csv",
+            "sales_report_recipe.json",
+            "Sales report cleanup",
+            {
+                "input_rows": 18,
+                "output_rows": 11,
+                "duplicates_removed": 2,
+                "empty_rows_removed": 0,
+                "invalid_rows": 3,
+                "changed_cells": 73,
+            },
+        ),
+        (
+            "inventory_dirty.csv",
+            "inventory_cleanup_recipe.json",
+            "Inventory catalog cleanup",
+            {
+                "input_rows": 16,
+                "output_rows": 14,
+                "duplicates_removed": 2,
+                "empty_rows_removed": 0,
+                "invalid_rows": 2,
+                "changed_cells": 62,
+            },
+        ),
+    ],
+)
+def test_demo_assets_load_and_apply(
+    client: TestClient,
+    dataset_name: str,
+    recipe_name: str,
+    expected_recipe: str,
+    expected_stats: dict[str, int],
+) -> None:
+    dataset = client.get(f"/samples/{dataset_name}")
+    recipe = client.get(f"/samples/{recipe_name}")
 
     assert dataset.status_code == 200
-    assert len(dataset.text.splitlines()) == 1_254
     assert recipe.status_code == 200
-    assert recipe.json()["name"] == "Customer export cleanup"
-    assert len(recipe.json()["operations"]) == 7
+    assert recipe.json()["name"] == expected_recipe
+
+    uploaded = client.post(
+        "/api/uploads",
+        files={"file": (dataset_name, dataset.content, "text/csv")},
+    )
+    assert uploaded.status_code == 201
+
+    preview = client.post(
+        "/api/preview",
+        json={
+            "upload_id": uploaded.json()["upload_id"],
+            "operations": recipe.json()["operations"],
+        },
+    )
+    assert preview.status_code == 200
+    assert preview.json()["stats"] == expected_stats
+    assert preview.json()["before"]["total_rows"] == expected_stats["input_rows"]
+    assert preview.json()["after"]["total_rows"] == expected_stats["output_rows"]
 
 
 def test_version_is_consistent_across_package_metadata_and_api(client: TestClient) -> None:

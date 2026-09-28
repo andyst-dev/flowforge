@@ -1,0 +1,15 @@
+{
+  "name": "Sales report cleanup",
+  "description": "Standardizes completed sales, removes invalid and duplicate transactions, and normalizes reporting fields.",
+  "operations": [
+    {"type": "trim_whitespace"},
+    {"type": "lowercase", "columns": ["customer_name", "sales_channel", "status"]},
+    {"type": "uppercase", "columns": ["region"]},
+    {"type": "fill_missing", "column": "sales_rep", "value": "Unassigned"},
+    {"type": "normalize_dates", "column": "order_date", "date_format": "%Y-%m-%d", "invalid": "drop"},
+    {"type": "convert_numeric", "column": "units", "invalid": "drop"},
+    {"type": "convert_numeric", "column": "unit_price", "invalid": "drop"},
+    {"type": "filter_rows", "column": "status", "operator": "equals", "value": "completed"},
+    {"type": "drop_duplicates", "columns": ["transaction_id"]}
+  ]
+}

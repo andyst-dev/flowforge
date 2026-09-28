@@ -88,32 +88,42 @@ async function handleFile(file, announce = true) {
 
 async function tryDemo() {
   const button = $("#try-demo");
+  const picker = $("#demo-picker");
+  const demo = picker.selectedOptions[0];
   const originalLabel = button.innerHTML;
   button.disabled = true;
+  picker.disabled = true;
   button.classList.add("is-loading");
   button.textContent = "Loading demo…";
   try {
     const [sampleResponse, recipeResponse] = await Promise.all([
-      fetch(button.dataset.sampleUrl),
-      fetch(button.dataset.recipeUrl),
+      fetch(demo.dataset.sampleUrl),
+      fetch(demo.dataset.recipeUrl),
     ]);
     if (!sampleResponse.ok || !recipeResponse.ok) throw new Error("Demo assets are unavailable.");
     const [sampleBlob, recipe] = await Promise.all([sampleResponse.blob(), recipeResponse.json()]);
-    const sampleFile = new File([sampleBlob], "customer_data_dirty.csv", { type: "text/csv" });
+    const sampleFile = new File([sampleBlob], demo.dataset.filename, { type: "text/csv" });
     if (!await handleFile(sampleFile, false)) return;
 
     $("#rule-list").innerHTML = "";
     recipe.operations.forEach(addRule);
     $("#recipe-name").value = recipe.name;
     goTo("recipe");
-    if (await runPreview()) toast("Demo ready — compare the clean and original tables.");
+    if (await runPreview()) toast(`${demo.dataset.title} ready — compare the clean and original tables.`);
   } catch (error) {
     toast(error.message, true);
   } finally {
     button.disabled = false;
+    picker.disabled = false;
     button.classList.remove("is-loading");
     button.innerHTML = originalLabel;
   }
+}
+
+function updateDemoDetails() {
+  const demo = $("#demo-picker").selectedOptions[0];
+  $("#demo-title").textContent = demo.dataset.title;
+  $("#demo-meta").textContent = demo.dataset.meta;
 }
 
 function optionsHtml(values, selected = "") {
@@ -368,6 +378,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $("#file-input").addEventListener("change", (event) => handleFile(event.target.files[0]));
   $("#try-demo").addEventListener("click", tryDemo);
+  $("#demo-picker").addEventListener("change", updateDemoDetails);
   const dropzone = $("#dropzone");
   ["dragenter", "dragover"].forEach((name) => dropzone.addEventListener(name, (event) => { event.preventDefault(); dropzone.classList.add("is-dragging"); }));
   ["dragleave", "drop"].forEach((name) => dropzone.addEventListener(name, (event) => { event.preventDefault(); dropzone.classList.remove("is-dragging"); }));

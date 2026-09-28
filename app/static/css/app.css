@@ -32,6 +32,7 @@ body {
 
 button, input, select { font: inherit; }
 button { color: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 button:focus-visible, a:focus-visible, .dropzone:focus-within {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
@@ -129,10 +130,13 @@ button:focus-visible, a:focus-visible, .dropzone:focus-within {
 .dropzone small { margin-top: 25px; font: 9px var(--mono); color: var(--muted); letter-spacing: .12em; }
 .demo-strip { margin-top: 10px; padding: 14px 15px; border: 1px solid var(--navy); background: var(--navy); color: white; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .demo-strip[hidden] { display: none; }
-.demo-strip > div { min-width: 0; display: grid; gap: 3px; }
-.demo-strip > div > span { color: #97a2b1; font: 9px var(--mono); letter-spacing: .11em; }
+.demo-copy { min-width: 0; display: grid; gap: 3px; }
+.demo-copy > span { color: #97a2b1; font: 9px var(--mono); letter-spacing: .11em; }
 .demo-strip strong { font-size: 12px; font-weight: 700; }
 .demo-strip small { color: #aab3bf; font: 9px var(--mono); }
+.demo-controls { display: flex; align-items: center; gap: 8px; flex: none; }
+.demo-controls select { min-width: 145px; border-color: #526073; background: #1d2a3e; color: white; }
+.demo-controls select:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgb(242 84 45 / 24%); }
 .button.demo-button { flex: none; min-height: 40px; border-color: #526073; background: transparent; color: white; }
 .button.demo-button span { color: var(--accent); font-size: 14px; }
 .button.demo-button:hover { border-color: var(--accent); background: var(--accent); box-shadow: none; }
@@ -273,6 +277,8 @@ tr:nth-child(even) td { background: #f4f3ee; }
   .recipe-picker { margin-top: 16px; }
   .dropzone { min-height: 270px; }
   .demo-strip { align-items: stretch; display: grid; }
+  .demo-controls { display: grid; grid-template-columns: 1fr; }
+  .demo-controls select { width: 100%; }
   .demo-button { width: 100%; }
   .save-strip, .format-grid { grid-template-columns: 1fr; display: grid; }
   .panel-actions .hint { display: none; }
