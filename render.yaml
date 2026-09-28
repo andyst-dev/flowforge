@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: flowforge
+    name: flowforge-studio
     runtime: docker
     plan: free
     autoDeploy: true
