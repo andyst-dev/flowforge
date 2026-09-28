@@ -1,0 +1,13 @@
+services:
+  flowforge:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      FLOWFORGE_DATA_DIR: /app/storage
+      FLOWFORGE_DATABASE_PATH: /app/storage/flowforge.db
+    volumes:
+      - flowforge-data:/app/storage
+
+volumes:
+  flowforge-data:

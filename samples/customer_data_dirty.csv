@@ -1,0 +1,1254 @@
+customer_id,first_name,last_name,email,phone,city,state,signup_date,lifetime_value,segment
+C-10000, AVERY , CHEN , Avery.Chen0@Example.COM ,, ZURICH ,ZH,2021-01-03,250,growth
+C-10001,maya,rossi,Maya.Rossi1@Example.COM,+41 79 101 01 03,basel,bs,01/16/2021,287,core
+C-10002,Jonas,Silva,Jonas.Silva2@Example.COM,+41 79 102 02 06,Bern,BE,"Jan 29, 2021",324,enterprise
+C-10003,ELENA,PATEL,Elena.Patel3@Example.COM,+41 79 103 03 09,GENEVA,ge,2021-02-11,361,growth
+C-10004, noah , brown , Noah.Brown4@Example.COM ,+41 79 104 04 12, lausanne ,VD,02/24/2021,398,core
+C-10005,Amara,Martin,Amara.Martin5@Example.COM,+41 79 105 05 15,Zurich,zh,"Mar 09, 2021",435,enterprise
+C-10006,LUCA,MÜLLER,Luca.Müller6@Example.COM,+41 79 106 06 18,BASEL,BS,2021-03-22,472,growth
+C-10007,sofia,okafor,Sofia.Okafor7@Example.COM,+41 79 107 07 21,bern,be,04/04/2021,509,core
+C-10008, Avery , Chen , Avery.Chen8@Example.COM ,+41 79 108 08 24, Geneva ,GE,"Apr 17, 2021",546,enterprise
+C-10009,MAYA,ROSSI,Maya.Rossi9@Example.COM,+41 79 109 09 27,LAUSANNE,vd,2021-04-30,583,growth
+C-10010,jonas,silva,Jonas.Silva10@Example.COM,+41 79 110 10 30,zurich,ZH,05/13/2021,620,core
+C-10011,Elena,Patel,Elena.Patel11@Example.COM,+41 79 111 11 33,Basel,bs,"May 26, 2021",657,enterprise
+C-10012, NOAH , BROWN , Noah.Brown12@Example.COM ,+41 79 112 12 36, BERN ,BE,2021-06-08,694,growth
+C-10013,amara,martin,Amara.Martin13@Example.COM,+41 79 113 13 39,geneva,ge,06/21/2021,731,core
+C-10014,Luca,Müller,Luca.Müller14@Example.COM,+41 79 114 14 42,Lausanne,VD,"Jul 04, 2021",768,enterprise
+C-10015,SOFIA,OKAFOR,Sofia.Okafor15@Example.COM,+41 79 115 15 45,ZURICH,zh,2021-07-17,805,growth
+C-10016, avery , chen , Avery.Chen16@Example.COM ,+41 79 116 16 48, basel ,BS,07/30/2021,842,core
+C-10017,Maya,Rossi,Maya.Rossi17@Example.COM,,Bern,be,"Aug 12, 2021",879,enterprise
+C-10018,JONAS,SILVA,Jonas.Silva18@Example.COM,+41 79 118 18 54,GENEVA,GE,2021-08-25,916,growth
+C-10019,elena,patel,Elena.Patel19@Example.COM,+41 79 119 19 57,lausanne,vd,09/07/2021,953,core
+C-10020, Noah , Brown , Noah.Brown20@Example.COM ,+41 79 120 20 60, Zurich ,ZH,"Sep 20, 2021",990,enterprise
+C-10021,AMARA,MARTIN,Amara.Martin21@Example.COM,+41 79 121 21 63,BASEL,bs,2021-10-03,1027,growth
+C-10022,luca,müller,Luca.Müller22@Example.COM,+41 79 122 22 66,bern,BE,10/16/2021,1064,core
+C-10023,Sofia,Okafor,Sofia.Okafor23@Example.COM,+41 79 123 23 69,Geneva,ge,"Oct 29, 2021",1101,enterprise
+C-10024, AVERY , CHEN , Avery.Chen24@Example.COM ,+41 79 124 24 72, LAUSANNE ,VD,2021-11-11,1138,growth
+C-10025,maya,rossi,Maya.Rossi25@Example.COM,+41 79 125 25 75,zurich,zh,11/24/2021,"1,175",core
+C-10026,Jonas,Silva,Jonas.Silva26@Example.COM,+41 79 126 26 78,Basel,BS,"Dec 07, 2021",1212,enterprise
+C-10027,ELENA,PATEL,Elena.Patel27@Example.COM,+41 79 127 27 81,BERN,be,2021-12-20,1249,growth
+C-10028, noah , brown , Noah.Brown28@Example.COM ,+41 79 128 28 84, geneva ,GE,01/02/2022,1286,core
+C-10029,Amara,Martin,Amara.Martin29@Example.COM,+41 79 129 29 87,Lausanne,vd,"Jan 15, 2022",1323,enterprise
+C-10030,LUCA,MÜLLER,Luca.Müller30@Example.COM,+41 79 130 30 90,ZURICH,ZH,2022-01-28,"1,360",growth
+C-10031,sofia,okafor,Sofia.Okafor31@Example.COM,+41 79 131 31 93,basel,bs,02/10/2022,1397,core
+C-10032, Avery , Chen , Avery.Chen32@Example.COM ,+41 79 132 32 96, Bern ,BE,"Feb 23, 2022",1434,enterprise
+C-10033,MAYA,ROSSI,Maya.Rossi33@Example.COM,+41 79 133 33 99,GENEVA,ge,2022-03-08,1471,growth
+C-10034,jonas,silva,Jonas.Silva34@Example.COM,,lausanne,VD,03/21/2022,1508,core
+C-10035,Elena,Patel,Elena.Patel35@Example.COM,+41 79 135 35 05,Zurich,zh,"Apr 03, 2022","1,545",enterprise
+C-10036, NOAH , BROWN , Noah.Brown36@Example.COM ,+41 79 136 36 08, BASEL ,BS,2022-04-16,1582,growth
+C-10037,amara,martin,Amara.Martin37@Example.COM,+41 79 137 37 11,bern,be,04/29/2022,1619,core
+C-10038,Luca,Müller,Luca.Müller38@Example.COM,+41 79 138 38 14,Geneva,GE,"May 12, 2022",1656,enterprise
+C-10039,SOFIA,OKAFOR,Sofia.Okafor39@Example.COM,+41 79 139 39 17,LAUSANNE,vd,2022-05-25,1693,growth
+C-10040, avery , chen , Avery.Chen40@Example.COM ,+41 79 140 40 20, zurich ,ZH,06/07/2022,"1,730",core
+C-10041,Maya,Rossi,Maya.Rossi41@Example.COM,+41 79 141 41 23,Basel,bs,"Jun 20, 2022",1767,enterprise
+C-10042,JONAS,SILVA,Jonas.Silva42@Example.COM,+41 79 142 42 26,BERN,BE,2022-07-03,1804,growth
+C-10043,elena,patel,Elena.Patel43@Example.COM,+41 79 143 43 29,geneva,ge,07/16/2022,1841,core
+C-10044, Noah , Brown , Noah.Brown44@Example.COM ,+41 79 144 44 32, Lausanne ,VD,"Jul 29, 2022",1878,enterprise
+C-10045,AMARA,MARTIN,Amara.Martin45@Example.COM,+41 79 145 45 35,ZURICH,zh,2022-08-11,"1,915",growth
+C-10046,luca,müller,Luca.Müller46@Example.COM,+41 79 146 46 38,basel,BS,08/24/2022,1952,core
+C-10047,Sofia,Okafor,Sofia.Okafor47@Example.COM,+41 79 147 47 41,Bern,be,"Sep 06, 2022",1989,enterprise
+C-10048, AVERY , CHEN , Avery.Chen48@Example.COM ,+41 79 148 48 44, GENEVA ,GE,2022-09-19,2026,growth
+C-10049,maya,rossi,Maya.Rossi49@Example.COM,+41 79 149 49 47,lausanne,vd,10/02/2022,2063,core
+C-10050,Jonas,Silva,Jonas.Silva50@Example.COM,+41 79 150 50 50,Zurich,ZH,"Oct 15, 2022","2,100",enterprise
+C-10051,ELENA,PATEL,Elena.Patel51@Example.COM,,BASEL,bs,2022-10-28,2137,growth
+C-10052, noah , brown , Noah.Brown52@Example.COM ,+41 79 152 52 56, bern ,BE,11/10/2022,2174,core
+C-10053,Amara,Martin,Amara.Martin53@Example.COM,+41 79 153 53 59,Geneva,ge,"Nov 23, 2022",2211,enterprise
+C-10054,LUCA,MÜLLER,Luca.Müller54@Example.COM,+41 79 154 54 62,LAUSANNE,VD,2022-12-06,2248,growth
+C-10055,sofia,okafor,Sofia.Okafor55@Example.COM,+41 79 155 55 65,zurich,zh,12/19/2022,"2,285",core
+C-10056, Avery , Chen , Avery.Chen56@Example.COM ,+41 79 156 56 68, Basel ,BS,"Jan 01, 2023",2322,enterprise
+C-10057,MAYA,ROSSI,Maya.Rossi57@Example.COM,+41 79 157 57 71,BERN,be,2023-01-14,2359,growth
+C-10058,jonas,silva,Jonas.Silva58@Example.COM,+41 79 158 58 74,geneva,GE,01/27/2023,2396,core
+C-10059,Elena,Patel,Elena.Patel59@Example.COM,+41 79 159 59 77,Lausanne,vd,"Feb 09, 2023",2433,enterprise
+C-10060, NOAH , BROWN , Noah.Brown60@Example.COM ,+41 79 160 60 80, ZURICH ,ZH,2023-02-22,"2,470",growth
+C-10061,amara,martin,Amara.Martin61@Example.COM,+41 79 161 61 83,basel,bs,03/07/2023,2507,core
+C-10062,Luca,Müller,Luca.Müller62@Example.COM,+41 79 162 62 86,Bern,BE,"Mar 20, 2023",2544,enterprise
+C-10063,SOFIA,OKAFOR,Sofia.Okafor63@Example.COM,+41 79 163 63 89,GENEVA,ge,2023-04-02,2581,growth
+C-10064, avery , chen , Avery.Chen64@Example.COM ,+41 79 164 64 92, lausanne ,VD,04/15/2023,2618,core
+C-10065,Maya,Rossi,Maya.Rossi65@Example.COM,+41 79 165 65 95,Zurich,zh,"Apr 28, 2023","2,655",enterprise
+C-10066,JONAS,SILVA,Jonas.Silva66@Example.COM,+41 79 166 66 98,BASEL,BS,2023-05-11,2692,growth
+C-10067,elena,patel,Elena.Patel67@Example.COM,+41 79 167 67 01,bern,be,05/24/2023,2729,core
+C-10068, Noah , Brown , Noah.Brown68@Example.COM ,, Geneva ,GE,"Jun 06, 2023",2766,enterprise
+C-10069,AMARA,MARTIN,Amara.Martin69@Example.COM,+41 79 169 69 07,LAUSANNE,vd,2023-06-19,2803,growth
+C-10070,luca,müller,Luca.Müller70@Example.COM,+41 79 170 70 10,zurich,ZH,07/02/2023,"2,840",core
+C-10071,Sofia,Okafor,Sofia.Okafor71@Example.COM,+41 79 171 71 13,Basel,bs,"Jul 15, 2023",2877,enterprise
+C-10072, AVERY , CHEN , Avery.Chen72@Example.COM ,+41 79 172 72 16, BERN ,BE,2023-07-28,2914,growth
+C-10073,maya,rossi,Maya.Rossi73@Example.COM,+41 79 173 73 19,geneva,ge,08/10/2023,2951,core
+C-10074,Jonas,Silva,Jonas.Silva74@Example.COM,+41 79 174 74 22,Lausanne,VD,"Aug 23, 2023",2988,enterprise
+C-10075,ELENA,PATEL,Elena.Patel75@Example.COM,+41 79 175 75 25,ZURICH,zh,2023-09-05,"3,025",growth
+C-10076, noah , brown , Noah.Brown76@Example.COM ,+41 79 176 76 28, basel ,BS,09/18/2023,3062,core
+C-10077,Amara,Martin,Amara.Martin77@Example.COM,+41 79 177 77 31,Bern,be,"Oct 01, 2023",3099,enterprise
+C-10078,LUCA,MÜLLER,Luca.Müller78@Example.COM,+41 79 178 78 34,GENEVA,GE,2023-10-14,3136,growth
+C-10079,sofia,okafor,Sofia.Okafor79@Example.COM,+41 79 179 79 37,lausanne,vd,10/27/2023,3173,core
+C-10080, Avery , Chen , Avery.Chen80@Example.COM ,+41 79 180 80 40, Zurich ,ZH,"Nov 09, 2023","3,210",enterprise
+C-10081,MAYA,ROSSI,Maya.Rossi81@Example.COM,+41 79 181 81 43,BASEL,bs,2023-11-22,3247,growth
+C-10082,jonas,silva,Jonas.Silva82@Example.COM,+41 79 182 82 46,bern,BE,12/05/2023,3284,core
+C-10083,Elena,Patel,Elena.Patel83@Example.COM,+41 79 183 83 49,Geneva,ge,"Dec 18, 2023",3321,enterprise
+C-10084, NOAH , BROWN , Noah.Brown84@Example.COM ,+41 79 184 84 52, LAUSANNE ,VD,2023-12-31,3358,growth
+C-10085,amara,martin,Amara.Martin85@Example.COM,,zurich,zh,01/13/2024,"3,395",core
+C-10086,Luca,Müller,Luca.Müller86@Example.COM,+41 79 186 86 58,Basel,BS,"Jan 26, 2024",3432,enterprise
+C-10087,SOFIA,OKAFOR,Sofia.Okafor87@Example.COM,+41 79 187 87 61,BERN,be,2024-02-08,3469,growth
+C-10088, avery , chen , Avery.Chen88@Example.COM ,+41 79 188 88 64, geneva ,GE,02/21/2024,3506,core
+C-10089,Maya,Rossi,Maya.Rossi89@Example.COM,+41 79 189 89 67,Lausanne,vd,"Mar 05, 2024",3543,enterprise
+C-10090,JONAS,SILVA,Jonas.Silva90@Example.COM,+41 79 190 90 70,ZURICH,ZH,2024-03-18,"3,580",growth
+C-10091,elena,patel,Elena.Patel91@Example.COM,+41 79 191 91 73,basel,bs,03/31/2024,3617,core
+C-10092, Noah , Brown , Noah.Brown92@Example.COM ,+41 79 192 92 76, Bern ,BE,"Apr 13, 2024",3654,enterprise
+C-10093,AMARA,MARTIN,Amara.Martin93@Example.COM,+41 79 193 93 79,GENEVA,ge,2024-04-26,3691,growth
+C-10094,luca,müller,Luca.Müller94@Example.COM,+41 79 194 94 82,lausanne,VD,05/09/2024,3728,core
+C-10095,Sofia,Okafor,Sofia.Okafor95@Example.COM,+41 79 195 95 85,Zurich,zh,"May 22, 2024","3,765",enterprise
+C-10096, AVERY , CHEN , Avery.Chen96@Example.COM ,+41 79 196 96 88, BASEL ,BS,2024-06-04,3802,growth
+C-10097,maya,rossi,Maya.Rossi97@Example.COM,+41 79 197 97 91,bern,be,06/17/2024,3839,core
+C-10098,Jonas,Silva,Jonas.Silva98@Example.COM,+41 79 198 98 94,Geneva,GE,"Jun 30, 2024",3876,enterprise
+C-10099,ELENA,PATEL,Elena.Patel99@Example.COM,+41 79 199 99 97,LAUSANNE,vd,2024-07-13,3913,growth
+C-10100, noah , brown , Noah.Brown100@Example.COM ,+41 79 200 00 00, zurich ,ZH,07/26/2024,"3,950",core
+C-10101,Amara,Martin,Amara.Martin101@Example.COM,+41 79 201 01 03,Basel,bs,"Aug 08, 2024",3987,enterprise
+C-10102,LUCA,MÜLLER,Luca.Müller102@Example.COM,,BERN,BE,2024-08-21,4024,growth
+C-10103,sofia,okafor,Sofia.Okafor103@Example.COM,+41 79 203 03 09,geneva,ge,09/03/2024,4061,core
+C-10104, Avery , Chen , Avery.Chen104@Example.COM ,+41 79 204 04 12, Lausanne ,VD,"Sep 16, 2024",4098,enterprise
+C-10105,MAYA,ROSSI,Maya.Rossi105@Example.COM,+41 79 205 05 15,ZURICH,zh,2024-09-29,"4,135",growth
+C-10106,jonas,silva,Jonas.Silva106@Example.COM,+41 79 206 06 18,basel,BS,10/12/2024,4172,core
+C-10107,Elena,Patel,Elena.Patel107@Example.COM,+41 79 207 07 21,Bern,be,"Oct 25, 2024",4209,enterprise
+C-10108, NOAH , BROWN , Noah.Brown108@Example.COM ,+41 79 208 08 24, GENEVA ,GE,2024-11-07,4246,growth
+C-10109,amara,martin,Amara.Martin109@Example.COM,+41 79 209 09 27,lausanne,vd,11/20/2024,4283,core
+C-10110,Luca,Müller,Luca.Müller110@Example.COM,+41 79 210 10 30,Zurich,ZH,"Dec 03, 2024","4,320",enterprise
+C-10111,SOFIA,OKAFOR,Sofia.Okafor111@Example.COM,+41 79 211 11 33,BASEL,bs,2024-12-16,4357,growth
+C-10112, avery , chen , Avery.Chen112@Example.COM ,+41 79 212 12 36, bern ,BE,12/29/2024,4394,core
+C-10113,Maya,Rossi,Maya.Rossi113@Example.COM,+41 79 213 13 39,Geneva,ge,"Jan 11, 2025",4431,enterprise
+C-10114,JONAS,SILVA,Jonas.Silva114@Example.COM,+41 79 214 14 42,LAUSANNE,VD,2025-01-24,4468,growth
+C-10115,elena,patel,Elena.Patel115@Example.COM,+41 79 215 15 45,zurich,zh,02/06/2025,"4,505",core
+C-10116, Noah , Brown , Noah.Brown116@Example.COM ,+41 79 216 16 48, Basel ,BS,"Feb 19, 2025",4542,enterprise
+C-10117,AMARA,MARTIN,Amara.Martin117@Example.COM,+41 79 217 17 51,BERN,be,2025-03-04,4579,growth
+C-10118,luca,müller,Luca.Müller118@Example.COM,+41 79 218 18 54,geneva,GE,03/17/2025,4616,core
+C-10119,Sofia,Okafor,Sofia.Okafor119@Example.COM,,Lausanne,vd,"Mar 30, 2025",4653,enterprise
+C-10120, AVERY , CHEN , Avery.Chen120@Example.COM ,+41 79 220 20 60, ZURICH ,ZH,2025-04-12,"4,690",growth
+C-10121,maya,rossi,Maya.Rossi121@Example.COM,+41 79 221 21 63,basel,bs,04/25/2025,4727,core
+C-10122,Jonas,Silva,Jonas.Silva122@Example.COM,+41 79 222 22 66,Bern,BE,"May 08, 2025",4764,enterprise
+C-10123,ELENA,PATEL,Elena.Patel123@Example.COM,+41 79 223 23 69,GENEVA,ge,2025-05-21,4801,growth
+C-10124, noah , brown , Noah.Brown124@Example.COM ,+41 79 224 24 72, lausanne ,VD,06/03/2025,4838,core
+C-10125,Amara,Martin,Amara.Martin125@Example.COM,+41 79 225 25 75,Zurich,zh,"Jun 16, 2025","4,875",enterprise
+C-10126,LUCA,MÜLLER,Luca.Müller126@Example.COM,+41 79 226 26 78,BASEL,BS,2025-06-29,4912,growth
+C-10127,sofia,okafor,Sofia.Okafor127@Example.COM,+41 79 227 27 81,bern,be,07/12/2025,4949,core
+C-10128, Avery , Chen , Avery.Chen128@Example.COM ,+41 79 228 28 84, Geneva ,GE,"Jul 25, 2025",4986,enterprise
+C-10129,MAYA,ROSSI,Maya.Rossi129@Example.COM,+41 79 229 29 87,LAUSANNE,vd,2025-08-07,5023,growth
+C-10130,jonas,silva,Jonas.Silva130@Example.COM,+41 79 230 30 90,zurich,ZH,08/20/2025,"5,060",core
+C-10131,Elena,Patel,Elena.Patel131@Example.COM,+41 79 231 31 93,Basel,bs,"Sep 02, 2025",5097,enterprise
+C-10132, NOAH , BROWN , Noah.Brown132@Example.COM ,+41 79 232 32 96, BERN ,BE,2025-09-15,5134,growth
+C-10133,amara,martin,Amara.Martin133@Example.COM,+41 79 233 33 99,geneva,ge,09/28/2025,5171,core
+C-10134,Luca,Müller,Luca.Müller134@Example.COM,+41 79 234 34 02,Lausanne,VD,"Oct 11, 2025",5208,enterprise
+C-10135,SOFIA,OKAFOR,Sofia.Okafor135@Example.COM,+41 79 235 35 05,ZURICH,zh,2025-10-24,"5,245",growth
+C-10136, avery , chen , Avery.Chen136@Example.COM ,, basel ,BS,11/06/2025,5282,core
+C-10137,Maya,Rossi,Maya.Rossi137@Example.COM,+41 79 237 37 11,Bern,be,"Nov 19, 2025",5319,enterprise
+C-10138,JONAS,SILVA,Jonas.Silva138@Example.COM,+41 79 238 38 14,GENEVA,GE,2025-12-02,5356,growth
+C-10139,elena,patel,Elena.Patel139@Example.COM,+41 79 239 39 17,lausanne,vd,01/10/2021,5393,core
+C-10140, Noah , Brown , Noah.Brown140@Example.COM ,+41 79 240 40 20, Zurich ,ZH,"Jan 23, 2021","5,430",enterprise
+C-10141,AMARA,MARTIN,Amara.Martin141@Example.COM,+41 79 241 41 23,BASEL,bs,2021-02-05,5467,growth
+C-10142,luca,müller,Luca.Müller142@Example.COM,+41 79 242 42 26,bern,BE,02/18/2021,5504,core
+C-10143,Sofia,Okafor,Sofia.Okafor143@Example.COM,+41 79 243 43 29,Geneva,ge,"Mar 03, 2021",5541,enterprise
+C-10144, AVERY , CHEN , Avery.Chen144@Example.COM ,+41 79 244 44 32, LAUSANNE ,VD,2021-03-16,5578,growth
+C-10145,maya,rossi,Maya.Rossi145@Example.COM,+41 79 245 45 35,zurich,zh,03/29/2021,"5,615",core
+C-10146,Jonas,Silva,Jonas.Silva146@Example.COM,+41 79 246 46 38,Basel,BS,"Apr 11, 2021",5652,enterprise
+C-10147,ELENA,PATEL,Elena.Patel147@Example.COM,+41 79 247 47 41,BERN,be,2021-04-24,5689,growth
+C-10148, noah , brown , Noah.Brown148@Example.COM ,+41 79 248 48 44, geneva ,GE,05/07/2021,5726,core
+C-10149,Amara,Martin,Amara.Martin149@Example.COM,+41 79 249 49 47,Lausanne,vd,"May 20, 2021",5763,enterprise
+C-10150,LUCA,MÜLLER,Luca.Müller150@Example.COM,+41 79 250 50 50,ZURICH,ZH,2021-06-02,"5,800",growth
+C-10151,sofia,okafor,Sofia.Okafor151@Example.COM,+41 79 251 51 53,basel,bs,06/15/2021,5837,core
+C-10152, Avery , Chen , Avery.Chen152@Example.COM ,+41 79 252 52 56, Bern ,BE,"Jun 28, 2021",5874,enterprise
+C-10153,MAYA,ROSSI,Maya.Rossi153@Example.COM,,GENEVA,ge,2021-07-11,5911,growth
+C-10154,jonas,silva,Jonas.Silva154@Example.COM,+41 79 254 54 62,lausanne,VD,07/24/2021,5948,core
+C-10155,Elena,Patel,Elena.Patel155@Example.COM,+41 79 255 55 65,Zurich,zh,"Aug 06, 2021","5,985",enterprise
+C-10156, NOAH , BROWN , Noah.Brown156@Example.COM ,+41 79 256 56 68, BASEL ,BS,2021-08-19,6022,growth
+C-10157,amara,martin,Amara.Martin157@Example.COM,+41 79 257 57 71,bern,be,09/01/2021,6059,core
+C-10158,Luca,Müller,Luca.Müller158@Example.COM,+41 79 258 58 74,Geneva,GE,"Sep 14, 2021",6096,enterprise
+C-10159,SOFIA,OKAFOR,Sofia.Okafor159@Example.COM,+41 79 259 59 77,LAUSANNE,vd,2021-09-27,6133,growth
+C-10160, avery , chen , Avery.Chen160@Example.COM ,+41 79 260 60 80, zurich ,ZH,10/10/2021,"6,170",core
+C-10161,Maya,Rossi,Maya.Rossi161@Example.COM,+41 79 261 61 83,Basel,bs,"Oct 23, 2021",6207,enterprise
+C-10162,JONAS,SILVA,Jonas.Silva162@Example.COM,+41 79 262 62 86,BERN,BE,2021-11-05,6244,growth
+C-10163,elena,patel,Elena.Patel163@Example.COM,+41 79 263 63 89,geneva,ge,11/18/2021,6281,core
+C-10164, Noah , Brown , Noah.Brown164@Example.COM ,+41 79 264 64 92, Lausanne ,VD,"Dec 01, 2021",6318,enterprise
+C-10165,AMARA,MARTIN,Amara.Martin165@Example.COM,+41 79 265 65 95,ZURICH,zh,2021-12-14,"6,355",growth
+C-10166,luca,müller,Luca.Müller166@Example.COM,+41 79 266 66 98,basel,BS,12/27/2021,6392,core
+C-10167,Sofia,Okafor,Sofia.Okafor167@Example.COM,+41 79 267 67 01,Bern,be,"Jan 09, 2022",6429,enterprise
+C-10168, AVERY , CHEN , Avery.Chen168@Example.COM ,+41 79 268 68 04, GENEVA ,GE,2022-01-22,6466,growth
+C-10169,maya,rossi,Maya.Rossi169@Example.COM,+41 79 269 69 07,lausanne,vd,02/04/2022,6503,core
+C-10170,Jonas,Silva,Jonas.Silva170@Example.COM,,Zurich,ZH,"Feb 17, 2022","6,540",enterprise
+C-10171,ELENA,PATEL,Elena.Patel171@Example.COM,+41 79 271 71 13,BASEL,bs,2022-03-02,6577,growth
+C-10172, noah , brown , Noah.Brown172@Example.COM ,+41 79 272 72 16, bern ,BE,03/15/2022,6614,core
+C-10173,Amara,Martin,Amara.Martin173@Example.COM,+41 79 273 73 19,Geneva,ge,"Mar 28, 2022",6651,enterprise
+C-10174,LUCA,MÜLLER,Luca.Müller174@Example.COM,+41 79 274 74 22,LAUSANNE,VD,2022-04-10,6688,growth
+C-10175,sofia,okafor,Sofia.Okafor175@Example.COM,+41 79 275 75 25,zurich,zh,04/23/2022,"6,725",core
+C-10176, Avery , Chen , Avery.Chen176@Example.COM ,+41 79 276 76 28, Basel ,BS,"May 06, 2022",6762,enterprise
+C-10177,MAYA,ROSSI,Maya.Rossi177@Example.COM,+41 79 277 77 31,BERN,be,2022-05-19,6799,growth
+C-10178,jonas,silva,Jonas.Silva178@Example.COM,+41 79 278 78 34,geneva,GE,06/01/2022,6836,core
+C-10179,Elena,Patel,Elena.Patel179@Example.COM,+41 79 279 79 37,Lausanne,vd,"Jun 14, 2022",6873,enterprise
+C-10180, NOAH , BROWN , Noah.Brown180@Example.COM ,+41 79 280 80 40, ZURICH ,ZH,2022-06-27,"6,910",growth
+C-10181,amara,martin,Amara.Martin181@Example.COM,+41 79 281 81 43,basel,bs,07/10/2022,6947,core
+C-10182,Luca,Müller,Luca.Müller182@Example.COM,+41 79 282 82 46,Bern,BE,"Jul 23, 2022",6984,enterprise
+C-10183,SOFIA,OKAFOR,Sofia.Okafor183@Example.COM,+41 79 283 83 49,GENEVA,ge,2022-08-05,7021,growth
+C-10184, avery , chen , Avery.Chen184@Example.COM ,+41 79 284 84 52, lausanne ,VD,08/18/2022,7058,core
+C-10185,Maya,Rossi,Maya.Rossi185@Example.COM,+41 79 285 85 55,Zurich,zh,"Aug 31, 2022","7,095",enterprise
+C-10186,JONAS,SILVA,Jonas.Silva186@Example.COM,+41 79 286 86 58,BASEL,BS,2022-09-13,7132,growth
+C-10187,elena,patel,Elena.Patel187@Example.COM,,bern,be,09/26/2022,7169,core
+C-10188, Noah , Brown , Noah.Brown188@Example.COM ,+41 79 288 88 64, Geneva ,GE,"Oct 09, 2022",7206,enterprise
+C-10189,AMARA,MARTIN,Amara.Martin189@Example.COM,+41 79 289 89 67,LAUSANNE,vd,2022-10-22,7243,growth
+C-10190,luca,müller,Luca.Müller190@Example.COM,+41 79 290 90 70,zurich,ZH,11/04/2022,"7,280",core
+C-10191,Sofia,Okafor,Sofia.Okafor191@Example.COM,+41 79 291 91 73,Basel,bs,"Nov 17, 2022",7317,enterprise
+C-10192, AVERY , CHEN , Avery.Chen192@Example.COM ,+41 79 292 92 76, BERN ,BE,2022-11-30,7354,growth
+C-10193,maya,rossi,Maya.Rossi193@Example.COM,+41 79 293 93 79,geneva,ge,12/13/2022,7391,core
+C-10194,Jonas,Silva,Jonas.Silva194@Example.COM,+41 79 294 94 82,Lausanne,VD,"Dec 26, 2022",7428,enterprise
+C-10195,ELENA,PATEL,Elena.Patel195@Example.COM,+41 79 295 95 85,ZURICH,zh,2023-01-08,"7,465",growth
+C-10196, noah , brown , Noah.Brown196@Example.COM ,+41 79 296 96 88, basel ,BS,01/21/2023,7502,core
+C-10197,Amara,Martin,Amara.Martin197@Example.COM,+41 79 297 97 91,Bern,be,"Feb 03, 2023",7539,enterprise
+C-10198,LUCA,MÜLLER,Luca.Müller198@Example.COM,+41 79 298 98 94,GENEVA,GE,2023-02-16,7576,growth
+C-10199,sofia,okafor,Sofia.Okafor199@Example.COM,+41 79 299 99 97,lausanne,vd,03/01/2023,7613,core
+C-10200, Avery , Chen , Avery.Chen200@Example.COM ,+41 79 300 00 00, Zurich ,ZH,"Mar 14, 2023","7,650",enterprise
+C-10201,MAYA,ROSSI,Maya.Rossi201@Example.COM,+41 79 301 01 03,BASEL,bs,2023-03-27,7687,growth
+C-10202,jonas,silva,Jonas.Silva202@Example.COM,+41 79 302 02 06,bern,BE,04/09/2023,7724,core
+C-10203,Elena,Patel,Elena.Patel203@Example.COM,+41 79 303 03 09,Geneva,ge,"Apr 22, 2023",7761,enterprise
+C-10204, NOAH , BROWN , Noah.Brown204@Example.COM ,, LAUSANNE ,VD,2023-05-05,7798,growth
+C-10205,amara,martin,Amara.Martin205@Example.COM,+41 79 305 05 15,zurich,zh,05/18/2023,"7,835",core
+C-10206,Luca,Müller,Luca.Müller206@Example.COM,+41 79 306 06 18,Basel,BS,"May 31, 2023",7872,enterprise
+C-10207,SOFIA,OKAFOR,Sofia.Okafor207@Example.COM,+41 79 307 07 21,BERN,be,2023-06-13,7909,growth
+C-10208, avery , chen , Avery.Chen208@Example.COM ,+41 79 308 08 24, geneva ,GE,06/26/2023,7946,core
+C-10209,Maya,Rossi,Maya.Rossi209@Example.COM,+41 79 309 09 27,Lausanne,vd,"Jul 09, 2023",7983,enterprise
+C-10210,JONAS,SILVA,Jonas.Silva210@Example.COM,+41 79 310 10 30,ZURICH,ZH,2023-07-22,"8,020",growth
+C-10211,elena,patel,Elena.Patel211@Example.COM,+41 79 311 11 33,basel,bs,08/04/2023,8057,core
+C-10212, Noah , Brown , Noah.Brown212@Example.COM ,+41 79 312 12 36, Bern ,BE,"Aug 17, 2023",8094,enterprise
+C-10213,AMARA,MARTIN,Amara.Martin213@Example.COM,+41 79 313 13 39,GENEVA,ge,2023-08-30,8131,growth
+C-10214,luca,müller,Luca.Müller214@Example.COM,+41 79 314 14 42,lausanne,VD,09/12/2023,8168,core
+C-10215,Sofia,Okafor,Sofia.Okafor215@Example.COM,+41 79 315 15 45,Zurich,zh,"Sep 25, 2023","8,205",enterprise
+C-10216, AVERY , CHEN , Avery.Chen216@Example.COM ,+41 79 316 16 48, BASEL ,BS,2023-10-08,8242,growth
+C-10217,maya,rossi,Maya.Rossi217@Example.COM,+41 79 317 17 51,bern,be,10/21/2023,8279,core
+C-10218,Jonas,Silva,Jonas.Silva218@Example.COM,+41 79 318 18 54,Geneva,GE,"Nov 03, 2023",8316,enterprise
+C-10219,ELENA,PATEL,Elena.Patel219@Example.COM,+41 79 319 19 57,LAUSANNE,vd,2023-11-16,8353,growth
+C-10220, noah , brown , Noah.Brown220@Example.COM ,+41 79 320 20 60, zurich ,ZH,11/29/2023,"8,390",core
+C-10221,Amara,Martin,Amara.Martin221@Example.COM,,Basel,bs,"Dec 12, 2023",8427,enterprise
+C-10222,LUCA,MÜLLER,Luca.Müller222@Example.COM,+41 79 322 22 66,BERN,BE,2023-12-25,8464,growth
+C-10223,sofia,okafor,Sofia.Okafor223@Example.COM,+41 79 323 23 69,geneva,ge,01/07/2024,8501,core
+C-10224, Avery , Chen , Avery.Chen224@Example.COM ,+41 79 324 24 72, Lausanne ,VD,"Jan 20, 2024",8538,enterprise
+C-10225,MAYA,ROSSI,Maya.Rossi225@Example.COM,+41 79 325 25 75,ZURICH,zh,2024-02-02,"8,575",growth
+C-10226,jonas,silva,Jonas.Silva226@Example.COM,+41 79 326 26 78,basel,BS,02/15/2024,8612,core
+C-10227,Elena,Patel,Elena.Patel227@Example.COM,+41 79 327 27 81,Bern,be,"Feb 28, 2024",8649,enterprise
+C-10228, NOAH , BROWN , Noah.Brown228@Example.COM ,+41 79 328 28 84, GENEVA ,GE,2024-03-12,8686,growth
+C-10229,amara,martin,Amara.Martin229@Example.COM,+41 79 329 29 87,lausanne,vd,03/25/2024,8723,core
+C-10230,Luca,Müller,Luca.Müller230@Example.COM,+41 79 330 30 90,Zurich,ZH,"Apr 07, 2024","8,760",enterprise
+C-10231,SOFIA,OKAFOR,Sofia.Okafor231@Example.COM,+41 79 331 31 93,BASEL,bs,2024-04-20,8797,growth
+C-10232, avery , chen , Avery.Chen232@Example.COM ,+41 79 332 32 96, bern ,BE,05/03/2024,8834,core
+C-10233,Maya,Rossi,Maya.Rossi233@Example.COM,+41 79 333 33 99,Geneva,ge,"May 16, 2024",8871,enterprise
+C-10234,JONAS,SILVA,Jonas.Silva234@Example.COM,+41 79 334 34 02,LAUSANNE,VD,2024-05-29,8908,growth
+C-10235,elena,patel,Elena.Patel235@Example.COM,+41 79 335 35 05,zurich,zh,06/11/2024,"8,945",core
+C-10236, Noah , Brown , Noah.Brown236@Example.COM ,+41 79 336 36 08, Basel ,BS,"Jun 24, 2024",8982,enterprise
+C-10237,AMARA,MARTIN,Amara.Martin237@Example.COM,+41 79 337 37 11,BERN,be,2024-07-07,9019,growth
+C-10238,luca,müller,Luca.Müller238@Example.COM,,geneva,GE,07/20/2024,9056,core
+C-10239,Sofia,Okafor,Sofia.Okafor239@Example.COM,+41 79 339 39 17,Lausanne,vd,"Aug 02, 2024",9093,enterprise
+C-10240, AVERY , CHEN , Avery.Chen240@Example.COM ,+41 79 340 40 20, ZURICH ,ZH,2024-08-15,"9,130",growth
+C-10241,maya,rossi,Maya.Rossi241@Example.COM,+41 79 341 41 23,basel,bs,08/28/2024,9167,core
+C-10242,Jonas,Silva,Jonas.Silva242@Example.COM,+41 79 342 42 26,Bern,BE,"Sep 10, 2024",9204,enterprise
+C-10243,ELENA,PATEL,Elena.Patel243@Example.COM,+41 79 343 43 29,GENEVA,ge,2024-09-23,9241,growth
+C-10244, noah , brown , Noah.Brown244@Example.COM ,+41 79 344 44 32, lausanne ,VD,10/06/2024,9278,core
+C-10245,Amara,Martin,Amara.Martin245@Example.COM,+41 79 345 45 35,Zurich,zh,"Oct 19, 2024","9,315",enterprise
+C-10246,LUCA,MÜLLER,Luca.Müller246@Example.COM,+41 79 346 46 38,BASEL,BS,2024-11-01,9352,growth
+C-10247,sofia,okafor,Sofia.Okafor247@Example.COM,+41 79 347 47 41,bern,be,11/14/2024,9389,core
+C-10248, Avery , Chen , Avery.Chen248@Example.COM ,+41 79 348 48 44, Geneva ,GE,"Nov 27, 2024",9426,enterprise
+C-10249,MAYA,ROSSI,Maya.Rossi249@Example.COM,+41 79 349 49 47,LAUSANNE,vd,2024-12-10,9463,growth
+C-10250,jonas,silva,Jonas.Silva250@Example.COM,+41 79 350 50 50,zurich,ZH,12/23/2024,"9,500",core
+C-10251,Elena,Patel,Elena.Patel251@Example.COM,+41 79 351 51 53,Basel,bs,"Jan 05, 2025",9537,enterprise
+C-10252, NOAH , BROWN , Noah.Brown252@Example.COM ,+41 79 352 52 56, BERN ,BE,2025-01-18,9574,growth
+C-10253,amara,martin,Amara.Martin253@Example.COM,+41 79 353 53 59,geneva,ge,01/31/2025,9611,core
+C-10254,Luca,Müller,Luca.Müller254@Example.COM,+41 79 354 54 62,Lausanne,VD,"Feb 13, 2025",9648,enterprise
+C-10255,SOFIA,OKAFOR,Sofia.Okafor255@Example.COM,,ZURICH,zh,2025-02-26,"9,685",growth
+C-10256, avery , chen , Avery.Chen256@Example.COM ,+41 79 356 56 68, basel ,BS,03/11/2025,9722,core
+C-10257,Maya,Rossi,Maya.Rossi257@Example.COM,+41 79 357 57 71,Bern,be,"Mar 24, 2025",9759,enterprise
+C-10258,JONAS,SILVA,Jonas.Silva258@Example.COM,+41 79 358 58 74,GENEVA,GE,2025-04-06,9796,growth
+C-10259,elena,patel,Elena.Patel259@Example.COM,+41 79 359 59 77,lausanne,vd,04/19/2025,9833,core
+C-10260, Noah , Brown , Noah.Brown260@Example.COM ,+41 79 360 60 80, Zurich ,ZH,"May 02, 2025","9,870",enterprise
+C-10261,AMARA,MARTIN,Amara.Martin261@Example.COM,+41 79 361 61 83,BASEL,bs,2025-05-15,9907,growth
+C-10262,luca,müller,Luca.Müller262@Example.COM,+41 79 362 62 86,bern,BE,05/28/2025,9944,core
+C-10263,Sofia,Okafor,Sofia.Okafor263@Example.COM,+41 79 363 63 89,Geneva,ge,"Jun 10, 2025",9981,enterprise
+C-10264, AVERY , CHEN , Avery.Chen264@Example.COM ,+41 79 364 64 92, LAUSANNE ,VD,2025-06-23,10018,growth
+C-10265,maya,rossi,Maya.Rossi265@Example.COM,+41 79 365 65 95,zurich,zh,07/06/2025,"10,055",core
+C-10266,Jonas,Silva,Jonas.Silva266@Example.COM,+41 79 366 66 98,Basel,BS,"Jul 19, 2025",10092,enterprise
+C-10267,ELENA,PATEL,Elena.Patel267@Example.COM,+41 79 367 67 01,BERN,be,2025-08-01,10129,growth
+C-10268, noah , brown , Noah.Brown268@Example.COM ,+41 79 368 68 04, geneva ,GE,08/14/2025,10166,core
+C-10269,Amara,Martin,Amara.Martin269@Example.COM,+41 79 369 69 07,Lausanne,vd,"Aug 27, 2025",10203,enterprise
+C-10270,LUCA,MÜLLER,Luca.Müller270@Example.COM,+41 79 370 70 10,ZURICH,ZH,2025-09-09,"10,240",growth
+C-10271,sofia,okafor,Sofia.Okafor271@Example.COM,+41 79 371 71 13,basel,bs,09/22/2025,10277,core
+C-10272, Avery , Chen , Avery.Chen272@Example.COM ,, Bern ,BE,"Oct 05, 2025",10314,enterprise
+C-10273,MAYA,ROSSI,Maya.Rossi273@Example.COM,+41 79 373 73 19,GENEVA,ge,2025-10-18,10351,growth
+C-10274,jonas,silva,Jonas.Silva274@Example.COM,+41 79 374 74 22,lausanne,VD,10/31/2025,10388,core
+C-10275,Elena,Patel,Elena.Patel275@Example.COM,+41 79 375 75 25,Zurich,zh,"Nov 13, 2025","10,425",enterprise
+C-10276, NOAH , BROWN , Noah.Brown276@Example.COM ,+41 79 376 76 28, BASEL ,BS,2025-11-26,10462,growth
+C-10277,amara,martin,Amara.Martin277@Example.COM,+41 79 377 77 31,bern,be,01/04/2021,10499,core
+C-10278,Luca,Müller,Luca.Müller278@Example.COM,+41 79 378 78 34,Geneva,GE,"Jan 17, 2021",10536,enterprise
+C-10279,SOFIA,OKAFOR,Sofia.Okafor279@Example.COM,+41 79 379 79 37,LAUSANNE,vd,2021-01-30,10573,growth
+C-10280, avery , chen , Avery.Chen280@Example.COM ,+41 79 380 80 40, zurich ,ZH,02/12/2021,"10,610",core
+C-10281,Maya,Rossi,Maya.Rossi281@Example.COM,+41 79 381 81 43,Basel,bs,"Feb 25, 2021",10647,enterprise
+C-10282,JONAS,SILVA,Jonas.Silva282@Example.COM,+41 79 382 82 46,BERN,BE,2021-03-10,10684,growth
+C-10283,elena,patel,Elena.Patel283@Example.COM,+41 79 383 83 49,geneva,ge,03/23/2021,10721,core
+C-10284, Noah , Brown , Noah.Brown284@Example.COM ,+41 79 384 84 52, Lausanne ,VD,"Apr 05, 2021",10758,enterprise
+C-10285,AMARA,MARTIN,Amara.Martin285@Example.COM,+41 79 385 85 55,ZURICH,zh,2021-04-18,"10,795",growth
+C-10286,luca,müller,Luca.Müller286@Example.COM,+41 79 386 86 58,basel,BS,05/01/2021,10832,core
+C-10287,Sofia,Okafor,Sofia.Okafor287@Example.COM,+41 79 387 87 61,Bern,be,"May 14, 2021",10869,enterprise
+C-10288, AVERY , CHEN , Avery.Chen288@Example.COM ,+41 79 388 88 64, GENEVA ,GE,2021-05-27,10906,growth
+C-10289,maya,rossi,Maya.Rossi289@Example.COM,,lausanne,vd,06/09/2021,10943,core
+C-10290,Jonas,Silva,Jonas.Silva290@Example.COM,+41 79 390 90 70,Zurich,ZH,"Jun 22, 2021","10,980",enterprise
+C-10291,ELENA,PATEL,Elena.Patel291@Example.COM,+41 79 391 91 73,BASEL,bs,2021-07-05,11017,growth
+C-10292, noah , brown , Noah.Brown292@Example.COM ,+41 79 392 92 76, bern ,BE,07/18/2021,11054,core
+C-10293,Amara,Martin,Amara.Martin293@Example.COM,+41 79 393 93 79,Geneva,ge,"Jul 31, 2021",11091,enterprise
+C-10294,LUCA,MÜLLER,Luca.Müller294@Example.COM,+41 79 394 94 82,LAUSANNE,VD,2021-08-13,11128,growth
+C-10295,sofia,okafor,Sofia.Okafor295@Example.COM,+41 79 395 95 85,zurich,zh,08/26/2021,"11,165",core
+C-10296, Avery , Chen , Avery.Chen296@Example.COM ,+41 79 396 96 88, Basel ,BS,"Sep 08, 2021",11202,enterprise
+C-10297,MAYA,ROSSI,Maya.Rossi297@Example.COM,+41 79 397 97 91,BERN,be,2021-09-21,11239,growth
+C-10298,jonas,silva,Jonas.Silva298@Example.COM,+41 79 398 98 94,geneva,GE,10/04/2021,11276,core
+C-10299,Elena,Patel,Elena.Patel299@Example.COM,+41 79 399 99 97,Lausanne,vd,"Oct 17, 2021",11313,enterprise
+C-10300, NOAH , BROWN , Noah.Brown300@Example.COM ,+41 79 400 00 00, ZURICH ,ZH,2021-10-30,"11,350",growth
+C-10301,amara,martin,Amara.Martin301@Example.COM,+41 79 401 01 03,basel,bs,11/12/2021,11387,core
+C-10302,Luca,Müller,Luca.Müller302@Example.COM,+41 79 402 02 06,Bern,BE,"Nov 25, 2021",11424,enterprise
+C-10303,SOFIA,OKAFOR,Sofia.Okafor303@Example.COM,+41 79 403 03 09,GENEVA,ge,2021-12-08,11461,growth
+C-10304, avery , chen , Avery.Chen304@Example.COM ,+41 79 404 04 12, lausanne ,VD,12/21/2021,11498,core
+C-10305,Maya,Rossi,Maya.Rossi305@Example.COM,+41 79 405 05 15,Zurich,zh,"Jan 03, 2022","11,535",enterprise
+C-10306,JONAS,SILVA,Jonas.Silva306@Example.COM,,BASEL,BS,2022-01-16,11572,growth
+C-10307,elena,patel,Elena.Patel307@Example.COM,+41 79 407 07 21,bern,be,01/29/2022,11609,core
+C-10308, Noah , Brown , Noah.Brown308@Example.COM ,+41 79 408 08 24, Geneva ,GE,"Feb 11, 2022",11646,enterprise
+C-10309,AMARA,MARTIN,Amara.Martin309@Example.COM,+41 79 409 09 27,LAUSANNE,vd,2022-02-24,11683,growth
+C-10310,luca,müller,Luca.Müller310@Example.COM,+41 79 410 10 30,zurich,ZH,03/09/2022,"11,720",core
+C-10311,Sofia,Okafor,Sofia.Okafor311@Example.COM,+41 79 411 11 33,Basel,bs,"Mar 22, 2022",11757,enterprise
+C-10312, AVERY , CHEN , Avery.Chen312@Example.COM ,+41 79 412 12 36, BERN ,BE,2022-04-04,11794,growth
+C-10313,maya,rossi,Maya.Rossi313@Example.COM,+41 79 413 13 39,geneva,ge,04/17/2022,11831,core
+C-10314,Jonas,Silva,Jonas.Silva314@Example.COM,+41 79 414 14 42,Lausanne,VD,"Apr 30, 2022",11868,enterprise
+C-10315,ELENA,PATEL,Elena.Patel315@Example.COM,+41 79 415 15 45,ZURICH,zh,2022-05-13,"11,905",growth
+C-10316, noah , brown , Noah.Brown316@Example.COM ,+41 79 416 16 48, basel ,BS,05/26/2022,11942,core
+C-10317,Amara,Martin,Amara.Martin317@Example.COM,+41 79 417 17 51,Bern,be,"Jun 08, 2022",11979,enterprise
+C-10318,LUCA,MÜLLER,Luca.Müller318@Example.COM,+41 79 418 18 54,GENEVA,GE,2022-06-21,12016,growth
+C-10319,sofia,okafor,Sofia.Okafor319@Example.COM,+41 79 419 19 57,lausanne,vd,07/04/2022,12053,core
+C-10320, Avery , Chen , Avery.Chen320@Example.COM ,+41 79 420 20 60, Zurich ,ZH,"Jul 17, 2022","12,090",enterprise
+C-10321,MAYA,ROSSI,Maya.Rossi321@Example.COM,+41 79 421 21 63,BASEL,bs,2022-07-30,12127,growth
+C-10322,jonas,silva,Jonas.Silva322@Example.COM,+41 79 422 22 66,bern,BE,08/12/2022,12164,core
+C-10323,Elena,Patel,Elena.Patel323@Example.COM,,Geneva,ge,"Aug 25, 2022",12201,enterprise
+C-10324, NOAH , BROWN , Noah.Brown324@Example.COM ,+41 79 424 24 72, LAUSANNE ,VD,2022-09-07,12238,growth
+C-10325,amara,martin,Amara.Martin325@Example.COM,+41 79 425 25 75,zurich,zh,09/20/2022,275,core
+C-10326,Luca,Müller,Luca.Müller326@Example.COM,+41 79 426 26 78,Basel,BS,"Oct 03, 2022",312,enterprise
+C-10327,SOFIA,OKAFOR,Sofia.Okafor327@Example.COM,+41 79 427 27 81,BERN,be,2022-10-16,349,growth
+C-10328, avery , chen , Avery.Chen328@Example.COM ,+41 79 428 28 84, geneva ,GE,10/29/2022,386,core
+C-10329,Maya,Rossi,Maya.Rossi329@Example.COM,+41 79 429 29 87,Lausanne,vd,"Nov 11, 2022",423,enterprise
+C-10330,JONAS,SILVA,Jonas.Silva330@Example.COM,+41 79 430 30 90,ZURICH,ZH,2022-11-24,460,growth
+C-10331,elena,patel,Elena.Patel331@Example.COM,+41 79 431 31 93,basel,bs,12/07/2022,497,core
+C-10332, Noah , Brown , Noah.Brown332@Example.COM ,+41 79 432 32 96, Bern ,BE,"Dec 20, 2022",534,enterprise
+C-10333,AMARA,MARTIN,Amara.Martin333@Example.COM,+41 79 433 33 99,GENEVA,ge,2023-01-02,571,growth
+C-10334,luca,müller,Luca.Müller334@Example.COM,+41 79 434 34 02,lausanne,VD,01/15/2023,608,core
+C-10335,Sofia,Okafor,Sofia.Okafor335@Example.COM,+41 79 435 35 05,Zurich,zh,"Jan 28, 2023",645,enterprise
+C-10336, AVERY , CHEN , Avery.Chen336@Example.COM ,+41 79 436 36 08, BASEL ,BS,2023-02-10,682,growth
+C-10337,maya,rossi,Maya.Rossi337@Example.COM,+41 79 437 37 11,bern,be,02/23/2023,719,core
+C-10338,Jonas,Silva,Jonas.Silva338@Example.COM,+41 79 438 38 14,Geneva,GE,"Mar 08, 2023",756,enterprise
+C-10339,ELENA,PATEL,Elena.Patel339@Example.COM,+41 79 439 39 17,LAUSANNE,vd,2023-03-21,793,growth
+C-10340, noah , brown , Noah.Brown340@Example.COM ,, zurich ,ZH,04/03/2023,830,core
+C-10341,Amara,Martin,Amara.Martin341@Example.COM,+41 79 441 41 23,Basel,bs,"Apr 16, 2023",867,enterprise
+C-10342,LUCA,MÜLLER,Luca.Müller342@Example.COM,+41 79 442 42 26,BERN,BE,2023-04-29,904,growth
+C-10343,sofia,okafor,Sofia.Okafor343@Example.COM,+41 79 443 43 29,geneva,ge,05/12/2023,941,core
+C-10344, Avery , Chen , Avery.Chen344@Example.COM ,+41 79 444 44 32, Lausanne ,VD,"May 25, 2023",978,enterprise
+C-10345,MAYA,ROSSI,Maya.Rossi345@Example.COM,+41 79 445 45 35,ZURICH,zh,2023-06-07,"1,015",growth
+C-10346,jonas,silva,Jonas.Silva346@Example.COM,+41 79 446 46 38,basel,BS,06/20/2023,1052,core
+C-10347,Elena,Patel,Elena.Patel347@Example.COM,+41 79 447 47 41,Bern,be,"Jul 03, 2023",1089,enterprise
+C-10348, NOAH , BROWN , Noah.Brown348@Example.COM ,+41 79 448 48 44, GENEVA ,GE,2023-07-16,1126,growth
+C-10349,amara,martin,Amara.Martin349@Example.COM,+41 79 449 49 47,lausanne,vd,07/29/2023,1163,core
+C-10350,Luca,Müller,Luca.Müller350@Example.COM,+41 79 450 50 50,Zurich,ZH,"Aug 11, 2023","1,200",enterprise
+C-10351,SOFIA,OKAFOR,Sofia.Okafor351@Example.COM,+41 79 451 51 53,BASEL,bs,2023-08-24,1237,growth
+C-10352, avery , chen , Avery.Chen352@Example.COM ,+41 79 452 52 56, bern ,BE,09/06/2023,1274,core
+C-10353,Maya,Rossi,Maya.Rossi353@Example.COM,+41 79 453 53 59,Geneva,ge,"Sep 19, 2023",1311,enterprise
+C-10354,JONAS,SILVA,Jonas.Silva354@Example.COM,+41 79 454 54 62,LAUSANNE,VD,2023-10-02,1348,growth
+C-10355,elena,patel,Elena.Patel355@Example.COM,+41 79 455 55 65,zurich,zh,10/15/2023,"1,385",core
+C-10356, Noah , Brown , Noah.Brown356@Example.COM ,+41 79 456 56 68, Basel ,BS,"Oct 28, 2023",1422,enterprise
+C-10357,AMARA,MARTIN,Amara.Martin357@Example.COM,,BERN,be,2023-11-10,1459,growth
+C-10358,luca,müller,Luca.Müller358@Example.COM,+41 79 458 58 74,geneva,GE,11/23/2023,1496,core
+C-10359,Sofia,Okafor,Sofia.Okafor359@Example.COM,+41 79 459 59 77,Lausanne,vd,"Dec 06, 2023",1533,enterprise
+C-10360, AVERY , CHEN , Avery.Chen360@Example.COM ,+41 79 460 60 80, ZURICH ,ZH,2023-12-19,"1,570",growth
+C-10361,maya,rossi,Maya.Rossi361@Example.COM,+41 79 461 61 83,basel,bs,01/01/2024,1607,core
+C-10362,Jonas,Silva,Jonas.Silva362@Example.COM,+41 79 462 62 86,Bern,BE,"Jan 14, 2024",1644,enterprise
+C-10363,ELENA,PATEL,Elena.Patel363@Example.COM,+41 79 463 63 89,GENEVA,ge,2024-01-27,1681,growth
+C-10364, noah , brown , Noah.Brown364@Example.COM ,+41 79 464 64 92, lausanne ,VD,02/09/2024,1718,core
+C-10365,Amara,Martin,Amara.Martin365@Example.COM,+41 79 465 65 95,Zurich,zh,"Feb 22, 2024","1,755",enterprise
+C-10366,LUCA,MÜLLER,Luca.Müller366@Example.COM,+41 79 466 66 98,BASEL,BS,2024-03-06,1792,growth
+C-10367,sofia,okafor,Sofia.Okafor367@Example.COM,+41 79 467 67 01,bern,be,03/19/2024,1829,core
+C-10368, Avery , Chen , Avery.Chen368@Example.COM ,+41 79 468 68 04, Geneva ,GE,"Apr 01, 2024",1866,enterprise
+C-10369,MAYA,ROSSI,Maya.Rossi369@Example.COM,+41 79 469 69 07,LAUSANNE,vd,2024-04-14,1903,growth
+C-10370,jonas,silva,Jonas.Silva370@Example.COM,+41 79 470 70 10,zurich,ZH,04/27/2024,"1,940",core
+C-10371,Elena,Patel,Elena.Patel371@Example.COM,+41 79 471 71 13,Basel,bs,"May 10, 2024",1977,enterprise
+C-10372, NOAH , BROWN , Noah.Brown372@Example.COM ,+41 79 472 72 16, BERN ,BE,2024-05-23,2014,growth
+C-10373,amara,martin,Amara.Martin373@Example.COM,+41 79 473 73 19,geneva,ge,06/05/2024,2051,core
+C-10374,Luca,Müller,Luca.Müller374@Example.COM,,Lausanne,VD,"Jun 18, 2024",2088,enterprise
+C-10375,SOFIA,OKAFOR,Sofia.Okafor375@Example.COM,+41 79 475 75 25,ZURICH,zh,2024-07-01,"2,125",growth
+C-10376, avery , chen , Avery.Chen376@Example.COM ,+41 79 476 76 28, basel ,BS,07/14/2024,2162,core
+C-10377,Maya,Rossi,Maya.Rossi377@Example.COM,+41 79 477 77 31,Bern,be,"Jul 27, 2024",2199,enterprise
+C-10378,JONAS,SILVA,Jonas.Silva378@Example.COM,+41 79 478 78 34,GENEVA,GE,2024-08-09,2236,growth
+C-10379,elena,patel,Elena.Patel379@Example.COM,+41 79 479 79 37,lausanne,vd,08/22/2024,2273,core
+C-10380, Noah , Brown , Noah.Brown380@Example.COM ,+41 79 480 80 40, Zurich ,ZH,"Sep 04, 2024","2,310",enterprise
+C-10381,AMARA,MARTIN,Amara.Martin381@Example.COM,+41 79 481 81 43,BASEL,bs,2024-09-17,2347,growth
+C-10382,luca,müller,Luca.Müller382@Example.COM,+41 79 482 82 46,bern,BE,09/30/2024,2384,core
+C-10383,Sofia,Okafor,Sofia.Okafor383@Example.COM,+41 79 483 83 49,Geneva,ge,"Oct 13, 2024",2421,enterprise
+C-10384, AVERY , CHEN , Avery.Chen384@Example.COM ,+41 79 484 84 52, LAUSANNE ,VD,2024-10-26,2458,growth
+C-10385,maya,rossi,Maya.Rossi385@Example.COM,+41 79 485 85 55,zurich,zh,11/08/2024,"2,495",core
+C-10386,Jonas,Silva,Jonas.Silva386@Example.COM,+41 79 486 86 58,Basel,BS,"Nov 21, 2024",2532,enterprise
+C-10387,ELENA,PATEL,Elena.Patel387@Example.COM,+41 79 487 87 61,BERN,be,2024-12-04,2569,growth
+C-10388, noah , brown , Noah.Brown388@Example.COM ,+41 79 488 88 64, geneva ,GE,12/17/2024,2606,core
+C-10389,Amara,Martin,Amara.Martin389@Example.COM,+41 79 489 89 67,Lausanne,vd,"Dec 30, 2024",2643,enterprise
+C-10390,LUCA,MÜLLER,Luca.Müller390@Example.COM,+41 79 490 90 70,ZURICH,ZH,2025-01-12,"2,680",growth
+C-10391,sofia,okafor,Sofia.Okafor391@Example.COM,,basel,bs,01/25/2025,2717,core
+C-10392, Avery , Chen , Avery.Chen392@Example.COM ,+41 79 492 92 76, Bern ,BE,"Feb 07, 2025",2754,enterprise
+C-10393,MAYA,ROSSI,Maya.Rossi393@Example.COM,+41 79 493 93 79,GENEVA,ge,2025-02-20,2791,growth
+C-10394,jonas,silva,Jonas.Silva394@Example.COM,+41 79 494 94 82,lausanne,VD,03/05/2025,2828,core
+C-10395,Elena,Patel,Elena.Patel395@Example.COM,+41 79 495 95 85,Zurich,zh,"Mar 18, 2025","2,865",enterprise
+C-10396, NOAH , BROWN , Noah.Brown396@Example.COM ,+41 79 496 96 88, BASEL ,BS,2025-03-31,2902,growth
+C-10397,amara,martin,Amara.Martin397@Example.COM,+41 79 497 97 91,bern,be,04/13/2025,2939,core
+C-10398,Luca,Müller,Luca.Müller398@Example.COM,+41 79 498 98 94,Geneva,GE,"Apr 26, 2025",2976,enterprise
+C-10399,SOFIA,OKAFOR,Sofia.Okafor399@Example.COM,+41 79 499 99 97,LAUSANNE,vd,2025-05-09,3013,growth
+C-10400, avery , chen , Avery.Chen400@Example.COM ,+41 79 500 00 00, zurich ,ZH,05/22/2025,"3,050",core
+C-10401,Maya,Rossi,Maya.Rossi401@Example.COM,+41 79 501 01 03,Basel,bs,"Jun 04, 2025",3087,enterprise
+C-10402,JONAS,SILVA,Jonas.Silva402@Example.COM,+41 79 502 02 06,BERN,BE,2025-06-17,3124,growth
+C-10403,elena,patel,Elena.Patel403@Example.COM,+41 79 503 03 09,geneva,ge,06/30/2025,3161,core
+C-10404, Noah , Brown , Noah.Brown404@Example.COM ,+41 79 504 04 12, Lausanne ,VD,"Jul 13, 2025",3198,enterprise
+C-10405,AMARA,MARTIN,Amara.Martin405@Example.COM,+41 79 505 05 15,ZURICH,zh,2025-07-26,"3,235",growth
+C-10406,luca,müller,Luca.Müller406@Example.COM,+41 79 506 06 18,basel,BS,08/08/2025,3272,core
+C-10407,Sofia,Okafor,Sofia.Okafor407@Example.COM,+41 79 507 07 21,Bern,be,"Aug 21, 2025",3309,enterprise
+C-10408, AVERY , CHEN , Avery.Chen408@Example.COM ,, GENEVA ,GE,2025-09-03,3346,growth
+C-10409,maya,rossi,Maya.Rossi409@Example.COM,+41 79 509 09 27,lausanne,vd,09/16/2025,3383,core
+C-10410,Jonas,Silva,Jonas.Silva410@Example.COM,+41 79 510 10 30,Zurich,ZH,"Sep 29, 2025","3,420",enterprise
+C-10411,ELENA,PATEL,Elena.Patel411@Example.COM,+41 79 511 11 33,BASEL,bs,2025-10-12,3457,growth
+C-10412, noah , brown , Noah.Brown412@Example.COM ,+41 79 512 12 36, bern ,BE,10/25/2025,3494,core
+C-10413,Amara,Martin,Amara.Martin413@Example.COM,+41 79 513 13 39,Geneva,ge,"Nov 07, 2025",3531,enterprise
+C-10414,LUCA,MÜLLER,Luca.Müller414@Example.COM,+41 79 514 14 42,LAUSANNE,VD,2025-11-20,3568,growth
+C-10415,sofia,okafor,Sofia.Okafor415@Example.COM,+41 79 515 15 45,zurich,zh,12/03/2025,"3,605",core
+C-10416, Avery , Chen , Avery.Chen416@Example.COM ,+41 79 516 16 48, Basel ,BS,"Jan 11, 2021",3642,enterprise
+C-10417,MAYA,ROSSI,Maya.Rossi417@Example.COM,+41 79 517 17 51,BERN,be,2021-01-24,3679,growth
+C-10418,jonas,silva,Jonas.Silva418@Example.COM,+41 79 518 18 54,geneva,GE,02/06/2021,3716,core
+C-10419,Elena,Patel,Elena.Patel419@Example.COM,+41 79 519 19 57,Lausanne,vd,"Feb 19, 2021",3753,enterprise
+C-10420, NOAH , BROWN , Noah.Brown420@Example.COM ,+41 79 520 20 60, ZURICH ,ZH,2021-03-04,"3,790",growth
+C-10421,amara,martin,Amara.Martin421@Example.COM,+41 79 521 21 63,basel,bs,03/17/2021,3827,core
+C-10422,Luca,Müller,Luca.Müller422@Example.COM,+41 79 522 22 66,Bern,BE,"Mar 30, 2021",3864,enterprise
+C-10423,SOFIA,OKAFOR,Sofia.Okafor423@Example.COM,+41 79 523 23 69,GENEVA,ge,2021-04-12,3901,growth
+C-10424, avery , chen , Avery.Chen424@Example.COM ,+41 79 524 24 72, lausanne ,VD,04/25/2021,3938,core
+C-10425,Maya,Rossi,Maya.Rossi425@Example.COM,,Zurich,zh,"May 08, 2021","3,975",enterprise
+C-10426,JONAS,SILVA,Jonas.Silva426@Example.COM,+41 79 526 26 78,BASEL,BS,2021-05-21,4012,growth
+C-10427,elena,patel,Elena.Patel427@Example.COM,+41 79 527 27 81,bern,be,06/03/2021,4049,core
+C-10428, Noah , Brown , Noah.Brown428@Example.COM ,+41 79 528 28 84, Geneva ,GE,"Jun 16, 2021",4086,enterprise
+C-10429,AMARA,MARTIN,Amara.Martin429@Example.COM,+41 79 529 29 87,LAUSANNE,vd,2021-06-29,4123,growth
+C-10430,luca,müller,Luca.Müller430@Example.COM,+41 79 530 30 90,zurich,ZH,07/12/2021,"4,160",core
+C-10431,Sofia,Okafor,Sofia.Okafor431@Example.COM,+41 79 531 31 93,Basel,bs,"Jul 25, 2021",4197,enterprise
+C-10432, AVERY , CHEN , Avery.Chen432@Example.COM ,+41 79 532 32 96, BERN ,BE,2021-08-07,4234,growth
+C-10433,maya,rossi,Maya.Rossi433@Example.COM,+41 79 533 33 99,geneva,ge,08/20/2021,4271,core
+C-10434,Jonas,Silva,Jonas.Silva434@Example.COM,+41 79 534 34 02,Lausanne,VD,"Sep 02, 2021",4308,enterprise
+C-10435,ELENA,PATEL,Elena.Patel435@Example.COM,+41 79 535 35 05,ZURICH,zh,2021-09-15,"4,345",growth
+C-10436, noah , brown , Noah.Brown436@Example.COM ,+41 79 536 36 08, basel ,BS,09/28/2021,4382,core
+C-10437,Amara,Martin,Amara.Martin437@Example.COM,+41 79 537 37 11,Bern,be,"Oct 11, 2021",4419,enterprise
+C-10438,LUCA,MÜLLER,Luca.Müller438@Example.COM,+41 79 538 38 14,GENEVA,GE,2021-10-24,4456,growth
+C-10439,sofia,okafor,Sofia.Okafor439@Example.COM,+41 79 539 39 17,lausanne,vd,11/06/2021,4493,core
+C-10440, Avery , Chen , Avery.Chen440@Example.COM ,+41 79 540 40 20, Zurich ,ZH,"Nov 19, 2021","4,530",enterprise
+C-10441,MAYA,ROSSI,Maya.Rossi441@Example.COM,+41 79 541 41 23,BASEL,bs,2021-12-02,4567,growth
+C-10442,jonas,silva,Jonas.Silva442@Example.COM,,bern,BE,12/15/2021,4604,core
+C-10443,Elena,Patel,Elena.Patel443@Example.COM,+41 79 543 43 29,Geneva,ge,"Dec 28, 2021",4641,enterprise
+C-10444, NOAH , BROWN , Noah.Brown444@Example.COM ,+41 79 544 44 32, LAUSANNE ,VD,2022-01-10,4678,growth
+C-10445,amara,martin,Amara.Martin445@Example.COM,+41 79 545 45 35,zurich,zh,01/23/2022,"4,715",core
+C-10446,Luca,Müller,Luca.Müller446@Example.COM,+41 79 546 46 38,Basel,BS,"Feb 05, 2022",4752,enterprise
+C-10447,SOFIA,OKAFOR,Sofia.Okafor447@Example.COM,+41 79 547 47 41,BERN,be,2022-02-18,4789,growth
+C-10448, avery , chen , Avery.Chen448@Example.COM ,+41 79 548 48 44, geneva ,GE,03/03/2022,4826,core
+C-10449,Maya,Rossi,Maya.Rossi449@Example.COM,+41 79 549 49 47,Lausanne,vd,"Mar 16, 2022",4863,enterprise
+C-10450,JONAS,SILVA,Jonas.Silva450@Example.COM,+41 79 550 50 50,ZURICH,ZH,2022-03-29,"4,900",growth
+C-10451,elena,patel,Elena.Patel451@Example.COM,+41 79 551 51 53,basel,bs,04/11/2022,4937,core
+C-10452, Noah , Brown , Noah.Brown452@Example.COM ,+41 79 552 52 56, Bern ,BE,"Apr 24, 2022",4974,enterprise
+C-10453,AMARA,MARTIN,Amara.Martin453@Example.COM,+41 79 553 53 59,GENEVA,ge,2022-05-07,5011,growth
+C-10454,luca,müller,Luca.Müller454@Example.COM,+41 79 554 54 62,lausanne,VD,05/20/2022,5048,core
+C-10455,Sofia,Okafor,Sofia.Okafor455@Example.COM,+41 79 555 55 65,Zurich,zh,"Jun 02, 2022","5,085",enterprise
+C-10456, AVERY , CHEN , Avery.Chen456@Example.COM ,+41 79 556 56 68, BASEL ,BS,2022-06-15,5122,growth
+C-10457,maya,rossi,Maya.Rossi457@Example.COM,+41 79 557 57 71,bern,be,06/28/2022,5159,core
+C-10458,Jonas,Silva,Jonas.Silva458@Example.COM,+41 79 558 58 74,Geneva,GE,"Jul 11, 2022",5196,enterprise
+C-10459,ELENA,PATEL,Elena.Patel459@Example.COM,,LAUSANNE,vd,2022-07-24,5233,growth
+C-10460, noah , brown , Noah.Brown460@Example.COM ,+41 79 560 60 80, zurich ,ZH,08/06/2022,"5,270",core
+C-10461,Amara,Martin,Amara.Martin461@Example.COM,+41 79 561 61 83,Basel,bs,"Aug 19, 2022",5307,enterprise
+C-10462,LUCA,MÜLLER,Luca.Müller462@Example.COM,+41 79 562 62 86,BERN,BE,2022-09-01,5344,growth
+C-10463,sofia,okafor,Sofia.Okafor463@Example.COM,+41 79 563 63 89,geneva,ge,09/14/2022,5381,core
+C-10464, Avery , Chen , Avery.Chen464@Example.COM ,+41 79 564 64 92, Lausanne ,VD,"Sep 27, 2022",5418,enterprise
+C-10465,MAYA,ROSSI,Maya.Rossi465@Example.COM,+41 79 565 65 95,ZURICH,zh,2022-10-10,"5,455",growth
+C-10466,jonas,silva,Jonas.Silva466@Example.COM,+41 79 566 66 98,basel,BS,10/23/2022,5492,core
+C-10467,Elena,Patel,Elena.Patel467@Example.COM,+41 79 567 67 01,Bern,be,"Nov 05, 2022",5529,enterprise
+C-10468, NOAH , BROWN , Noah.Brown468@Example.COM ,+41 79 568 68 04, GENEVA ,GE,2022-11-18,5566,growth
+C-10469,amara,martin,Amara.Martin469@Example.COM,+41 79 569 69 07,lausanne,vd,12/01/2022,5603,core
+C-10470,Luca,Müller,Luca.Müller470@Example.COM,+41 79 570 70 10,Zurich,ZH,"Dec 14, 2022","5,640",enterprise
+C-10471,SOFIA,OKAFOR,Sofia.Okafor471@Example.COM,+41 79 571 71 13,BASEL,bs,2022-12-27,5677,growth
+C-10472, avery , chen , Avery.Chen472@Example.COM ,+41 79 572 72 16, bern ,BE,01/09/2023,5714,core
+C-10473,Maya,Rossi,Maya.Rossi473@Example.COM,+41 79 573 73 19,Geneva,ge,"Jan 22, 2023",5751,enterprise
+C-10474,JONAS,SILVA,Jonas.Silva474@Example.COM,+41 79 574 74 22,LAUSANNE,VD,2023-02-04,5788,growth
+C-10475,elena,patel,Elena.Patel475@Example.COM,+41 79 575 75 25,zurich,zh,02/17/2023,"5,825",core
+C-10476, Noah , Brown , Noah.Brown476@Example.COM ,, Basel ,BS,"Mar 02, 2023",5862,enterprise
+C-10477,AMARA,MARTIN,Amara.Martin477@Example.COM,+41 79 577 77 31,BERN,be,2023-03-15,5899,growth
+C-10478,luca,müller,Luca.Müller478@Example.COM,+41 79 578 78 34,geneva,GE,03/28/2023,5936,core
+C-10479,Sofia,Okafor,Sofia.Okafor479@Example.COM,+41 79 579 79 37,Lausanne,vd,"Apr 10, 2023",5973,enterprise
+C-10480, AVERY , CHEN , Avery.Chen480@Example.COM ,+41 79 580 80 40, ZURICH ,ZH,2023-04-23,"6,010",growth
+C-10481,maya,rossi,Maya.Rossi481@Example.COM,+41 79 581 81 43,basel,bs,05/06/2023,6047,core
+C-10482,Jonas,Silva,Jonas.Silva482@Example.COM,+41 79 582 82 46,Bern,BE,"May 19, 2023",6084,enterprise
+C-10483,ELENA,PATEL,Elena.Patel483@Example.COM,+41 79 583 83 49,GENEVA,ge,2023-06-01,6121,growth
+C-10484, noah , brown , Noah.Brown484@Example.COM ,+41 79 584 84 52, lausanne ,VD,06/14/2023,6158,core
+C-10485,Amara,Martin,Amara.Martin485@Example.COM,+41 79 585 85 55,Zurich,zh,"Jun 27, 2023","6,195",enterprise
+C-10486,LUCA,MÜLLER,Luca.Müller486@Example.COM,+41 79 586 86 58,BASEL,BS,2023-07-10,6232,growth
+C-10487,sofia,okafor,Sofia.Okafor487@Example.COM,+41 79 587 87 61,bern,be,07/23/2023,6269,core
+C-10488, Avery , Chen , Avery.Chen488@Example.COM ,+41 79 588 88 64, Geneva ,GE,"Aug 05, 2023",6306,enterprise
+C-10489,MAYA,ROSSI,Maya.Rossi489@Example.COM,+41 79 589 89 67,LAUSANNE,vd,2023-08-18,6343,growth
+C-10490,jonas,silva,Jonas.Silva490@Example.COM,+41 79 590 90 70,zurich,ZH,08/31/2023,"6,380",core
+C-10491,Elena,Patel,Elena.Patel491@Example.COM,+41 79 591 91 73,Basel,bs,"Sep 13, 2023",6417,enterprise
+C-10492, NOAH , BROWN , Noah.Brown492@Example.COM ,+41 79 592 92 76, BERN ,BE,2023-09-26,6454,growth
+C-10493,amara,martin,Amara.Martin493@Example.COM,,geneva,ge,10/09/2023,6491,core
+C-10494,Luca,Müller,Luca.Müller494@Example.COM,+41 79 594 94 82,Lausanne,VD,"Oct 22, 2023",6528,enterprise
+C-10495,SOFIA,OKAFOR,Sofia.Okafor495@Example.COM,+41 79 595 95 85,ZURICH,zh,2023-11-04,"6,565",growth
+C-10496, avery , chen , Avery.Chen496@Example.COM ,+41 79 596 96 88, basel ,BS,11/17/2023,6602,core
+C-10497,Maya,Rossi,Maya.Rossi497@Example.COM,+41 79 597 97 91,Bern,be,"Nov 30, 2023",6639,enterprise
+C-10498,JONAS,SILVA,Jonas.Silva498@Example.COM,+41 79 598 98 94,GENEVA,GE,2023-12-13,6676,growth
+C-10499,elena,patel,Elena.Patel499@Example.COM,+41 79 599 99 97,lausanne,vd,12/26/2023,6713,core
+C-10500, Noah , Brown , Noah.Brown500@Example.COM ,+41 79 600 00 00, Zurich ,ZH,"Jan 08, 2024","6,750",enterprise
+C-10501,AMARA,MARTIN,Amara.Martin501@Example.COM,+41 79 601 01 03,BASEL,bs,2024-01-21,6787,growth
+C-10502,luca,müller,Luca.Müller502@Example.COM,+41 79 602 02 06,bern,BE,02/03/2024,6824,core
+C-10503,Sofia,Okafor,Sofia.Okafor503@Example.COM,+41 79 603 03 09,Geneva,ge,"Feb 16, 2024",6861,enterprise
+C-10504, AVERY , CHEN , Avery.Chen504@Example.COM ,+41 79 604 04 12, LAUSANNE ,VD,2024-02-29,6898,growth
+C-10505,maya,rossi,Maya.Rossi505@Example.COM,+41 79 605 05 15,zurich,zh,03/13/2024,"6,935",core
+C-10506,Jonas,Silva,Jonas.Silva506@Example.COM,+41 79 606 06 18,Basel,BS,"Mar 26, 2024",6972,enterprise
+C-10507,ELENA,PATEL,Elena.Patel507@Example.COM,+41 79 607 07 21,BERN,be,2024-04-08,7009,growth
+C-10508, noah , brown , Noah.Brown508@Example.COM ,+41 79 608 08 24, geneva ,GE,04/21/2024,7046,core
+C-10509,Amara,Martin,Amara.Martin509@Example.COM,+41 79 609 09 27,Lausanne,vd,"May 04, 2024",7083,enterprise
+C-10510,LUCA,MÜLLER,Luca.Müller510@Example.COM,,ZURICH,ZH,2024-05-17,"7,120",growth
+C-10511,sofia,okafor,Sofia.Okafor511@Example.COM,+41 79 611 11 33,basel,bs,05/30/2024,7157,core
+C-10512, Avery , Chen , Avery.Chen512@Example.COM ,+41 79 612 12 36, Bern ,BE,"Jun 12, 2024",7194,enterprise
+C-10513,MAYA,ROSSI,Maya.Rossi513@Example.COM,+41 79 613 13 39,GENEVA,ge,2024-06-25,7231,growth
+C-10514,jonas,silva,Jonas.Silva514@Example.COM,+41 79 614 14 42,lausanne,VD,07/08/2024,7268,core
+C-10515,Elena,Patel,Elena.Patel515@Example.COM,+41 79 615 15 45,Zurich,zh,"Jul 21, 2024","7,305",enterprise
+C-10516, NOAH , BROWN , Noah.Brown516@Example.COM ,+41 79 616 16 48, BASEL ,BS,2024-08-03,7342,growth
+C-10517,amara,martin,Amara.Martin517@Example.COM,+41 79 617 17 51,bern,be,08/16/2024,7379,core
+C-10518,Luca,Müller,Luca.Müller518@Example.COM,+41 79 618 18 54,Geneva,GE,"Aug 29, 2024",7416,enterprise
+C-10519,SOFIA,OKAFOR,Sofia.Okafor519@Example.COM,+41 79 619 19 57,LAUSANNE,vd,2024-09-11,7453,growth
+C-10520, avery , chen , Avery.Chen520@Example.COM ,+41 79 620 20 60, zurich ,ZH,09/24/2024,"7,490",core
+C-10521,Maya,Rossi,Maya.Rossi521@Example.COM,+41 79 621 21 63,Basel,bs,"Oct 07, 2024",7527,enterprise
+C-10522,JONAS,SILVA,Jonas.Silva522@Example.COM,+41 79 622 22 66,BERN,BE,2024-10-20,7564,growth
+C-10523,elena,patel,Elena.Patel523@Example.COM,+41 79 623 23 69,geneva,ge,11/02/2024,7601,core
+C-10524, Noah , Brown , Noah.Brown524@Example.COM ,+41 79 624 24 72, Lausanne ,VD,"Nov 15, 2024",7638,enterprise
+C-10525,AMARA,MARTIN,Amara.Martin525@Example.COM,+41 79 625 25 75,ZURICH,zh,2024-11-28,"7,675",growth
+C-10526,luca,müller,Luca.Müller526@Example.COM,+41 79 626 26 78,basel,BS,12/11/2024,7712,core
+C-10527,Sofia,Okafor,Sofia.Okafor527@Example.COM,,Bern,be,"Dec 24, 2024",7749,enterprise
+C-10528, AVERY , CHEN , Avery.Chen528@Example.COM ,+41 79 628 28 84, GENEVA ,GE,2025-01-06,7786,growth
+C-10529,maya,rossi,Maya.Rossi529@Example.COM,+41 79 629 29 87,lausanne,vd,01/19/2025,7823,core
+C-10530,Jonas,Silva,Jonas.Silva530@Example.COM,+41 79 630 30 90,Zurich,ZH,"Feb 01, 2025","7,860",enterprise
+C-10531,ELENA,PATEL,Elena.Patel531@Example.COM,+41 79 631 31 93,BASEL,bs,2025-02-14,7897,growth
+C-10532, noah , brown , Noah.Brown532@Example.COM ,+41 79 632 32 96, bern ,BE,02/27/2025,7934,core
+C-10533,Amara,Martin,Amara.Martin533@Example.COM,+41 79 633 33 99,Geneva,ge,"Mar 12, 2025",7971,enterprise
+C-10534,LUCA,MÜLLER,Luca.Müller534@Example.COM,+41 79 634 34 02,LAUSANNE,VD,2025-03-25,8008,growth
+C-10535,sofia,okafor,Sofia.Okafor535@Example.COM,+41 79 635 35 05,zurich,zh,04/07/2025,"8,045",core
+C-10536, Avery , Chen , Avery.Chen536@Example.COM ,+41 79 636 36 08, Basel ,BS,"Apr 20, 2025",8082,enterprise
+C-10537,MAYA,ROSSI,Maya.Rossi537@Example.COM,+41 79 637 37 11,BERN,be,2025-05-03,8119,growth
+C-10538,jonas,silva,Jonas.Silva538@Example.COM,+41 79 638 38 14,geneva,GE,05/16/2025,8156,core
+C-10539,Elena,Patel,Elena.Patel539@Example.COM,+41 79 639 39 17,Lausanne,vd,"May 29, 2025",8193,enterprise
+C-10540, NOAH , BROWN , Noah.Brown540@Example.COM ,+41 79 640 40 20, ZURICH ,ZH,2025-06-11,"8,230",growth
+C-10541,amara,martin,Amara.Martin541@Example.COM,+41 79 641 41 23,basel,bs,06/24/2025,8267,core
+C-10542,Luca,Müller,Luca.Müller542@Example.COM,+41 79 642 42 26,Bern,BE,"Jul 07, 2025",8304,enterprise
+C-10543,SOFIA,OKAFOR,Sofia.Okafor543@Example.COM,+41 79 643 43 29,GENEVA,ge,2025-07-20,8341,growth
+C-10544, avery , chen , Avery.Chen544@Example.COM ,, lausanne ,VD,08/02/2025,8378,core
+C-10545,Maya,Rossi,Maya.Rossi545@Example.COM,+41 79 645 45 35,Zurich,zh,"Aug 15, 2025","8,415",enterprise
+C-10546,JONAS,SILVA,Jonas.Silva546@Example.COM,+41 79 646 46 38,BASEL,BS,2025-08-28,8452,growth
+C-10547,elena,patel,Elena.Patel547@Example.COM,+41 79 647 47 41,bern,be,09/10/2025,8489,core
+C-10548, Noah , Brown , Noah.Brown548@Example.COM ,+41 79 648 48 44, Geneva ,GE,"Sep 23, 2025",8526,enterprise
+C-10549,AMARA,MARTIN,Amara.Martin549@Example.COM,+41 79 649 49 47,LAUSANNE,vd,2025-10-06,8563,growth
+C-10550,luca,müller,Luca.Müller550@Example.COM,+41 79 650 50 50,zurich,ZH,10/19/2025,"8,600",core
+C-10551,Sofia,Okafor,Sofia.Okafor551@Example.COM,+41 79 651 51 53,Basel,bs,"Nov 01, 2025",8637,enterprise
+C-10552, AVERY , CHEN , Avery.Chen552@Example.COM ,+41 79 652 52 56, BERN ,BE,2025-11-14,8674,growth
+C-10553,maya,rossi,Maya.Rossi553@Example.COM,+41 79 653 53 59,geneva,ge,11/27/2025,8711,core
+C-10554,Jonas,Silva,Jonas.Silva554@Example.COM,+41 79 654 54 62,Lausanne,VD,"Jan 05, 2021",8748,enterprise
+C-10555,ELENA,PATEL,Elena.Patel555@Example.COM,+41 79 655 55 65,ZURICH,zh,2021-01-18,"8,785",growth
+C-10556, noah , brown , Noah.Brown556@Example.COM ,+41 79 656 56 68, basel ,BS,01/31/2021,8822,core
+C-10557,Amara,Martin,Amara.Martin557@Example.COM,+41 79 657 57 71,Bern,be,"Feb 13, 2021",8859,enterprise
+C-10558,LUCA,MÜLLER,Luca.Müller558@Example.COM,+41 79 658 58 74,GENEVA,GE,2021-02-26,8896,growth
+C-10559,sofia,okafor,Sofia.Okafor559@Example.COM,+41 79 659 59 77,lausanne,vd,03/11/2021,8933,core
+C-10560, Avery , Chen , Avery.Chen560@Example.COM ,+41 79 660 60 80, Zurich ,ZH,"Mar 24, 2021","8,970",enterprise
+C-10561,MAYA,ROSSI,Maya.Rossi561@Example.COM,,BASEL,bs,2021-04-06,9007,growth
+C-10562,jonas,silva,Jonas.Silva562@Example.COM,+41 79 662 62 86,bern,BE,04/19/2021,9044,core
+C-10563,Elena,Patel,Elena.Patel563@Example.COM,+41 79 663 63 89,Geneva,ge,"May 02, 2021",9081,enterprise
+C-10564, NOAH , BROWN , Noah.Brown564@Example.COM ,+41 79 664 64 92, LAUSANNE ,VD,2021-05-15,9118,growth
+C-10565,amara,martin,Amara.Martin565@Example.COM,+41 79 665 65 95,zurich,zh,05/28/2021,"9,155",core
+C-10566,Luca,Müller,Luca.Müller566@Example.COM,+41 79 666 66 98,Basel,BS,"Jun 10, 2021",9192,enterprise
+C-10567,SOFIA,OKAFOR,Sofia.Okafor567@Example.COM,+41 79 667 67 01,BERN,be,2021-06-23,9229,growth
+C-10568, avery , chen , Avery.Chen568@Example.COM ,+41 79 668 68 04, geneva ,GE,07/06/2021,9266,core
+C-10569,Maya,Rossi,Maya.Rossi569@Example.COM,+41 79 669 69 07,Lausanne,vd,"Jul 19, 2021",9303,enterprise
+C-10570,JONAS,SILVA,Jonas.Silva570@Example.COM,+41 79 670 70 10,ZURICH,ZH,2021-08-01,"9,340",growth
+C-10571,elena,patel,Elena.Patel571@Example.COM,+41 79 671 71 13,basel,bs,08/14/2021,9377,core
+C-10572, Noah , Brown , Noah.Brown572@Example.COM ,+41 79 672 72 16, Bern ,BE,"Aug 27, 2021",9414,enterprise
+C-10573,AMARA,MARTIN,Amara.Martin573@Example.COM,+41 79 673 73 19,GENEVA,ge,2021-09-09,9451,growth
+C-10574,luca,müller,Luca.Müller574@Example.COM,+41 79 674 74 22,lausanne,VD,09/22/2021,9488,core
+C-10575,Sofia,Okafor,Sofia.Okafor575@Example.COM,+41 79 675 75 25,Zurich,zh,"Oct 05, 2021","9,525",enterprise
+C-10576, AVERY , CHEN , Avery.Chen576@Example.COM ,+41 79 676 76 28, BASEL ,BS,2021-10-18,9562,growth
+C-10577,maya,rossi,Maya.Rossi577@Example.COM,+41 79 677 77 31,bern,be,10/31/2021,9599,core
+C-10578,Jonas,Silva,Jonas.Silva578@Example.COM,,Geneva,GE,"Nov 13, 2021",9636,enterprise
+C-10579,ELENA,PATEL,Elena.Patel579@Example.COM,+41 79 679 79 37,LAUSANNE,vd,2021-11-26,9673,growth
+C-10580, noah , brown , Noah.Brown580@Example.COM ,+41 79 680 80 40, zurich ,ZH,12/09/2021,"9,710",core
+C-10581,Amara,Martin,Amara.Martin581@Example.COM,+41 79 681 81 43,Basel,bs,"Dec 22, 2021",9747,enterprise
+C-10582,LUCA,MÜLLER,Luca.Müller582@Example.COM,+41 79 682 82 46,BERN,BE,2022-01-04,9784,growth
+C-10583,sofia,okafor,Sofia.Okafor583@Example.COM,+41 79 683 83 49,geneva,ge,01/17/2022,9821,core
+C-10584, Avery , Chen , Avery.Chen584@Example.COM ,+41 79 684 84 52, Lausanne ,VD,"Jan 30, 2022",9858,enterprise
+C-10585,MAYA,ROSSI,Maya.Rossi585@Example.COM,+41 79 685 85 55,ZURICH,zh,2022-02-12,"9,895",growth
+C-10586,jonas,silva,Jonas.Silva586@Example.COM,+41 79 686 86 58,basel,BS,02/25/2022,9932,core
+C-10587,Elena,Patel,Elena.Patel587@Example.COM,+41 79 687 87 61,Bern,be,"Mar 10, 2022",9969,enterprise
+C-10588, NOAH , BROWN , Noah.Brown588@Example.COM ,+41 79 688 88 64, GENEVA ,GE,2022-03-23,10006,growth
+C-10589,amara,martin,Amara.Martin589@Example.COM,+41 79 689 89 67,lausanne,vd,04/05/2022,10043,core
+C-10590,Luca,Müller,Luca.Müller590@Example.COM,+41 79 690 90 70,Zurich,ZH,"Apr 18, 2022","10,080",enterprise
+C-10591,SOFIA,OKAFOR,Sofia.Okafor591@Example.COM,+41 79 691 91 73,BASEL,bs,2022-05-01,10117,growth
+C-10592, avery , chen , Avery.Chen592@Example.COM ,+41 79 692 92 76, bern ,BE,05/14/2022,10154,core
+C-10593,Maya,Rossi,Maya.Rossi593@Example.COM,+41 79 693 93 79,Geneva,ge,"May 27, 2022",10191,enterprise
+C-10594,JONAS,SILVA,Jonas.Silva594@Example.COM,+41 79 694 94 82,LAUSANNE,VD,2022-06-09,10228,growth
+C-10595,elena,patel,Elena.Patel595@Example.COM,,zurich,zh,06/22/2022,"10,265",core
+C-10596, Noah , Brown , Noah.Brown596@Example.COM ,+41 79 696 96 88, Basel ,BS,"Jul 05, 2022",10302,enterprise
+C-10597,AMARA,MARTIN,Amara.Martin597@Example.COM,+41 79 697 97 91,BERN,be,2022-07-18,10339,growth
+C-10598,luca,müller,Luca.Müller598@Example.COM,+41 79 698 98 94,geneva,GE,07/31/2022,10376,core
+C-10599,Sofia,Okafor,Sofia.Okafor599@Example.COM,+41 79 699 99 97,Lausanne,vd,"Aug 13, 2022",10413,enterprise
+C-10600, AVERY , CHEN , Avery.Chen600@Example.COM ,+41 79 700 00 00, ZURICH ,ZH,2022-08-26,"10,450",growth
+C-10601,maya,rossi,Maya.Rossi601@Example.COM,+41 79 701 01 03,basel,bs,09/08/2022,10487,core
+C-10602,Jonas,Silva,Jonas.Silva602@Example.COM,+41 79 702 02 06,Bern,BE,"Sep 21, 2022",10524,enterprise
+C-10603,ELENA,PATEL,Elena.Patel603@Example.COM,+41 79 703 03 09,GENEVA,ge,2022-10-04,10561,growth
+C-10604, noah , brown , Noah.Brown604@Example.COM ,+41 79 704 04 12, lausanne ,VD,10/17/2022,10598,core
+C-10605,Amara,Martin,Amara.Martin605@Example.COM,+41 79 705 05 15,Zurich,zh,"Oct 30, 2022","10,635",enterprise
+C-10606,LUCA,MÜLLER,Luca.Müller606@Example.COM,+41 79 706 06 18,BASEL,BS,2022-11-12,10672,growth
+C-10607,sofia,okafor,Sofia.Okafor607@Example.COM,+41 79 707 07 21,bern,be,11/25/2022,10709,core
+C-10608, Avery , Chen , Avery.Chen608@Example.COM ,+41 79 708 08 24, Geneva ,GE,"Dec 08, 2022",10746,enterprise
+C-10609,MAYA,ROSSI,Maya.Rossi609@Example.COM,+41 79 709 09 27,LAUSANNE,vd,2022-12-21,10783,growth
+C-10610,jonas,silva,Jonas.Silva610@Example.COM,+41 79 710 10 30,zurich,ZH,01/03/2023,"10,820",core
+C-10611,Elena,Patel,Elena.Patel611@Example.COM,+41 79 711 11 33,Basel,bs,"Jan 16, 2023",10857,enterprise
+C-10612, NOAH , BROWN , Noah.Brown612@Example.COM ,, BERN ,BE,2023-01-29,10894,growth
+C-10613,amara,martin,Amara.Martin613@Example.COM,+41 79 713 13 39,geneva,ge,02/11/2023,10931,core
+C-10614,Luca,Müller,Luca.Müller614@Example.COM,+41 79 714 14 42,Lausanne,VD,"Feb 24, 2023",10968,enterprise
+C-10615,SOFIA,OKAFOR,Sofia.Okafor615@Example.COM,+41 79 715 15 45,ZURICH,zh,2023-03-09,"11,005",growth
+C-10616, avery , chen , Avery.Chen616@Example.COM ,+41 79 716 16 48, basel ,BS,03/22/2023,11042,core
+C-10617,Maya,Rossi,Maya.Rossi617@Example.COM,+41 79 717 17 51,Bern,be,"Apr 04, 2023",11079,enterprise
+C-10618,JONAS,SILVA,Jonas.Silva618@Example.COM,+41 79 718 18 54,GENEVA,GE,2023-04-17,11116,growth
+C-10619,elena,patel,Elena.Patel619@Example.COM,+41 79 719 19 57,lausanne,vd,04/30/2023,11153,core
+C-10620, Noah , Brown , Noah.Brown620@Example.COM ,+41 79 720 20 60, Zurich ,ZH,"May 13, 2023","11,190",enterprise
+C-10621,AMARA,MARTIN,Amara.Martin621@Example.COM,+41 79 721 21 63,BASEL,bs,2023-05-26,11227,growth
+C-10622,luca,müller,Luca.Müller622@Example.COM,+41 79 722 22 66,bern,BE,06/08/2023,11264,core
+C-10623,Sofia,Okafor,Sofia.Okafor623@Example.COM,+41 79 723 23 69,Geneva,ge,"Jun 21, 2023",11301,enterprise
+C-10624, AVERY , CHEN , Avery.Chen624@Example.COM ,+41 79 724 24 72, LAUSANNE ,VD,2023-07-04,11338,growth
+C-10625,maya,rossi,Maya.Rossi625@Example.COM,+41 79 725 25 75,zurich,zh,07/17/2023,"11,375",core
+C-10626,Jonas,Silva,Jonas.Silva626@Example.COM,+41 79 726 26 78,Basel,BS,"Jul 30, 2023",11412,enterprise
+C-10627,ELENA,PATEL,Elena.Patel627@Example.COM,+41 79 727 27 81,BERN,be,2023-08-12,11449,growth
+C-10628, noah , brown , Noah.Brown628@Example.COM ,+41 79 728 28 84, geneva ,GE,08/25/2023,11486,core
+C-10629,Amara,Martin,Amara.Martin629@Example.COM,,Lausanne,vd,"Sep 07, 2023",11523,enterprise
+C-10630,LUCA,MÜLLER,Luca.Müller630@Example.COM,+41 79 730 30 90,ZURICH,ZH,2023-09-20,"11,560",growth
+C-10631,sofia,okafor,Sofia.Okafor631@Example.COM,+41 79 731 31 93,basel,bs,10/03/2023,11597,core
+C-10632, Avery , Chen , Avery.Chen632@Example.COM ,+41 79 732 32 96, Bern ,BE,"Oct 16, 2023",11634,enterprise
+C-10633,MAYA,ROSSI,Maya.Rossi633@Example.COM,+41 79 733 33 99,GENEVA,ge,2023-10-29,11671,growth
+C-10634,jonas,silva,Jonas.Silva634@Example.COM,+41 79 734 34 02,lausanne,VD,11/11/2023,11708,core
+C-10635,Elena,Patel,Elena.Patel635@Example.COM,+41 79 735 35 05,Zurich,zh,"Nov 24, 2023","11,745",enterprise
+C-10636, NOAH , BROWN , Noah.Brown636@Example.COM ,+41 79 736 36 08, BASEL ,BS,2023-12-07,11782,growth
+C-10637,amara,martin,Amara.Martin637@Example.COM,+41 79 737 37 11,bern,be,12/20/2023,11819,core
+C-10638,Luca,Müller,Luca.Müller638@Example.COM,+41 79 738 38 14,Geneva,GE,"Jan 02, 2024",11856,enterprise
+C-10639,SOFIA,OKAFOR,Sofia.Okafor639@Example.COM,+41 79 739 39 17,LAUSANNE,vd,2024-01-15,11893,growth
+C-10640, avery , chen , Avery.Chen640@Example.COM ,+41 79 740 40 20, zurich ,ZH,01/28/2024,"11,930",core
+C-10641,Maya,Rossi,Maya.Rossi641@Example.COM,+41 79 741 41 23,Basel,bs,"Feb 10, 2024",11967,enterprise
+C-10642,JONAS,SILVA,Jonas.Silva642@Example.COM,+41 79 742 42 26,BERN,BE,2024-02-23,12004,growth
+C-10643,elena,patel,Elena.Patel643@Example.COM,+41 79 743 43 29,geneva,ge,03/07/2024,12041,core
+C-10644, Noah , Brown , Noah.Brown644@Example.COM ,+41 79 744 44 32, Lausanne ,VD,"Mar 20, 2024",12078,enterprise
+C-10645,AMARA,MARTIN,Amara.Martin645@Example.COM,+41 79 745 45 35,ZURICH,zh,2024-04-02,"12,115",growth
+C-10646,luca,müller,Luca.Müller646@Example.COM,,basel,BS,04/15/2024,12152,core
+C-10647,Sofia,Okafor,Sofia.Okafor647@Example.COM,+41 79 747 47 41,Bern,be,"Apr 28, 2024",12189,enterprise
+C-10648, AVERY , CHEN , Avery.Chen648@Example.COM ,+41 79 748 48 44, GENEVA ,GE,2024-05-11,12226,growth
+C-10649,maya,rossi,Maya.Rossi649@Example.COM,+41 79 749 49 47,lausanne,vd,05/24/2024,263,core
+C-10650,Jonas,Silva,Jonas.Silva650@Example.COM,+41 79 750 50 50,Zurich,ZH,"Jun 06, 2024",300,enterprise
+C-10651,ELENA,PATEL,Elena.Patel651@Example.COM,+41 79 751 51 53,BASEL,bs,2024-06-19,337,growth
+C-10652, noah , brown , Noah.Brown652@Example.COM ,+41 79 752 52 56, bern ,BE,07/02/2024,374,core
+C-10653,Amara,Martin,Amara.Martin653@Example.COM,+41 79 753 53 59,Geneva,ge,"Jul 15, 2024",411,enterprise
+C-10654,LUCA,MÜLLER,Luca.Müller654@Example.COM,+41 79 754 54 62,LAUSANNE,VD,2024-07-28,448,growth
+C-10655,sofia,okafor,Sofia.Okafor655@Example.COM,+41 79 755 55 65,zurich,zh,08/10/2024,485,core
+C-10656, Avery , Chen , Avery.Chen656@Example.COM ,+41 79 756 56 68, Basel ,BS,"Aug 23, 2024",522,enterprise
+C-10657,MAYA,ROSSI,Maya.Rossi657@Example.COM,+41 79 757 57 71,BERN,be,2024-09-05,559,growth
+C-10658,jonas,silva,Jonas.Silva658@Example.COM,+41 79 758 58 74,geneva,GE,09/18/2024,596,core
+C-10659,Elena,Patel,Elena.Patel659@Example.COM,+41 79 759 59 77,Lausanne,vd,"Oct 01, 2024",633,enterprise
+C-10660, NOAH , BROWN , Noah.Brown660@Example.COM ,+41 79 760 60 80, ZURICH ,ZH,2024-10-14,670,growth
+C-10661,amara,martin,Amara.Martin661@Example.COM,+41 79 761 61 83,basel,bs,10/27/2024,707,core
+C-10662,Luca,Müller,Luca.Müller662@Example.COM,+41 79 762 62 86,Bern,BE,"Nov 09, 2024",744,enterprise
+C-10663,SOFIA,OKAFOR,Sofia.Okafor663@Example.COM,,GENEVA,ge,2024-11-22,781,growth
+C-10664, avery , chen , Avery.Chen664@Example.COM ,+41 79 764 64 92, lausanne ,VD,12/05/2024,818,core
+C-10665,Maya,Rossi,Maya.Rossi665@Example.COM,+41 79 765 65 95,Zurich,zh,"Dec 18, 2024",855,enterprise
+C-10666,JONAS,SILVA,Jonas.Silva666@Example.COM,+41 79 766 66 98,BASEL,BS,2024-12-31,892,growth
+C-10667,elena,patel,Elena.Patel667@Example.COM,+41 79 767 67 01,bern,be,01/13/2025,929,core
+C-10668, Noah , Brown , Noah.Brown668@Example.COM ,+41 79 768 68 04, Geneva ,GE,"Jan 26, 2025",966,enterprise
+C-10669,AMARA,MARTIN,Amara.Martin669@Example.COM,+41 79 769 69 07,LAUSANNE,vd,2025-02-08,1003,growth
+C-10670,luca,müller,Luca.Müller670@Example.COM,+41 79 770 70 10,zurich,ZH,02/21/2025,"1,040",core
+C-10671,Sofia,Okafor,Sofia.Okafor671@Example.COM,+41 79 771 71 13,Basel,bs,"Mar 06, 2025",1077,enterprise
+C-10672, AVERY , CHEN , Avery.Chen672@Example.COM ,+41 79 772 72 16, BERN ,BE,2025-03-19,1114,growth
+C-10673,maya,rossi,Maya.Rossi673@Example.COM,+41 79 773 73 19,geneva,ge,04/01/2025,1151,core
+C-10674,Jonas,Silva,Jonas.Silva674@Example.COM,+41 79 774 74 22,Lausanne,VD,"Apr 14, 2025",1188,enterprise
+C-10675,ELENA,PATEL,Elena.Patel675@Example.COM,+41 79 775 75 25,ZURICH,zh,2025-04-27,"1,225",growth
+C-10676, noah , brown , Noah.Brown676@Example.COM ,+41 79 776 76 28, basel ,BS,05/10/2025,1262,core
+C-10677,Amara,Martin,Amara.Martin677@Example.COM,+41 79 777 77 31,Bern,be,"May 23, 2025",1299,enterprise
+C-10678,LUCA,MÜLLER,Luca.Müller678@Example.COM,+41 79 778 78 34,GENEVA,GE,2025-06-05,1336,growth
+C-10679,sofia,okafor,Sofia.Okafor679@Example.COM,+41 79 779 79 37,lausanne,vd,06/18/2025,1373,core
+C-10680, Avery , Chen , Avery.Chen680@Example.COM ,, Zurich ,ZH,"Jul 01, 2025","1,410",enterprise
+C-10681,MAYA,ROSSI,Maya.Rossi681@Example.COM,+41 79 781 81 43,BASEL,bs,2025-07-14,1447,growth
+C-10682,jonas,silva,Jonas.Silva682@Example.COM,+41 79 782 82 46,bern,BE,07/27/2025,1484,core
+C-10683,Elena,Patel,Elena.Patel683@Example.COM,+41 79 783 83 49,Geneva,ge,"Aug 09, 2025",1521,enterprise
+C-10684, NOAH , BROWN , Noah.Brown684@Example.COM ,+41 79 784 84 52, LAUSANNE ,VD,2025-08-22,1558,growth
+C-10685,amara,martin,Amara.Martin685@Example.COM,+41 79 785 85 55,zurich,zh,09/04/2025,"1,595",core
+C-10686,Luca,Müller,Luca.Müller686@Example.COM,+41 79 786 86 58,Basel,BS,"Sep 17, 2025",1632,enterprise
+C-10687,SOFIA,OKAFOR,Sofia.Okafor687@Example.COM,+41 79 787 87 61,BERN,be,2025-09-30,1669,growth
+C-10688, avery , chen , Avery.Chen688@Example.COM ,+41 79 788 88 64, geneva ,GE,10/13/2025,1706,core
+C-10689,Maya,Rossi,Maya.Rossi689@Example.COM,+41 79 789 89 67,Lausanne,vd,"Oct 26, 2025",1743,enterprise
+C-10690,JONAS,SILVA,Jonas.Silva690@Example.COM,+41 79 790 90 70,ZURICH,ZH,2025-11-08,"1,780",growth
+C-10691,elena,patel,Elena.Patel691@Example.COM,+41 79 791 91 73,basel,bs,11/21/2025,1817,core
+C-10692, Noah , Brown , Noah.Brown692@Example.COM ,+41 79 792 92 76, Bern ,BE,"Dec 04, 2025",1854,enterprise
+C-10693,AMARA,MARTIN,Amara.Martin693@Example.COM,+41 79 793 93 79,GENEVA,ge,2021-01-12,1891,growth
+C-10694,luca,müller,Luca.Müller694@Example.COM,+41 79 794 94 82,lausanne,VD,01/25/2021,1928,core
+C-10695,Sofia,Okafor,Sofia.Okafor695@Example.COM,+41 79 795 95 85,Zurich,zh,"Feb 07, 2021","1,965",enterprise
+C-10696, AVERY , CHEN , Avery.Chen696@Example.COM ,+41 79 796 96 88, BASEL ,BS,2021-02-20,2002,growth
+C-10697,maya,rossi,Maya.Rossi697@Example.COM,,bern,be,03/05/2021,2039,core
+C-10698,Jonas,Silva,Jonas.Silva698@Example.COM,+41 79 798 98 94,Geneva,GE,"Mar 18, 2021",2076,enterprise
+C-10699,ELENA,PATEL,Elena.Patel699@Example.COM,+41 79 799 99 97,LAUSANNE,vd,2021-03-31,2113,growth
+C-10700, noah , brown , Noah.Brown700@Example.COM ,+41 79 800 00 00, zurich ,ZH,04/13/2021,"2,150",core
+C-10701,Amara,Martin,Amara.Martin701@Example.COM,+41 79 801 01 03,Basel,bs,"Apr 26, 2021",2187,enterprise
+C-10702,LUCA,MÜLLER,Luca.Müller702@Example.COM,+41 79 802 02 06,BERN,BE,2021-05-09,2224,growth
+C-10703,sofia,okafor,Sofia.Okafor703@Example.COM,+41 79 803 03 09,geneva,ge,05/22/2021,2261,core
+C-10704, Avery , Chen , Avery.Chen704@Example.COM ,+41 79 804 04 12, Lausanne ,VD,"Jun 04, 2021",2298,enterprise
+C-10705,MAYA,ROSSI,Maya.Rossi705@Example.COM,+41 79 805 05 15,ZURICH,zh,2021-06-17,"2,335",growth
+C-10706,jonas,silva,Jonas.Silva706@Example.COM,+41 79 806 06 18,basel,BS,06/30/2021,2372,core
+C-10707,Elena,Patel,Elena.Patel707@Example.COM,+41 79 807 07 21,Bern,be,"Jul 13, 2021",2409,enterprise
+C-10708, NOAH , BROWN , Noah.Brown708@Example.COM ,+41 79 808 08 24, GENEVA ,GE,2021-07-26,2446,growth
+C-10709,amara,martin,Amara.Martin709@Example.COM,+41 79 809 09 27,lausanne,vd,08/08/2021,2483,core
+C-10710,Luca,Müller,Luca.Müller710@Example.COM,+41 79 810 10 30,Zurich,ZH,"Aug 21, 2021","2,520",enterprise
+C-10711,SOFIA,OKAFOR,Sofia.Okafor711@Example.COM,+41 79 811 11 33,BASEL,bs,2021-09-03,2557,growth
+C-10712, avery , chen , Avery.Chen712@Example.COM ,+41 79 812 12 36, bern ,BE,09/16/2021,2594,core
+C-10713,Maya,Rossi,Maya.Rossi713@Example.COM,+41 79 813 13 39,Geneva,ge,"Sep 29, 2021",2631,enterprise
+C-10714,JONAS,SILVA,Jonas.Silva714@Example.COM,,LAUSANNE,VD,2021-10-12,2668,growth
+C-10715,elena,patel,Elena.Patel715@Example.COM,+41 79 815 15 45,zurich,zh,10/25/2021,"2,705",core
+C-10716, Noah , Brown , Noah.Brown716@Example.COM ,+41 79 816 16 48, Basel ,BS,"Nov 07, 2021",2742,enterprise
+C-10717,AMARA,MARTIN,Amara.Martin717@Example.COM,+41 79 817 17 51,BERN,be,2021-11-20,2779,growth
+C-10718,luca,müller,Luca.Müller718@Example.COM,+41 79 818 18 54,geneva,GE,12/03/2021,2816,core
+C-10719,Sofia,Okafor,Sofia.Okafor719@Example.COM,+41 79 819 19 57,Lausanne,vd,"Dec 16, 2021",2853,enterprise
+C-10720, AVERY , CHEN , Avery.Chen720@Example.COM ,+41 79 820 20 60, ZURICH ,ZH,2021-12-29,"2,890",growth
+C-10721,maya,rossi,Maya.Rossi721@Example.COM,+41 79 821 21 63,basel,bs,01/11/2022,2927,core
+C-10722,Jonas,Silva,Jonas.Silva722@Example.COM,+41 79 822 22 66,Bern,BE,"Jan 24, 2022",2964,enterprise
+C-10723,ELENA,PATEL,Elena.Patel723@Example.COM,+41 79 823 23 69,GENEVA,ge,2022-02-06,3001,growth
+C-10724, noah , brown , Noah.Brown724@Example.COM ,+41 79 824 24 72, lausanne ,VD,02/19/2022,3038,core
+C-10725,Amara,Martin,Amara.Martin725@Example.COM,+41 79 825 25 75,Zurich,zh,"Mar 04, 2022","3,075",enterprise
+C-10726,LUCA,MÜLLER,Luca.Müller726@Example.COM,+41 79 826 26 78,BASEL,BS,2022-03-17,3112,growth
+C-10727,sofia,okafor,Sofia.Okafor727@Example.COM,+41 79 827 27 81,bern,be,03/30/2022,3149,core
+C-10728, Avery , Chen , Avery.Chen728@Example.COM ,+41 79 828 28 84, Geneva ,GE,"Apr 12, 2022",3186,enterprise
+C-10729,MAYA,ROSSI,Maya.Rossi729@Example.COM,+41 79 829 29 87,LAUSANNE,vd,2022-04-25,3223,growth
+C-10730,jonas,silva,Jonas.Silva730@Example.COM,+41 79 830 30 90,zurich,ZH,05/08/2022,"3,260",core
+C-10731,Elena,Patel,Elena.Patel731@Example.COM,,Basel,bs,"May 21, 2022",3297,enterprise
+C-10732, NOAH , BROWN , Noah.Brown732@Example.COM ,+41 79 832 32 96, BERN ,BE,2022-06-03,3334,growth
+C-10733,amara,martin,Amara.Martin733@Example.COM,+41 79 833 33 99,geneva,ge,06/16/2022,3371,core
+C-10734,Luca,Müller,Luca.Müller734@Example.COM,+41 79 834 34 02,Lausanne,VD,"Jun 29, 2022",3408,enterprise
+C-10735,SOFIA,OKAFOR,Sofia.Okafor735@Example.COM,+41 79 835 35 05,ZURICH,zh,2022-07-12,"3,445",growth
+C-10736, avery , chen , Avery.Chen736@Example.COM ,+41 79 836 36 08, basel ,BS,07/25/2022,3482,core
+C-10737,Maya,Rossi,Maya.Rossi737@Example.COM,+41 79 837 37 11,Bern,be,"Aug 07, 2022",3519,enterprise
+C-10738,JONAS,SILVA,Jonas.Silva738@Example.COM,+41 79 838 38 14,GENEVA,GE,2022-08-20,3556,growth
+C-10739,elena,patel,Elena.Patel739@Example.COM,+41 79 839 39 17,lausanne,vd,09/02/2022,3593,core
+C-10740, Noah , Brown , Noah.Brown740@Example.COM ,+41 79 840 40 20, Zurich ,ZH,"Sep 15, 2022","3,630",enterprise
+C-10741,AMARA,MARTIN,Amara.Martin741@Example.COM,+41 79 841 41 23,BASEL,bs,2022-09-28,3667,growth
+C-10742,luca,müller,Luca.Müller742@Example.COM,+41 79 842 42 26,bern,BE,10/11/2022,3704,core
+C-10743,Sofia,Okafor,Sofia.Okafor743@Example.COM,+41 79 843 43 29,Geneva,ge,"Oct 24, 2022",3741,enterprise
+C-10744, AVERY , CHEN , Avery.Chen744@Example.COM ,+41 79 844 44 32, LAUSANNE ,VD,2022-11-06,3778,growth
+C-10745,maya,rossi,Maya.Rossi745@Example.COM,+41 79 845 45 35,zurich,zh,11/19/2022,"3,815",core
+C-10746,Jonas,Silva,Jonas.Silva746@Example.COM,+41 79 846 46 38,Basel,BS,"Dec 02, 2022",3852,enterprise
+C-10747,ELENA,PATEL,Elena.Patel747@Example.COM,+41 79 847 47 41,BERN,be,2022-12-15,3889,growth
+C-10748, noah , brown , Noah.Brown748@Example.COM ,, geneva ,GE,12/28/2022,3926,core
+C-10749,Amara,Martin,Amara.Martin749@Example.COM,+41 79 849 49 47,Lausanne,vd,"Jan 10, 2023",3963,enterprise
+C-10750,LUCA,MÜLLER,Luca.Müller750@Example.COM,+41 79 850 50 50,ZURICH,ZH,2023-01-23,"4,000",growth
+C-10751,sofia,okafor,Sofia.Okafor751@Example.COM,+41 79 851 51 53,basel,bs,02/05/2023,4037,core
+C-10752, Avery , Chen , Avery.Chen752@Example.COM ,+41 79 852 52 56, Bern ,BE,"Feb 18, 2023",4074,enterprise
+C-10753,MAYA,ROSSI,Maya.Rossi753@Example.COM,+41 79 853 53 59,GENEVA,ge,2023-03-03,4111,growth
+C-10754,jonas,silva,Jonas.Silva754@Example.COM,+41 79 854 54 62,lausanne,VD,03/16/2023,4148,core
+C-10755,Elena,Patel,Elena.Patel755@Example.COM,+41 79 855 55 65,Zurich,zh,"Mar 29, 2023","4,185",enterprise
+C-10756, NOAH , BROWN , Noah.Brown756@Example.COM ,+41 79 856 56 68, BASEL ,BS,2023-04-11,4222,growth
+C-10757,amara,martin,Amara.Martin757@Example.COM,+41 79 857 57 71,bern,be,04/24/2023,4259,core
+C-10758,Luca,Müller,Luca.Müller758@Example.COM,+41 79 858 58 74,Geneva,GE,"May 07, 2023",4296,enterprise
+C-10759,SOFIA,OKAFOR,Sofia.Okafor759@Example.COM,+41 79 859 59 77,LAUSANNE,vd,2023-05-20,4333,growth
+C-10760, avery , chen , Avery.Chen760@Example.COM ,+41 79 860 60 80, zurich ,ZH,06/02/2023,"4,370",core
+C-10761,Maya,Rossi,Maya.Rossi761@Example.COM,+41 79 861 61 83,Basel,bs,"Jun 15, 2023",4407,enterprise
+C-10762,JONAS,SILVA,Jonas.Silva762@Example.COM,+41 79 862 62 86,BERN,BE,2023-06-28,4444,growth
+C-10763,elena,patel,Elena.Patel763@Example.COM,+41 79 863 63 89,geneva,ge,07/11/2023,4481,core
+C-10764, Noah , Brown , Noah.Brown764@Example.COM ,+41 79 864 64 92, Lausanne ,VD,"Jul 24, 2023",4518,enterprise
+C-10765,AMARA,MARTIN,Amara.Martin765@Example.COM,,ZURICH,zh,2023-08-06,"4,555",growth
+C-10766,luca,müller,Luca.Müller766@Example.COM,+41 79 866 66 98,basel,BS,08/19/2023,4592,core
+C-10767,Sofia,Okafor,Sofia.Okafor767@Example.COM,+41 79 867 67 01,Bern,be,"Sep 01, 2023",4629,enterprise
+C-10768, AVERY , CHEN , Avery.Chen768@Example.COM ,+41 79 868 68 04, GENEVA ,GE,2023-09-14,4666,growth
+C-10769,maya,rossi,Maya.Rossi769@Example.COM,+41 79 869 69 07,lausanne,vd,09/27/2023,4703,core
+C-10770,Jonas,Silva,Jonas.Silva770@Example.COM,+41 79 870 70 10,Zurich,ZH,"Oct 10, 2023","4,740",enterprise
+C-10771,ELENA,PATEL,Elena.Patel771@Example.COM,+41 79 871 71 13,BASEL,bs,2023-10-23,4777,growth
+C-10772, noah , brown , Noah.Brown772@Example.COM ,+41 79 872 72 16, bern ,BE,11/05/2023,4814,core
+C-10773,Amara,Martin,Amara.Martin773@Example.COM,+41 79 873 73 19,Geneva,ge,"Nov 18, 2023",4851,enterprise
+C-10774,LUCA,MÜLLER,Luca.Müller774@Example.COM,+41 79 874 74 22,LAUSANNE,VD,2023-12-01,4888,growth
+C-10775,sofia,okafor,Sofia.Okafor775@Example.COM,+41 79 875 75 25,zurich,zh,12/14/2023,"4,925",core
+C-10776, Avery , Chen , Avery.Chen776@Example.COM ,+41 79 876 76 28, Basel ,BS,"Dec 27, 2023",4962,enterprise
+C-10777,MAYA,ROSSI,Maya.Rossi777@Example.COM,+41 79 877 77 31,BERN,be,2024-01-09,4999,growth
+C-10778,jonas,silva,Jonas.Silva778@Example.COM,+41 79 878 78 34,geneva,GE,01/22/2024,5036,core
+C-10779,Elena,Patel,Elena.Patel779@Example.COM,+41 79 879 79 37,Lausanne,vd,"Feb 04, 2024",5073,enterprise
+C-10780, NOAH , BROWN , Noah.Brown780@Example.COM ,+41 79 880 80 40, ZURICH ,ZH,2024-02-17,"5,110",growth
+C-10781,amara,martin,Amara.Martin781@Example.COM,+41 79 881 81 43,basel,bs,03/01/2024,5147,core
+C-10782,Luca,Müller,Luca.Müller782@Example.COM,,Bern,BE,"Mar 14, 2024",5184,enterprise
+C-10783,SOFIA,OKAFOR,Sofia.Okafor783@Example.COM,+41 79 883 83 49,GENEVA,ge,2024-03-27,5221,growth
+C-10784, avery , chen , Avery.Chen784@Example.COM ,+41 79 884 84 52, lausanne ,VD,04/09/2024,5258,core
+C-10785,Maya,Rossi,Maya.Rossi785@Example.COM,+41 79 885 85 55,Zurich,zh,"Apr 22, 2024","5,295",enterprise
+C-10786,JONAS,SILVA,Jonas.Silva786@Example.COM,+41 79 886 86 58,BASEL,BS,2024-05-05,5332,growth
+C-10787,elena,patel,Elena.Patel787@Example.COM,+41 79 887 87 61,bern,be,05/18/2024,5369,core
+C-10788, Noah , Brown , Noah.Brown788@Example.COM ,+41 79 888 88 64, Geneva ,GE,"May 31, 2024",5406,enterprise
+C-10789,AMARA,MARTIN,Amara.Martin789@Example.COM,+41 79 889 89 67,LAUSANNE,vd,2024-06-13,5443,growth
+C-10790,luca,müller,Luca.Müller790@Example.COM,+41 79 890 90 70,zurich,ZH,06/26/2024,"5,480",core
+C-10791,Sofia,Okafor,Sofia.Okafor791@Example.COM,+41 79 891 91 73,Basel,bs,"Jul 09, 2024",5517,enterprise
+C-10792, AVERY , CHEN , Avery.Chen792@Example.COM ,+41 79 892 92 76, BERN ,BE,2024-07-22,5554,growth
+C-10793,maya,rossi,Maya.Rossi793@Example.COM,+41 79 893 93 79,geneva,ge,08/04/2024,5591,core
+C-10794,Jonas,Silva,Jonas.Silva794@Example.COM,+41 79 894 94 82,Lausanne,VD,"Aug 17, 2024",5628,enterprise
+C-10795,ELENA,PATEL,Elena.Patel795@Example.COM,+41 79 895 95 85,ZURICH,zh,2024-08-30,"5,665",growth
+C-10796, noah , brown , Noah.Brown796@Example.COM ,+41 79 896 96 88, basel ,BS,09/12/2024,5702,core
+C-10797,Amara,Martin,Amara.Martin797@Example.COM,+41 79 897 97 91,Bern,be,"Sep 25, 2024",5739,enterprise
+C-10798,LUCA,MÜLLER,Luca.Müller798@Example.COM,+41 79 898 98 94,GENEVA,GE,2024-10-08,5776,growth
+C-10799,sofia,okafor,Sofia.Okafor799@Example.COM,,lausanne,vd,10/21/2024,5813,core
+C-10800, Avery , Chen , Avery.Chen800@Example.COM ,+41 79 900 00 00, Zurich ,ZH,"Nov 03, 2024","5,850",enterprise
+C-10801,MAYA,ROSSI,Maya.Rossi801@Example.COM,+41 79 901 01 03,BASEL,bs,2024-11-16,5887,growth
+C-10802,jonas,silva,Jonas.Silva802@Example.COM,+41 79 902 02 06,bern,BE,11/29/2024,5924,core
+C-10803,Elena,Patel,Elena.Patel803@Example.COM,+41 79 903 03 09,Geneva,ge,"Dec 12, 2024",5961,enterprise
+C-10804, NOAH , BROWN , Noah.Brown804@Example.COM ,+41 79 904 04 12, LAUSANNE ,VD,2024-12-25,5998,growth
+C-10805,amara,martin,Amara.Martin805@Example.COM,+41 79 905 05 15,zurich,zh,01/07/2025,"6,035",core
+C-10806,Luca,Müller,Luca.Müller806@Example.COM,+41 79 906 06 18,Basel,BS,"Jan 20, 2025",6072,enterprise
+C-10807,SOFIA,OKAFOR,Sofia.Okafor807@Example.COM,+41 79 907 07 21,BERN,be,2025-02-02,6109,growth
+C-10808, avery , chen , Avery.Chen808@Example.COM ,+41 79 908 08 24, geneva ,GE,02/15/2025,6146,core
+C-10809,Maya,Rossi,Maya.Rossi809@Example.COM,+41 79 909 09 27,Lausanne,vd,"Feb 28, 2025",6183,enterprise
+C-10810,JONAS,SILVA,Jonas.Silva810@Example.COM,+41 79 910 10 30,ZURICH,ZH,2025-03-13,"6,220",growth
+C-10811,elena,patel,Elena.Patel811@Example.COM,+41 79 911 11 33,basel,bs,03/26/2025,6257,core
+C-10812, Noah , Brown , Noah.Brown812@Example.COM ,+41 79 912 12 36, Bern ,BE,"Apr 08, 2025",6294,enterprise
+C-10813,AMARA,MARTIN,Amara.Martin813@Example.COM,+41 79 913 13 39,GENEVA,ge,2025-04-21,6331,growth
+C-10814,luca,müller,Luca.Müller814@Example.COM,+41 79 914 14 42,lausanne,VD,05/04/2025,6368,core
+C-10815,Sofia,Okafor,Sofia.Okafor815@Example.COM,+41 79 915 15 45,Zurich,zh,"May 17, 2025","6,405",enterprise
+C-10816, AVERY , CHEN , Avery.Chen816@Example.COM ,, BASEL ,BS,2025-05-30,6442,growth
+C-10817,maya,rossi,Maya.Rossi817@Example.COM,+41 79 917 17 51,bern,be,06/12/2025,6479,core
+C-10818,Jonas,Silva,Jonas.Silva818@Example.COM,+41 79 918 18 54,Geneva,GE,"Jun 25, 2025",6516,enterprise
+C-10819,ELENA,PATEL,Elena.Patel819@Example.COM,+41 79 919 19 57,LAUSANNE,vd,2025-07-08,6553,growth
+C-10820, noah , brown , Noah.Brown820@Example.COM ,+41 79 920 20 60, zurich ,ZH,07/21/2025,"6,590",core
+C-10821,Amara,Martin,Amara.Martin821@Example.COM,+41 79 921 21 63,Basel,bs,"Aug 03, 2025",6627,enterprise
+C-10822,LUCA,MÜLLER,Luca.Müller822@Example.COM,+41 79 922 22 66,BERN,BE,2025-08-16,6664,growth
+C-10823,sofia,okafor,Sofia.Okafor823@Example.COM,+41 79 923 23 69,geneva,ge,08/29/2025,6701,core
+C-10824, Avery , Chen , Avery.Chen824@Example.COM ,+41 79 924 24 72, Lausanne ,VD,"Sep 11, 2025",6738,enterprise
+C-10825,MAYA,ROSSI,Maya.Rossi825@Example.COM,+41 79 925 25 75,ZURICH,zh,2025-09-24,"6,775",growth
+C-10826,jonas,silva,Jonas.Silva826@Example.COM,+41 79 926 26 78,basel,BS,10/07/2025,6812,core
+C-10827,Elena,Patel,Elena.Patel827@Example.COM,+41 79 927 27 81,Bern,be,"Oct 20, 2025",6849,enterprise
+C-10828, NOAH , BROWN , Noah.Brown828@Example.COM ,+41 79 928 28 84, GENEVA ,GE,2025-11-02,6886,growth
+C-10829,amara,martin,Amara.Martin829@Example.COM,+41 79 929 29 87,lausanne,vd,11/15/2025,6923,core
+C-10830,Luca,Müller,Luca.Müller830@Example.COM,+41 79 930 30 90,Zurich,ZH,"Nov 28, 2025","6,960",enterprise
+C-10831,SOFIA,OKAFOR,Sofia.Okafor831@Example.COM,+41 79 931 31 93,BASEL,bs,2021-01-06,6997,growth
+C-10832, avery , chen , Avery.Chen832@Example.COM ,+41 79 932 32 96, bern ,BE,01/19/2021,7034,core
+C-10833,Maya,Rossi,Maya.Rossi833@Example.COM,,Geneva,ge,"Feb 01, 2021",7071,enterprise
+C-10834,JONAS,SILVA,Jonas.Silva834@Example.COM,+41 79 934 34 02,LAUSANNE,VD,2021-02-14,7108,growth
+C-10835,elena,patel,Elena.Patel835@Example.COM,+41 79 935 35 05,zurich,zh,02/27/2021,"7,145",core
+C-10836, Noah , Brown , Noah.Brown836@Example.COM ,+41 79 936 36 08, Basel ,BS,"Mar 12, 2021",7182,enterprise
+C-10837,AMARA,MARTIN,Amara.Martin837@Example.COM,+41 79 937 37 11,BERN,be,2021-03-25,7219,growth
+C-10838,luca,müller,Luca.Müller838@Example.COM,+41 79 938 38 14,geneva,GE,04/07/2021,7256,core
+C-10839,Sofia,Okafor,Sofia.Okafor839@Example.COM,+41 79 939 39 17,Lausanne,vd,"Apr 20, 2021",7293,enterprise
+C-10840, AVERY , CHEN , Avery.Chen840@Example.COM ,+41 79 940 40 20, ZURICH ,ZH,2021-05-03,"7,330",growth
+C-10841,maya,rossi,Maya.Rossi841@Example.COM,+41 79 941 41 23,basel,bs,05/16/2021,7367,core
+C-10842,Jonas,Silva,Jonas.Silva842@Example.COM,+41 79 942 42 26,Bern,BE,"May 29, 2021",7404,enterprise
+C-10843,ELENA,PATEL,Elena.Patel843@Example.COM,+41 79 943 43 29,GENEVA,ge,2021-06-11,7441,growth
+C-10844, noah , brown , Noah.Brown844@Example.COM ,+41 79 944 44 32, lausanne ,VD,06/24/2021,7478,core
+C-10845,Amara,Martin,Amara.Martin845@Example.COM,+41 79 945 45 35,Zurich,zh,"Jul 07, 2021","7,515",enterprise
+C-10846,LUCA,MÜLLER,Luca.Müller846@Example.COM,+41 79 946 46 38,BASEL,BS,2021-07-20,7552,growth
+C-10847,sofia,okafor,Sofia.Okafor847@Example.COM,+41 79 947 47 41,bern,be,08/02/2021,7589,core
+C-10848, Avery , Chen , Avery.Chen848@Example.COM ,+41 79 948 48 44, Geneva ,GE,"Aug 15, 2021",7626,enterprise
+C-10849,MAYA,ROSSI,Maya.Rossi849@Example.COM,+41 79 949 49 47,LAUSANNE,vd,2021-08-28,7663,growth
+C-10850,jonas,silva,Jonas.Silva850@Example.COM,,zurich,ZH,09/10/2021,"7,700",core
+C-10851,Elena,Patel,Elena.Patel851@Example.COM,+41 79 951 51 53,Basel,bs,"Sep 23, 2021",7737,enterprise
+C-10852, NOAH , BROWN , Noah.Brown852@Example.COM ,+41 79 952 52 56, BERN ,BE,2021-10-06,7774,growth
+C-10853,amara,martin,Amara.Martin853@Example.COM,+41 79 953 53 59,geneva,ge,10/19/2021,7811,core
+C-10854,Luca,Müller,Luca.Müller854@Example.COM,+41 79 954 54 62,Lausanne,VD,"Nov 01, 2021",7848,enterprise
+C-10855,SOFIA,OKAFOR,Sofia.Okafor855@Example.COM,+41 79 955 55 65,ZURICH,zh,2021-11-14,"7,885",growth
+C-10856, avery , chen , Avery.Chen856@Example.COM ,+41 79 956 56 68, basel ,BS,11/27/2021,7922,core
+C-10857,Maya,Rossi,Maya.Rossi857@Example.COM,+41 79 957 57 71,Bern,be,"Dec 10, 2021",7959,enterprise
+C-10858,JONAS,SILVA,Jonas.Silva858@Example.COM,+41 79 958 58 74,GENEVA,GE,2021-12-23,7996,growth
+C-10859,elena,patel,Elena.Patel859@Example.COM,+41 79 959 59 77,lausanne,vd,01/05/2022,8033,core
+C-10860, Noah , Brown , Noah.Brown860@Example.COM ,+41 79 960 60 80, Zurich ,ZH,"Jan 18, 2022","8,070",enterprise
+C-10861,AMARA,MARTIN,Amara.Martin861@Example.COM,+41 79 961 61 83,BASEL,bs,2022-01-31,8107,growth
+C-10862,luca,müller,Luca.Müller862@Example.COM,+41 79 962 62 86,bern,BE,02/13/2022,8144,core
+C-10863,Sofia,Okafor,Sofia.Okafor863@Example.COM,+41 79 963 63 89,Geneva,ge,"Feb 26, 2022",8181,enterprise
+C-10864, AVERY , CHEN , Avery.Chen864@Example.COM ,+41 79 964 64 92, LAUSANNE ,VD,2022-03-11,8218,growth
+C-10865,maya,rossi,Maya.Rossi865@Example.COM,+41 79 965 65 95,zurich,zh,03/24/2022,"8,255",core
+C-10866,Jonas,Silva,Jonas.Silva866@Example.COM,+41 79 966 66 98,Basel,BS,"Apr 06, 2022",8292,enterprise
+C-10867,ELENA,PATEL,Elena.Patel867@Example.COM,,BERN,be,2022-04-19,8329,growth
+C-10868, noah , brown , Noah.Brown868@Example.COM ,+41 79 968 68 04, geneva ,GE,05/02/2022,8366,core
+C-10869,Amara,Martin,Amara.Martin869@Example.COM,+41 79 969 69 07,Lausanne,vd,"May 15, 2022",8403,enterprise
+C-10870,LUCA,MÜLLER,Luca.Müller870@Example.COM,+41 79 970 70 10,ZURICH,ZH,2022-05-28,"8,440",growth
+C-10871,sofia,okafor,Sofia.Okafor871@Example.COM,+41 79 971 71 13,basel,bs,06/10/2022,8477,core
+C-10872, Avery , Chen , Avery.Chen872@Example.COM ,+41 79 972 72 16, Bern ,BE,"Jun 23, 2022",8514,enterprise
+C-10873,MAYA,ROSSI,Maya.Rossi873@Example.COM,+41 79 973 73 19,GENEVA,ge,2022-07-06,8551,growth
+C-10874,jonas,silva,Jonas.Silva874@Example.COM,+41 79 974 74 22,lausanne,VD,07/19/2022,8588,core
+C-10875,Elena,Patel,Elena.Patel875@Example.COM,+41 79 975 75 25,Zurich,zh,"Aug 01, 2022","8,625",enterprise
+C-10876, NOAH , BROWN , Noah.Brown876@Example.COM ,+41 79 976 76 28, BASEL ,BS,2022-08-14,8662,growth
+C-10877,amara,martin,Amara.Martin877@Example.COM,+41 79 977 77 31,bern,be,08/27/2022,8699,core
+C-10878,Luca,Müller,Luca.Müller878@Example.COM,+41 79 978 78 34,Geneva,GE,"Sep 09, 2022",8736,enterprise
+C-10879,SOFIA,OKAFOR,Sofia.Okafor879@Example.COM,+41 79 979 79 37,LAUSANNE,vd,2022-09-22,8773,growth
+C-10880, avery , chen , Avery.Chen880@Example.COM ,+41 79 980 80 40, zurich ,ZH,10/05/2022,"8,810",core
+C-10881,Maya,Rossi,Maya.Rossi881@Example.COM,+41 79 981 81 43,Basel,bs,"Oct 18, 2022",8847,enterprise
+C-10882,JONAS,SILVA,Jonas.Silva882@Example.COM,+41 79 982 82 46,BERN,BE,2022-10-31,8884,growth
+C-10883,elena,patel,Elena.Patel883@Example.COM,+41 79 983 83 49,geneva,ge,11/13/2022,8921,core
+C-10884, Noah , Brown , Noah.Brown884@Example.COM ,, Lausanne ,VD,"Nov 26, 2022",8958,enterprise
+C-10885,AMARA,MARTIN,Amara.Martin885@Example.COM,+41 79 985 85 55,ZURICH,zh,2022-12-09,"8,995",growth
+C-10886,luca,müller,Luca.Müller886@Example.COM,+41 79 986 86 58,basel,BS,12/22/2022,9032,core
+C-10887,Sofia,Okafor,Sofia.Okafor887@Example.COM,+41 79 987 87 61,Bern,be,"Jan 04, 2023",9069,enterprise
+C-10888, AVERY , CHEN , Avery.Chen888@Example.COM ,+41 79 988 88 64, GENEVA ,GE,2023-01-17,9106,growth
+C-10889,maya,rossi,Maya.Rossi889@Example.COM,+41 79 989 89 67,lausanne,vd,01/30/2023,9143,core
+C-10890,Jonas,Silva,Jonas.Silva890@Example.COM,+41 79 990 90 70,Zurich,ZH,"Feb 12, 2023","9,180",enterprise
+C-10891,ELENA,PATEL,Elena.Patel891@Example.COM,+41 79 991 91 73,BASEL,bs,2023-02-25,9217,growth
+C-10892, noah , brown , Noah.Brown892@Example.COM ,+41 79 992 92 76, bern ,BE,03/10/2023,9254,core
+C-10893,Amara,Martin,Amara.Martin893@Example.COM,+41 79 993 93 79,Geneva,ge,"Mar 23, 2023",9291,enterprise
+C-10894,LUCA,MÜLLER,Luca.Müller894@Example.COM,+41 79 994 94 82,LAUSANNE,VD,2023-04-05,9328,growth
+C-10895,sofia,okafor,Sofia.Okafor895@Example.COM,+41 79 995 95 85,zurich,zh,04/18/2023,"9,365",core
+C-10896, Avery , Chen , Avery.Chen896@Example.COM ,+41 79 996 96 88, Basel ,BS,"May 01, 2023",9402,enterprise
+C-10897,MAYA,ROSSI,Maya.Rossi897@Example.COM,+41 79 997 97 91,BERN,be,2023-05-14,9439,growth
+C-10898,jonas,silva,Jonas.Silva898@Example.COM,+41 79 998 98 94,geneva,GE,05/27/2023,9476,core
+C-10899,Elena,Patel,Elena.Patel899@Example.COM,+41 79 999 99 97,Lausanne,vd,"Jun 09, 2023",9513,enterprise
+C-10900, NOAH , BROWN , Noah.Brown900@Example.COM ,+41 79 100 00 00, ZURICH ,ZH,2023-06-22,"9,550",growth
+C-10901,amara,martin,Amara.Martin901@Example.COM,,basel,bs,07/05/2023,9587,core
+C-10902,Luca,Müller,Luca.Müller902@Example.COM,+41 79 102 02 06,Bern,BE,"Jul 18, 2023",9624,enterprise
+C-10903,SOFIA,OKAFOR,Sofia.Okafor903@Example.COM,+41 79 103 03 09,GENEVA,ge,2023-07-31,9661,growth
+C-10904, avery , chen , Avery.Chen904@Example.COM ,+41 79 104 04 12, lausanne ,VD,08/13/2023,9698,core
+C-10905,Maya,Rossi,Maya.Rossi905@Example.COM,+41 79 105 05 15,Zurich,zh,"Aug 26, 2023","9,735",enterprise
+C-10906,JONAS,SILVA,Jonas.Silva906@Example.COM,+41 79 106 06 18,BASEL,BS,2023-09-08,9772,growth
+C-10907,elena,patel,Elena.Patel907@Example.COM,+41 79 107 07 21,bern,be,09/21/2023,9809,core
+C-10908, Noah , Brown , Noah.Brown908@Example.COM ,+41 79 108 08 24, Geneva ,GE,"Oct 04, 2023",9846,enterprise
+C-10909,AMARA,MARTIN,Amara.Martin909@Example.COM,+41 79 109 09 27,LAUSANNE,vd,2023-10-17,9883,growth
+C-10910,luca,müller,Luca.Müller910@Example.COM,+41 79 110 10 30,zurich,ZH,10/30/2023,"9,920",core
+C-10911,Sofia,Okafor,Sofia.Okafor911@Example.COM,+41 79 111 11 33,Basel,bs,"Nov 12, 2023",9957,enterprise
+C-10912, AVERY , CHEN , Avery.Chen912@Example.COM ,+41 79 112 12 36, BERN ,BE,2023-11-25,9994,growth
+C-10913,maya,rossi,Maya.Rossi913@Example.COM,+41 79 113 13 39,geneva,ge,12/08/2023,10031,core
+C-10914,Jonas,Silva,Jonas.Silva914@Example.COM,+41 79 114 14 42,Lausanne,VD,"Dec 21, 2023",10068,enterprise
+C-10915,ELENA,PATEL,Elena.Patel915@Example.COM,+41 79 115 15 45,ZURICH,zh,2024-01-03,"10,105",growth
+C-10916, noah , brown , Noah.Brown916@Example.COM ,+41 79 116 16 48, basel ,BS,01/16/2024,10142,core
+C-10917,Amara,Martin,Amara.Martin917@Example.COM,+41 79 117 17 51,Bern,be,"Jan 29, 2024",10179,enterprise
+C-10918,LUCA,MÜLLER,Luca.Müller918@Example.COM,,GENEVA,GE,2024-02-11,10216,growth
+C-10919,sofia,okafor,Sofia.Okafor919@Example.COM,+41 79 119 19 57,lausanne,vd,02/24/2024,10253,core
+C-10920, Avery , Chen , Avery.Chen920@Example.COM ,+41 79 120 20 60, Zurich ,ZH,"Mar 08, 2024","10,290",enterprise
+C-10921,MAYA,ROSSI,Maya.Rossi921@Example.COM,+41 79 121 21 63,BASEL,bs,2024-03-21,10327,growth
+C-10922,jonas,silva,Jonas.Silva922@Example.COM,+41 79 122 22 66,bern,BE,04/03/2024,10364,core
+C-10923,Elena,Patel,Elena.Patel923@Example.COM,+41 79 123 23 69,Geneva,ge,"Apr 16, 2024",10401,enterprise
+C-10924, NOAH , BROWN , Noah.Brown924@Example.COM ,+41 79 124 24 72, LAUSANNE ,VD,2024-04-29,10438,growth
+C-10925,amara,martin,Amara.Martin925@Example.COM,+41 79 125 25 75,zurich,zh,05/12/2024,"10,475",core
+C-10926,Luca,Müller,Luca.Müller926@Example.COM,+41 79 126 26 78,Basel,BS,"May 25, 2024",10512,enterprise
+C-10927,SOFIA,OKAFOR,Sofia.Okafor927@Example.COM,+41 79 127 27 81,BERN,be,2024-06-07,10549,growth
+C-10928, avery , chen , Avery.Chen928@Example.COM ,+41 79 128 28 84, geneva ,GE,06/20/2024,10586,core
+C-10929,Maya,Rossi,Maya.Rossi929@Example.COM,+41 79 129 29 87,Lausanne,vd,"Jul 03, 2024",10623,enterprise
+C-10930,JONAS,SILVA,Jonas.Silva930@Example.COM,+41 79 130 30 90,ZURICH,ZH,2024-07-16,"10,660",growth
+C-10931,elena,patel,Elena.Patel931@Example.COM,+41 79 131 31 93,basel,bs,07/29/2024,10697,core
+C-10932, Noah , Brown , Noah.Brown932@Example.COM ,+41 79 132 32 96, Bern ,BE,"Aug 11, 2024",10734,enterprise
+C-10933,AMARA,MARTIN,Amara.Martin933@Example.COM,+41 79 133 33 99,GENEVA,ge,2024-08-24,10771,growth
+C-10934,luca,müller,Luca.Müller934@Example.COM,+41 79 134 34 02,lausanne,VD,09/06/2024,10808,core
+C-10935,Sofia,Okafor,Sofia.Okafor935@Example.COM,,Zurich,zh,"Sep 19, 2024","10,845",enterprise
+C-10936, AVERY , CHEN , Avery.Chen936@Example.COM ,+41 79 136 36 08, BASEL ,BS,2024-10-02,10882,growth
+C-10937,maya,rossi,Maya.Rossi937@Example.COM,+41 79 137 37 11,bern,be,10/15/2024,10919,core
+C-10938,Jonas,Silva,Jonas.Silva938@Example.COM,+41 79 138 38 14,Geneva,GE,"Oct 28, 2024",10956,enterprise
+C-10939,ELENA,PATEL,Elena.Patel939@Example.COM,+41 79 139 39 17,LAUSANNE,vd,2024-11-10,10993,growth
+C-10940, noah , brown , Noah.Brown940@Example.COM ,+41 79 140 40 20, zurich ,ZH,11/23/2024,"11,030",core
+C-10941,Amara,Martin,Amara.Martin941@Example.COM,+41 79 141 41 23,Basel,bs,"Dec 06, 2024",11067,enterprise
+C-10942,LUCA,MÜLLER,Luca.Müller942@Example.COM,+41 79 142 42 26,BERN,BE,2024-12-19,11104,growth
+C-10943,sofia,okafor,Sofia.Okafor943@Example.COM,+41 79 143 43 29,geneva,ge,01/01/2025,11141,core
+C-10944, Avery , Chen , Avery.Chen944@Example.COM ,+41 79 144 44 32, Lausanne ,VD,"Jan 14, 2025",11178,enterprise
+C-10945,MAYA,ROSSI,Maya.Rossi945@Example.COM,+41 79 145 45 35,ZURICH,zh,2025-01-27,"11,215",growth
+C-10946,jonas,silva,Jonas.Silva946@Example.COM,+41 79 146 46 38,basel,BS,02/09/2025,11252,core
+C-10947,Elena,Patel,Elena.Patel947@Example.COM,+41 79 147 47 41,Bern,be,"Feb 22, 2025",11289,enterprise
+C-10948, NOAH , BROWN , Noah.Brown948@Example.COM ,+41 79 148 48 44, GENEVA ,GE,2025-03-07,11326,growth
+C-10949,amara,martin,Amara.Martin949@Example.COM,+41 79 149 49 47,lausanne,vd,03/20/2025,11363,core
+C-10950,Luca,Müller,Luca.Müller950@Example.COM,+41 79 150 50 50,Zurich,ZH,"Apr 02, 2025","11,400",enterprise
+C-10951,SOFIA,OKAFOR,Sofia.Okafor951@Example.COM,+41 79 151 51 53,BASEL,bs,2025-04-15,11437,growth
+C-10952, avery , chen , Avery.Chen952@Example.COM ,, bern ,BE,04/28/2025,11474,core
+C-10953,Maya,Rossi,Maya.Rossi953@Example.COM,+41 79 153 53 59,Geneva,ge,"May 11, 2025",11511,enterprise
+C-10954,JONAS,SILVA,Jonas.Silva954@Example.COM,+41 79 154 54 62,LAUSANNE,VD,2025-05-24,11548,growth
+C-10955,elena,patel,Elena.Patel955@Example.COM,+41 79 155 55 65,zurich,zh,06/06/2025,"11,585",core
+C-10956, Noah , Brown , Noah.Brown956@Example.COM ,+41 79 156 56 68, Basel ,BS,"Jun 19, 2025",11622,enterprise
+C-10957,AMARA,MARTIN,Amara.Martin957@Example.COM,+41 79 157 57 71,BERN,be,2025-07-02,11659,growth
+C-10958,luca,müller,Luca.Müller958@Example.COM,+41 79 158 58 74,geneva,GE,07/15/2025,11696,core
+C-10959,Sofia,Okafor,Sofia.Okafor959@Example.COM,+41 79 159 59 77,Lausanne,vd,"Jul 28, 2025",11733,enterprise
+C-10960, AVERY , CHEN , Avery.Chen960@Example.COM ,+41 79 160 60 80, ZURICH ,ZH,2025-08-10,"11,770",growth
+C-10961,maya,rossi,Maya.Rossi961@Example.COM,+41 79 161 61 83,basel,bs,08/23/2025,11807,core
+C-10962,Jonas,Silva,Jonas.Silva962@Example.COM,+41 79 162 62 86,Bern,BE,"Sep 05, 2025",11844,enterprise
+C-10963,ELENA,PATEL,Elena.Patel963@Example.COM,+41 79 163 63 89,GENEVA,ge,2025-09-18,11881,growth
+C-10964, noah , brown , Noah.Brown964@Example.COM ,+41 79 164 64 92, lausanne ,VD,10/01/2025,11918,core
+C-10965,Amara,Martin,Amara.Martin965@Example.COM,+41 79 165 65 95,Zurich,zh,"Oct 14, 2025","11,955",enterprise
+C-10966,LUCA,MÜLLER,Luca.Müller966@Example.COM,+41 79 166 66 98,BASEL,BS,2025-10-27,11992,growth
+C-10967,sofia,okafor,Sofia.Okafor967@Example.COM,+41 79 167 67 01,bern,be,11/09/2025,12029,core
+C-10968, Avery , Chen , Avery.Chen968@Example.COM ,+41 79 168 68 04, Geneva ,GE,"Nov 22, 2025",12066,enterprise
+C-10969,MAYA,ROSSI,Maya.Rossi969@Example.COM,,LAUSANNE,vd,2025-12-05,12103,growth
+C-10970,jonas,silva,Jonas.Silva970@Example.COM,+41 79 170 70 10,zurich,ZH,01/13/2021,"12,140",core
+C-10971,Elena,Patel,Elena.Patel971@Example.COM,+41 79 171 71 13,Basel,bs,"Jan 26, 2021",12177,enterprise
+C-10972, NOAH , BROWN , Noah.Brown972@Example.COM ,+41 79 172 72 16, BERN ,BE,2021-02-08,12214,growth
+C-10973,amara,martin,Amara.Martin973@Example.COM,+41 79 173 73 19,geneva,ge,02/21/2021,251,core
+C-10974,Luca,Müller,Luca.Müller974@Example.COM,+41 79 174 74 22,Lausanne,VD,"Mar 06, 2021",288,enterprise
+C-10975,SOFIA,OKAFOR,Sofia.Okafor975@Example.COM,+41 79 175 75 25,ZURICH,zh,2021-03-19,325,growth
+C-10976, avery , chen , Avery.Chen976@Example.COM ,+41 79 176 76 28, basel ,BS,04/01/2021,362,core
+C-10977,Maya,Rossi,Maya.Rossi977@Example.COM,+41 79 177 77 31,Bern,be,"Apr 14, 2021",399,enterprise
+C-10978,JONAS,SILVA,Jonas.Silva978@Example.COM,+41 79 178 78 34,GENEVA,GE,2021-04-27,436,growth
+C-10979,elena,patel,Elena.Patel979@Example.COM,+41 79 179 79 37,lausanne,vd,05/10/2021,473,core
+C-10980, Noah , Brown , Noah.Brown980@Example.COM ,+41 79 180 80 40, Zurich ,ZH,"May 23, 2021",510,enterprise
+C-10981,AMARA,MARTIN,Amara.Martin981@Example.COM,+41 79 181 81 43,BASEL,bs,2021-06-05,547,growth
+C-10982,luca,müller,Luca.Müller982@Example.COM,+41 79 182 82 46,bern,BE,06/18/2021,584,core
+C-10983,Sofia,Okafor,Sofia.Okafor983@Example.COM,+41 79 183 83 49,Geneva,ge,"Jul 01, 2021",621,enterprise
+C-10984, AVERY , CHEN , Avery.Chen984@Example.COM ,+41 79 184 84 52, LAUSANNE ,VD,2021-07-14,658,growth
+C-10985,maya,rossi,Maya.Rossi985@Example.COM,+41 79 185 85 55,zurich,zh,07/27/2021,695,core
+C-10986,Jonas,Silva,Jonas.Silva986@Example.COM,,Basel,BS,"Aug 09, 2021",732,enterprise
+C-10987,ELENA,PATEL,Elena.Patel987@Example.COM,+41 79 187 87 61,BERN,be,2021-08-22,769,growth
+C-10988, noah , brown , Noah.Brown988@Example.COM ,+41 79 188 88 64, geneva ,GE,09/04/2021,806,core
+C-10989,Amara,Martin,Amara.Martin989@Example.COM,+41 79 189 89 67,Lausanne,vd,"Sep 17, 2021",843,enterprise
+C-10990,LUCA,MÜLLER,Luca.Müller990@Example.COM,+41 79 190 90 70,ZURICH,ZH,2021-09-30,880,growth
+C-10991,sofia,okafor,Sofia.Okafor991@Example.COM,+41 79 191 91 73,basel,bs,10/13/2021,917,core
+C-10992, Avery , Chen , Avery.Chen992@Example.COM ,+41 79 192 92 76, Bern ,BE,"Oct 26, 2021",954,enterprise
+C-10993,MAYA,ROSSI,Maya.Rossi993@Example.COM,+41 79 193 93 79,GENEVA,ge,2021-11-08,991,growth
+C-10994,jonas,silva,Jonas.Silva994@Example.COM,+41 79 194 94 82,lausanne,VD,11/21/2021,1028,core
+C-10995,Elena,Patel,Elena.Patel995@Example.COM,+41 79 195 95 85,Zurich,zh,"Dec 04, 2021","1,065",enterprise
+C-10996, NOAH , BROWN , Noah.Brown996@Example.COM ,+41 79 196 96 88, BASEL ,BS,2021-12-17,1102,growth
+C-10997,amara,martin,Amara.Martin997@Example.COM,+41 79 197 97 91,bern,be,12/30/2021,1139,core
+C-10998,Luca,Müller,Luca.Müller998@Example.COM,+41 79 198 98 94,Geneva,GE,"Jan 12, 2022",1176,enterprise
+C-10999,SOFIA,OKAFOR,Sofia.Okafor999@Example.COM,+41 79 199 99 97,LAUSANNE,vd,2022-01-25,1213,growth
+C-11000, avery , chen , Avery.Chen1000@Example.COM ,+41 79 200 00 00, zurich ,ZH,02/07/2022,"1,250",core
+C-11001,Maya,Rossi,Maya.Rossi1001@Example.COM,+41 79 201 01 03,Basel,bs,"Feb 20, 2022",1287,enterprise
+C-11002,JONAS,SILVA,Jonas.Silva1002@Example.COM,+41 79 202 02 06,BERN,BE,2022-03-05,1324,growth
+C-11003,elena,patel,Elena.Patel1003@Example.COM,,geneva,ge,03/18/2022,1361,core
+C-11004, Noah , Brown , Noah.Brown1004@Example.COM ,+41 79 204 04 12, Lausanne ,VD,"Mar 31, 2022",1398,enterprise
+C-11005,AMARA,MARTIN,Amara.Martin1005@Example.COM,+41 79 205 05 15,ZURICH,zh,2022-04-13,"1,435",growth
+C-11006,luca,müller,Luca.Müller1006@Example.COM,+41 79 206 06 18,basel,BS,04/26/2022,1472,core
+C-11007,Sofia,Okafor,Sofia.Okafor1007@Example.COM,+41 79 207 07 21,Bern,be,"May 09, 2022",1509,enterprise
+C-11008, AVERY , CHEN , Avery.Chen1008@Example.COM ,+41 79 208 08 24, GENEVA ,GE,2022-05-22,1546,growth
+C-11009,maya,rossi,Maya.Rossi1009@Example.COM,+41 79 209 09 27,lausanne,vd,06/04/2022,1583,core
+C-11010,Jonas,Silva,Jonas.Silva1010@Example.COM,+41 79 210 10 30,Zurich,ZH,"Jun 17, 2022","1,620",enterprise
+C-11011,ELENA,PATEL,Elena.Patel1011@Example.COM,+41 79 211 11 33,BASEL,bs,2022-06-30,1657,growth
+C-11012, noah , brown , Noah.Brown1012@Example.COM ,+41 79 212 12 36, bern ,BE,07/13/2022,1694,core
+C-11013,Amara,Martin,Amara.Martin1013@Example.COM,+41 79 213 13 39,Geneva,ge,"Jul 26, 2022",1731,enterprise
+C-11014,LUCA,MÜLLER,Luca.Müller1014@Example.COM,+41 79 214 14 42,LAUSANNE,VD,2022-08-08,1768,growth
+C-11015,sofia,okafor,Sofia.Okafor1015@Example.COM,+41 79 215 15 45,zurich,zh,08/21/2022,"1,805",core
+C-11016, Avery , Chen , Avery.Chen1016@Example.COM ,+41 79 216 16 48, Basel ,BS,"Sep 03, 2022",1842,enterprise
+C-11017,MAYA,ROSSI,Maya.Rossi1017@Example.COM,+41 79 217 17 51,BERN,be,2022-09-16,1879,growth
+C-11018,jonas,silva,Jonas.Silva1018@Example.COM,+41 79 218 18 54,geneva,GE,09/29/2022,1916,core
+C-11019,Elena,Patel,Elena.Patel1019@Example.COM,+41 79 219 19 57,Lausanne,vd,"Oct 12, 2022",1953,enterprise
+C-11020, NOAH , BROWN , Noah.Brown1020@Example.COM ,, ZURICH ,ZH,2022-10-25,"1,990",growth
+C-11021,amara,martin,Amara.Martin1021@Example.COM,+41 79 221 21 63,basel,bs,11/07/2022,2027,core
+C-11022,Luca,Müller,Luca.Müller1022@Example.COM,+41 79 222 22 66,Bern,BE,"Nov 20, 2022",2064,enterprise
+C-11023,SOFIA,OKAFOR,Sofia.Okafor1023@Example.COM,+41 79 223 23 69,GENEVA,ge,2022-12-03,2101,growth
+C-11024, avery , chen , Avery.Chen1024@Example.COM ,+41 79 224 24 72, lausanne ,VD,12/16/2022,2138,core
+C-11025,Maya,Rossi,Maya.Rossi1025@Example.COM,+41 79 225 25 75,Zurich,zh,"Dec 29, 2022","2,175",enterprise
+C-11026,JONAS,SILVA,Jonas.Silva1026@Example.COM,+41 79 226 26 78,BASEL,BS,2023-01-11,2212,growth
+C-11027,elena,patel,Elena.Patel1027@Example.COM,+41 79 227 27 81,bern,be,01/24/2023,2249,core
+C-11028, Noah , Brown , Noah.Brown1028@Example.COM ,+41 79 228 28 84, Geneva ,GE,"Feb 06, 2023",2286,enterprise
+C-11029,AMARA,MARTIN,Amara.Martin1029@Example.COM,+41 79 229 29 87,LAUSANNE,vd,2023-02-19,2323,growth
+C-11030,luca,müller,Luca.Müller1030@Example.COM,+41 79 230 30 90,zurich,ZH,03/04/2023,"2,360",core
+C-11031,Sofia,Okafor,Sofia.Okafor1031@Example.COM,+41 79 231 31 93,Basel,bs,"Mar 17, 2023",2397,enterprise
+C-11032, AVERY , CHEN , Avery.Chen1032@Example.COM ,+41 79 232 32 96, BERN ,BE,2023-03-30,2434,growth
+C-11033,maya,rossi,Maya.Rossi1033@Example.COM,+41 79 233 33 99,geneva,ge,04/12/2023,2471,core
+C-11034,Jonas,Silva,Jonas.Silva1034@Example.COM,+41 79 234 34 02,Lausanne,VD,"Apr 25, 2023",2508,enterprise
+C-11035,ELENA,PATEL,Elena.Patel1035@Example.COM,+41 79 235 35 05,ZURICH,zh,2023-05-08,"2,545",growth
+C-11036, noah , brown , Noah.Brown1036@Example.COM ,+41 79 236 36 08, basel ,BS,05/21/2023,2582,core
+C-11037,Amara,Martin,Amara.Martin1037@Example.COM,,Bern,be,"Jun 03, 2023",2619,enterprise
+C-11038,LUCA,MÜLLER,Luca.Müller1038@Example.COM,+41 79 238 38 14,GENEVA,GE,2023-06-16,2656,growth
+C-11039,sofia,okafor,Sofia.Okafor1039@Example.COM,+41 79 239 39 17,lausanne,vd,06/29/2023,2693,core
+C-11040, Avery , Chen , Avery.Chen1040@Example.COM ,+41 79 240 40 20, Zurich ,ZH,"Jul 12, 2023","2,730",enterprise
+C-11041,MAYA,ROSSI,Maya.Rossi1041@Example.COM,+41 79 241 41 23,BASEL,bs,2023-07-25,2767,growth
+C-11042,jonas,silva,Jonas.Silva1042@Example.COM,+41 79 242 42 26,bern,BE,08/07/2023,2804,core
+C-11043,Elena,Patel,Elena.Patel1043@Example.COM,+41 79 243 43 29,Geneva,ge,"Aug 20, 2023",2841,enterprise
+C-11044, NOAH , BROWN , Noah.Brown1044@Example.COM ,+41 79 244 44 32, LAUSANNE ,VD,2023-09-02,2878,growth
+C-11045,amara,martin,Amara.Martin1045@Example.COM,+41 79 245 45 35,zurich,zh,09/15/2023,"2,915",core
+C-11046,Luca,Müller,Luca.Müller1046@Example.COM,+41 79 246 46 38,Basel,BS,"Sep 28, 2023",2952,enterprise
+C-11047,SOFIA,OKAFOR,Sofia.Okafor1047@Example.COM,+41 79 247 47 41,BERN,be,2023-10-11,2989,growth
+C-11048, avery , chen , Avery.Chen1048@Example.COM ,+41 79 248 48 44, geneva ,GE,10/24/2023,3026,core
+C-11049,Maya,Rossi,Maya.Rossi1049@Example.COM,+41 79 249 49 47,Lausanne,vd,"Nov 06, 2023",3063,enterprise
+C-11050,JONAS,SILVA,Jonas.Silva1050@Example.COM,+41 79 250 50 50,ZURICH,ZH,2023-11-19,"3,100",growth
+C-11051,elena,patel,Elena.Patel1051@Example.COM,+41 79 251 51 53,basel,bs,12/02/2023,3137,core
+C-11052, Noah , Brown , Noah.Brown1052@Example.COM ,+41 79 252 52 56, Bern ,BE,"Dec 15, 2023",3174,enterprise
+C-11053,AMARA,MARTIN,Amara.Martin1053@Example.COM,+41 79 253 53 59,GENEVA,ge,2023-12-28,3211,growth
+C-11054,luca,müller,Luca.Müller1054@Example.COM,,lausanne,VD,01/10/2024,3248,core
+C-11055,Sofia,Okafor,Sofia.Okafor1055@Example.COM,+41 79 255 55 65,Zurich,zh,"Jan 23, 2024","3,285",enterprise
+C-11056, AVERY , CHEN , Avery.Chen1056@Example.COM ,+41 79 256 56 68, BASEL ,BS,2024-02-05,3322,growth
+C-11057,maya,rossi,Maya.Rossi1057@Example.COM,+41 79 257 57 71,bern,be,02/18/2024,3359,core
+C-11058,Jonas,Silva,Jonas.Silva1058@Example.COM,+41 79 258 58 74,Geneva,GE,"Mar 02, 2024",3396,enterprise
+C-11059,ELENA,PATEL,Elena.Patel1059@Example.COM,+41 79 259 59 77,LAUSANNE,vd,2024-03-15,3433,growth
+C-11060, noah , brown , Noah.Brown1060@Example.COM ,+41 79 260 60 80, zurich ,ZH,03/28/2024,"3,470",core
+C-11061,Amara,Martin,Amara.Martin1061@Example.COM,+41 79 261 61 83,Basel,bs,"Apr 10, 2024",3507,enterprise
+C-11062,LUCA,MÜLLER,Luca.Müller1062@Example.COM,+41 79 262 62 86,BERN,BE,2024-04-23,3544,growth
+C-11063,sofia,okafor,Sofia.Okafor1063@Example.COM,+41 79 263 63 89,geneva,ge,05/06/2024,3581,core
+C-11064, Avery , Chen , Avery.Chen1064@Example.COM ,+41 79 264 64 92, Lausanne ,VD,"May 19, 2024",3618,enterprise
+C-11065,MAYA,ROSSI,Maya.Rossi1065@Example.COM,+41 79 265 65 95,ZURICH,zh,2024-06-01,"3,655",growth
+C-11066,jonas,silva,Jonas.Silva1066@Example.COM,+41 79 266 66 98,basel,BS,06/14/2024,3692,core
+C-11067,Elena,Patel,Elena.Patel1067@Example.COM,+41 79 267 67 01,Bern,be,"Jun 27, 2024",3729,enterprise
+C-11068, NOAH , BROWN , Noah.Brown1068@Example.COM ,+41 79 268 68 04, GENEVA ,GE,2024-07-10,3766,growth
+C-11069,amara,martin,Amara.Martin1069@Example.COM,+41 79 269 69 07,lausanne,vd,07/23/2024,3803,core
+C-11070,Luca,Müller,Luca.Müller1070@Example.COM,+41 79 270 70 10,Zurich,ZH,"Aug 05, 2024","3,840",enterprise
+C-11071,SOFIA,OKAFOR,Sofia.Okafor1071@Example.COM,,BASEL,bs,2024-08-18,3877,growth
+C-11072, avery , chen , Avery.Chen1072@Example.COM ,+41 79 272 72 16, bern ,BE,08/31/2024,3914,core
+C-11073,Maya,Rossi,Maya.Rossi1073@Example.COM,+41 79 273 73 19,Geneva,ge,"Sep 13, 2024",3951,enterprise
+C-11074,JONAS,SILVA,Jonas.Silva1074@Example.COM,+41 79 274 74 22,LAUSANNE,VD,2024-09-26,3988,growth
+C-11075,elena,patel,Elena.Patel1075@Example.COM,+41 79 275 75 25,zurich,zh,10/09/2024,"4,025",core
+C-11076, Noah , Brown , Noah.Brown1076@Example.COM ,+41 79 276 76 28, Basel ,BS,"Oct 22, 2024",4062,enterprise
+C-11077,AMARA,MARTIN,Amara.Martin1077@Example.COM,+41 79 277 77 31,BERN,be,2024-11-04,4099,growth
+C-11078,luca,müller,Luca.Müller1078@Example.COM,+41 79 278 78 34,geneva,GE,11/17/2024,4136,core
+C-11079,Sofia,Okafor,Sofia.Okafor1079@Example.COM,+41 79 279 79 37,Lausanne,vd,"Nov 30, 2024",4173,enterprise
+C-11080, AVERY , CHEN , Avery.Chen1080@Example.COM ,+41 79 280 80 40, ZURICH ,ZH,2024-12-13,"4,210",growth
+C-11081,maya,rossi,Maya.Rossi1081@Example.COM,+41 79 281 81 43,basel,bs,12/26/2024,4247,core
+C-11082,Jonas,Silva,Jonas.Silva1082@Example.COM,+41 79 282 82 46,Bern,BE,"Jan 08, 2025",4284,enterprise
+C-11083,ELENA,PATEL,Elena.Patel1083@Example.COM,+41 79 283 83 49,GENEVA,ge,2025-01-21,4321,growth
+C-11084, noah , brown , Noah.Brown1084@Example.COM ,+41 79 284 84 52, lausanne ,VD,02/03/2025,4358,core
+C-11085,Amara,Martin,Amara.Martin1085@Example.COM,+41 79 285 85 55,Zurich,zh,"Feb 16, 2025","4,395",enterprise
+C-11086,LUCA,MÜLLER,Luca.Müller1086@Example.COM,+41 79 286 86 58,BASEL,BS,2025-03-01,4432,growth
+C-11087,sofia,okafor,Sofia.Okafor1087@Example.COM,+41 79 287 87 61,bern,be,03/14/2025,4469,core
+C-11088, Avery , Chen , Avery.Chen1088@Example.COM ,, Geneva ,GE,"Mar 27, 2025",4506,enterprise
+C-11089,MAYA,ROSSI,Maya.Rossi1089@Example.COM,+41 79 289 89 67,LAUSANNE,vd,2025-04-09,4543,growth
+C-11090,jonas,silva,Jonas.Silva1090@Example.COM,+41 79 290 90 70,zurich,ZH,04/22/2025,"4,580",core
+C-11091,Elena,Patel,Elena.Patel1091@Example.COM,+41 79 291 91 73,Basel,bs,"May 05, 2025",4617,enterprise
+C-11092, NOAH , BROWN , Noah.Brown1092@Example.COM ,+41 79 292 92 76, BERN ,BE,2025-05-18,4654,growth
+C-11093,amara,martin,Amara.Martin1093@Example.COM,+41 79 293 93 79,geneva,ge,05/31/2025,4691,core
+C-11094,Luca,Müller,Luca.Müller1094@Example.COM,+41 79 294 94 82,Lausanne,VD,"Jun 13, 2025",4728,enterprise
+C-11095,SOFIA,OKAFOR,Sofia.Okafor1095@Example.COM,+41 79 295 95 85,ZURICH,zh,2025-06-26,"4,765",growth
+C-11096, avery , chen , Avery.Chen1096@Example.COM ,+41 79 296 96 88, basel ,BS,07/09/2025,4802,core
+C-11097,Maya,Rossi,Maya.Rossi1097@Example.COM,+41 79 297 97 91,Bern,be,"Jul 22, 2025",4839,enterprise
+C-11098,JONAS,SILVA,Jonas.Silva1098@Example.COM,+41 79 298 98 94,GENEVA,GE,2025-08-04,4876,growth
+C-11099,elena,patel,Elena.Patel1099@Example.COM,+41 79 299 99 97,lausanne,vd,08/17/2025,4913,core
+C-11100, Noah , Brown , Noah.Brown1100@Example.COM ,+41 79 300 00 00, Zurich ,ZH,"Aug 30, 2025","4,950",enterprise
+C-11101,AMARA,MARTIN,Amara.Martin1101@Example.COM,+41 79 301 01 03,BASEL,bs,2025-09-12,4987,growth
+C-11102,luca,müller,Luca.Müller1102@Example.COM,+41 79 302 02 06,bern,BE,09/25/2025,5024,core
+C-11103,Sofia,Okafor,Sofia.Okafor1103@Example.COM,+41 79 303 03 09,Geneva,ge,"Oct 08, 2025",5061,enterprise
+C-11104, AVERY , CHEN , Avery.Chen1104@Example.COM ,+41 79 304 04 12, LAUSANNE ,VD,2025-10-21,5098,growth
+C-11105,maya,rossi,Maya.Rossi1105@Example.COM,,zurich,zh,11/03/2025,"5,135",core
+C-11106,Jonas,Silva,Jonas.Silva1106@Example.COM,+41 79 306 06 18,Basel,BS,"Nov 16, 2025",5172,enterprise
+C-11107,ELENA,PATEL,Elena.Patel1107@Example.COM,+41 79 307 07 21,BERN,be,2025-11-29,5209,growth
+C-11108, noah , brown , Noah.Brown1108@Example.COM ,+41 79 308 08 24, geneva ,GE,01/07/2021,5246,core
+C-11109,Amara,Martin,Amara.Martin1109@Example.COM,+41 79 309 09 27,Lausanne,vd,"Jan 20, 2021",5283,enterprise
+C-11110,LUCA,MÜLLER,Luca.Müller1110@Example.COM,+41 79 310 10 30,ZURICH,ZH,2021-02-02,"5,320",growth
+C-11111,sofia,okafor,Sofia.Okafor1111@Example.COM,+41 79 311 11 33,basel,bs,02/15/2021,5357,core
+C-11112, Avery , Chen , Avery.Chen1112@Example.COM ,+41 79 312 12 36, Bern ,BE,"Feb 28, 2021",5394,enterprise
+C-11113,MAYA,ROSSI,Maya.Rossi1113@Example.COM,+41 79 313 13 39,GENEVA,ge,2021-03-13,5431,growth
+C-11114,jonas,silva,Jonas.Silva1114@Example.COM,+41 79 314 14 42,lausanne,VD,03/26/2021,5468,core
+C-11115,Elena,Patel,Elena.Patel1115@Example.COM,+41 79 315 15 45,Zurich,zh,"Apr 08, 2021","5,505",enterprise
+C-11116, NOAH , BROWN , Noah.Brown1116@Example.COM ,+41 79 316 16 48, BASEL ,BS,2021-04-21,5542,growth
+C-11117,amara,martin,Amara.Martin1117@Example.COM,+41 79 317 17 51,bern,be,05/04/2021,5579,core
+C-11118,Luca,Müller,Luca.Müller1118@Example.COM,+41 79 318 18 54,Geneva,GE,"May 17, 2021",5616,enterprise
+C-11119,SOFIA,OKAFOR,Sofia.Okafor1119@Example.COM,+41 79 319 19 57,LAUSANNE,vd,2021-05-30,5653,growth
+C-11120, avery , chen , Avery.Chen1120@Example.COM ,+41 79 320 20 60, zurich ,ZH,06/12/2021,"5,690",core
+C-11121,Maya,Rossi,Maya.Rossi1121@Example.COM,+41 79 321 21 63,Basel,bs,"Jun 25, 2021",5727,enterprise
+C-11122,JONAS,SILVA,Jonas.Silva1122@Example.COM,,BERN,BE,2021-07-08,5764,growth
+C-11123,elena,patel,Elena.Patel1123@Example.COM,+41 79 323 23 69,geneva,ge,07/21/2021,5801,core
+C-11124, Noah , Brown , Noah.Brown1124@Example.COM ,+41 79 324 24 72, Lausanne ,VD,"Aug 03, 2021",5838,enterprise
+C-11125,AMARA,MARTIN,Amara.Martin1125@Example.COM,+41 79 325 25 75,ZURICH,zh,2021-08-16,"5,875",growth
+C-11126,luca,müller,Luca.Müller1126@Example.COM,+41 79 326 26 78,basel,BS,08/29/2021,5912,core
+C-11127,Sofia,Okafor,Sofia.Okafor1127@Example.COM,+41 79 327 27 81,Bern,be,"Sep 11, 2021",5949,enterprise
+C-11128, AVERY , CHEN , Avery.Chen1128@Example.COM ,+41 79 328 28 84, GENEVA ,GE,2021-09-24,5986,growth
+C-11129,maya,rossi,Maya.Rossi1129@Example.COM,+41 79 329 29 87,lausanne,vd,10/07/2021,6023,core
+C-11130,Jonas,Silva,Jonas.Silva1130@Example.COM,+41 79 330 30 90,Zurich,ZH,"Oct 20, 2021","6,060",enterprise
+C-11131,ELENA,PATEL,Elena.Patel1131@Example.COM,+41 79 331 31 93,BASEL,bs,2021-11-02,6097,growth
+C-11132, noah , brown , Noah.Brown1132@Example.COM ,+41 79 332 32 96, bern ,BE,11/15/2021,6134,core
+C-11133,Amara,Martin,Amara.Martin1133@Example.COM,+41 79 333 33 99,Geneva,ge,"Nov 28, 2021",6171,enterprise
+C-11134,LUCA,MÜLLER,Luca.Müller1134@Example.COM,+41 79 334 34 02,LAUSANNE,VD,2021-12-11,6208,growth
+C-11135,sofia,okafor,Sofia.Okafor1135@Example.COM,+41 79 335 35 05,zurich,zh,12/24/2021,"6,245",core
+C-11136, Avery , Chen , Avery.Chen1136@Example.COM ,+41 79 336 36 08, Basel ,BS,"Jan 06, 2022",6282,enterprise
+C-11137,MAYA,ROSSI,Maya.Rossi1137@Example.COM,+41 79 337 37 11,BERN,be,2022-01-19,6319,growth
+C-11138,jonas,silva,Jonas.Silva1138@Example.COM,+41 79 338 38 14,geneva,GE,02/01/2022,6356,core
+C-11139,Elena,Patel,Elena.Patel1139@Example.COM,,Lausanne,vd,"Feb 14, 2022",6393,enterprise
+C-11140, NOAH , BROWN , Noah.Brown1140@Example.COM ,+41 79 340 40 20, ZURICH ,ZH,2022-02-27,"6,430",growth
+C-11141,amara,martin,Amara.Martin1141@Example.COM,+41 79 341 41 23,basel,bs,03/12/2022,6467,core
+C-11142,Luca,Müller,Luca.Müller1142@Example.COM,+41 79 342 42 26,Bern,BE,"Mar 25, 2022",6504,enterprise
+C-11143,SOFIA,OKAFOR,Sofia.Okafor1143@Example.COM,+41 79 343 43 29,GENEVA,ge,2022-04-07,6541,growth
+C-11144, avery , chen , Avery.Chen1144@Example.COM ,+41 79 344 44 32, lausanne ,VD,04/20/2022,6578,core
+C-11145,Maya,Rossi,Maya.Rossi1145@Example.COM,+41 79 345 45 35,Zurich,zh,"May 03, 2022","6,615",enterprise
+C-11146,JONAS,SILVA,Jonas.Silva1146@Example.COM,+41 79 346 46 38,BASEL,BS,2022-05-16,6652,growth
+C-11147,elena,patel,Elena.Patel1147@Example.COM,+41 79 347 47 41,bern,be,05/29/2022,6689,core
+C-11148, Noah , Brown , Noah.Brown1148@Example.COM ,+41 79 348 48 44, Geneva ,GE,"Jun 11, 2022",6726,enterprise
+C-11149,AMARA,MARTIN,Amara.Martin1149@Example.COM,+41 79 349 49 47,LAUSANNE,vd,2022-06-24,6763,growth
+C-11150,luca,müller,Luca.Müller1150@Example.COM,+41 79 350 50 50,zurich,ZH,07/07/2022,"6,800",core
+C-11151,Sofia,Okafor,Sofia.Okafor1151@Example.COM,+41 79 351 51 53,Basel,bs,"Jul 20, 2022",6837,enterprise
+C-11152, AVERY , CHEN , Avery.Chen1152@Example.COM ,+41 79 352 52 56, BERN ,BE,2022-08-02,6874,growth
+C-11153,maya,rossi,Maya.Rossi1153@Example.COM,+41 79 353 53 59,geneva,ge,08/15/2022,6911,core
+C-11154,Jonas,Silva,Jonas.Silva1154@Example.COM,+41 79 354 54 62,Lausanne,VD,"Aug 28, 2022",6948,enterprise
+C-11155,ELENA,PATEL,Elena.Patel1155@Example.COM,+41 79 355 55 65,ZURICH,zh,2022-09-10,"6,985",growth
+C-11156, noah , brown , Noah.Brown1156@Example.COM ,, basel ,BS,09/23/2022,7022,core
+C-11157,Amara,Martin,Amara.Martin1157@Example.COM,+41 79 357 57 71,Bern,be,"Oct 06, 2022",7059,enterprise
+C-11158,LUCA,MÜLLER,Luca.Müller1158@Example.COM,+41 79 358 58 74,GENEVA,GE,2022-10-19,7096,growth
+C-11159,sofia,okafor,Sofia.Okafor1159@Example.COM,+41 79 359 59 77,lausanne,vd,11/01/2022,7133,core
+C-11160, Avery , Chen , Avery.Chen1160@Example.COM ,+41 79 360 60 80, Zurich ,ZH,"Nov 14, 2022","7,170",enterprise
+C-11161,MAYA,ROSSI,Maya.Rossi1161@Example.COM,+41 79 361 61 83,BASEL,bs,2022-11-27,7207,growth
+C-11162,jonas,silva,Jonas.Silva1162@Example.COM,+41 79 362 62 86,bern,BE,12/10/2022,7244,core
+C-11163,Elena,Patel,Elena.Patel1163@Example.COM,+41 79 363 63 89,Geneva,ge,"Dec 23, 2022",7281,enterprise
+C-11164, NOAH , BROWN , Noah.Brown1164@Example.COM ,+41 79 364 64 92, LAUSANNE ,VD,2023-01-05,7318,growth
+C-11165,amara,martin,Amara.Martin1165@Example.COM,+41 79 365 65 95,zurich,zh,01/18/2023,"7,355",core
+C-11166,Luca,Müller,Luca.Müller1166@Example.COM,+41 79 366 66 98,Basel,BS,"Jan 31, 2023",7392,enterprise
+C-11167,SOFIA,OKAFOR,Sofia.Okafor1167@Example.COM,+41 79 367 67 01,BERN,be,2023-02-13,7429,growth
+C-11168, avery , chen , Avery.Chen1168@Example.COM ,+41 79 368 68 04, geneva ,GE,02/26/2023,7466,core
+C-11169,Maya,Rossi,Maya.Rossi1169@Example.COM,+41 79 369 69 07,Lausanne,vd,"Mar 11, 2023",7503,enterprise
+C-11170,JONAS,SILVA,Jonas.Silva1170@Example.COM,+41 79 370 70 10,ZURICH,ZH,2023-03-24,"7,540",growth
+C-11171,elena,patel,Elena.Patel1171@Example.COM,+41 79 371 71 13,basel,bs,04/06/2023,7577,core
+C-11172, Noah , Brown , Noah.Brown1172@Example.COM ,+41 79 372 72 16, Bern ,BE,"Apr 19, 2023",7614,enterprise
+C-11173,AMARA,MARTIN,Amara.Martin1173@Example.COM,,GENEVA,ge,2023-05-02,7651,growth
+C-11174,luca,müller,Luca.Müller1174@Example.COM,+41 79 374 74 22,lausanne,VD,05/15/2023,7688,core
+C-11175,Sofia,Okafor,Sofia.Okafor1175@Example.COM,+41 79 375 75 25,Zurich,zh,"May 28, 2023","7,725",enterprise
+C-11176, AVERY , CHEN , Avery.Chen1176@Example.COM ,+41 79 376 76 28, BASEL ,BS,2023-06-10,7762,growth
+C-11177,maya,rossi,Maya.Rossi1177@Example.COM,+41 79 377 77 31,bern,be,06/23/2023,7799,core
+C-11178,Jonas,Silva,Jonas.Silva1178@Example.COM,+41 79 378 78 34,Geneva,GE,"Jul 06, 2023",7836,enterprise
+C-11179,ELENA,PATEL,Elena.Patel1179@Example.COM,+41 79 379 79 37,LAUSANNE,vd,2023-07-19,7873,growth
+C-11180, noah , brown , Noah.Brown1180@Example.COM ,+41 79 380 80 40, zurich ,ZH,08/01/2023,"7,910",core
+C-11181,Amara,Martin,Amara.Martin1181@Example.COM,+41 79 381 81 43,Basel,bs,"Aug 14, 2023",7947,enterprise
+C-11182,LUCA,MÜLLER,Luca.Müller1182@Example.COM,+41 79 382 82 46,BERN,BE,2023-08-27,7984,growth
+C-11183,sofia,okafor,Sofia.Okafor1183@Example.COM,+41 79 383 83 49,geneva,ge,09/09/2023,8021,core
+C-11184, Avery , Chen , Avery.Chen1184@Example.COM ,+41 79 384 84 52, Lausanne ,VD,"Sep 22, 2023",8058,enterprise
+C-11185,MAYA,ROSSI,Maya.Rossi1185@Example.COM,+41 79 385 85 55,ZURICH,zh,2023-10-05,"8,095",growth
+C-11186,jonas,silva,Jonas.Silva1186@Example.COM,+41 79 386 86 58,basel,BS,10/18/2023,8132,core
+C-12000, Avery , Chen , Avery.Chen2000@Example.COM ,+41 79 300 00 00, Zurich ,ZH,"Mar 14, 2023",unknown,enterprise
+C-12001,MAYA,ROSSI,Maya.Rossi2001@Example.COM,+41 79 301 01 03,BASEL,bs,2023-03-27,n/a?,growth
+C-12002,jonas,silva,Jonas.Silva2002@Example.COM,+41 79 302 02 06,bern,BE,04/09/2023,12O0,core
+C-12003,Elena,Patel,Elena.Patel2003@Example.COM,+41 79 303 03 09,Geneva,ge,"Apr 22, 2023",—,enterprise
+C-12004, NOAH , BROWN , Noah.Brown2004@Example.COM ,+41 79 304 04 12, LAUSANNE ,VD,2023-05-05,pending,growth
+C-12005,amara,martin,Amara.Martin2005@Example.COM,+41 79 305 05 15,zurich,zh,05/18/2023,unknown,core
+C-12006,Luca,Müller,Luca.Müller2006@Example.COM,,Basel,BS,"May 31, 2023",n/a?,enterprise
+C-12007,SOFIA,OKAFOR,Sofia.Okafor2007@Example.COM,+41 79 307 07 21,BERN,be,2023-06-13,12O0,growth
+C-12008, avery , chen , Avery.Chen2008@Example.COM ,+41 79 308 08 24, geneva ,GE,06/26/2023,—,core
+C-12009,Maya,Rossi,Maya.Rossi2009@Example.COM,+41 79 309 09 27,Lausanne,vd,"Jul 09, 2023",pending,enterprise
+C-12010,JONAS,SILVA,Jonas.Silva2010@Example.COM,+41 79 310 10 30,ZURICH,ZH,2023-07-22,unknown,growth
+C-12011,elena,patel,Elena.Patel2011@Example.COM,+41 79 311 11 33,basel,bs,08/04/2023,n/a?,core
+C-12012, Noah , Brown , Noah.Brown2012@Example.COM ,+41 79 312 12 36, Bern ,BE,"Aug 17, 2023",12O0,enterprise
+C-12013,AMARA,MARTIN,Amara.Martin2013@Example.COM,+41 79 313 13 39,GENEVA,ge,2023-08-30,—,growth
+C-12014,luca,müller,Luca.Müller2014@Example.COM,+41 79 314 14 42,lausanne,VD,09/12/2023,pending,core
+C-12015,Sofia,Okafor,Sofia.Okafor2015@Example.COM,+41 79 315 15 45,Zurich,zh,"Sep 25, 2023",unknown,enterprise
+C-12016, AVERY , CHEN , Avery.Chen2016@Example.COM ,+41 79 316 16 48, BASEL ,BS,2023-10-08,n/a?,growth
+C-12017,maya,rossi,Maya.Rossi2017@Example.COM,+41 79 317 17 51,bern,be,10/21/2023,12O0,core
+C-12018,Jonas,Silva,Jonas.Silva2018@Example.COM,+41 79 318 18 54,Geneva,GE,"Nov 03, 2023",—,enterprise
+C-12019,ELENA,PATEL,Elena.Patel2019@Example.COM,+41 79 319 19 57,LAUSANNE,vd,2023-11-16,pending,growth
+C-12020, noah , brown , Noah.Brown2020@Example.COM ,+41 79 320 20 60, zurich ,ZH,11/29/2023,unknown,core
+C-12021,Amara,Martin,Amara.Martin2021@Example.COM,+41 79 321 21 63,Basel,bs,"Dec 12, 2023",n/a?,enterprise
+C-12022,LUCA,MÜLLER,Luca.Müller2022@Example.COM,+41 79 322 22 66,BERN,BE,2023-12-25,12O0,growth
+C-12023,sofia,okafor,Sofia.Okafor2023@Example.COM,,geneva,ge,01/07/2024,—,core
+C-12024, Avery , Chen , Avery.Chen2024@Example.COM ,+41 79 324 24 72, Lausanne ,VD,"Jan 20, 2024",pending,enterprise
+C-10000, AVERY , CHEN , Avery.Chen0@Example.COM ,, ZURICH ,ZH,2021-01-03,250,growth
+C-10001,maya,rossi,Maya.Rossi1@Example.COM,+41 79 101 01 03,basel,bs,01/16/2021,287,core
+C-10002,Jonas,Silva,Jonas.Silva2@Example.COM,+41 79 102 02 06,Bern,BE,"Jan 29, 2021",324,enterprise
+C-10003,ELENA,PATEL,Elena.Patel3@Example.COM,+41 79 103 03 09,GENEVA,ge,2021-02-11,361,growth
+C-10004, noah , brown , Noah.Brown4@Example.COM ,+41 79 104 04 12, lausanne ,VD,02/24/2021,398,core
+C-10005,Amara,Martin,Amara.Martin5@Example.COM,+41 79 105 05 15,Zurich,zh,"Mar 09, 2021",435,enterprise
+C-10006,LUCA,MÜLLER,Luca.Müller6@Example.COM,+41 79 106 06 18,BASEL,BS,2021-03-22,472,growth
+C-10007,sofia,okafor,Sofia.Okafor7@Example.COM,+41 79 107 07 21,bern,be,04/04/2021,509,core
+C-10008, Avery , Chen , Avery.Chen8@Example.COM ,+41 79 108 08 24, Geneva ,GE,"Apr 17, 2021",546,enterprise
+C-10009,MAYA,ROSSI,Maya.Rossi9@Example.COM,+41 79 109 09 27,LAUSANNE,vd,2021-04-30,583,growth
+C-10010,jonas,silva,Jonas.Silva10@Example.COM,+41 79 110 10 30,zurich,ZH,05/13/2021,620,core
+C-10011,Elena,Patel,Elena.Patel11@Example.COM,+41 79 111 11 33,Basel,bs,"May 26, 2021",657,enterprise
+C-10012, NOAH , BROWN , Noah.Brown12@Example.COM ,+41 79 112 12 36, BERN ,BE,2021-06-08,694,growth
+C-10013,amara,martin,Amara.Martin13@Example.COM,+41 79 113 13 39,geneva,ge,06/21/2021,731,core
+C-10014,Luca,Müller,Luca.Müller14@Example.COM,+41 79 114 14 42,Lausanne,VD,"Jul 04, 2021",768,enterprise
+C-10015,SOFIA,OKAFOR,Sofia.Okafor15@Example.COM,+41 79 115 15 45,ZURICH,zh,2021-07-17,805,growth
+C-10016, avery , chen , Avery.Chen16@Example.COM ,+41 79 116 16 48, basel ,BS,07/30/2021,842,core
+C-10017,Maya,Rossi,Maya.Rossi17@Example.COM,,Bern,be,"Aug 12, 2021",879,enterprise
+C-10018,JONAS,SILVA,Jonas.Silva18@Example.COM,+41 79 118 18 54,GENEVA,GE,2021-08-25,916,growth
+C-10019,elena,patel,Elena.Patel19@Example.COM,+41 79 119 19 57,lausanne,vd,09/07/2021,953,core
+C-10020, Noah , Brown , Noah.Brown20@Example.COM ,+41 79 120 20 60, Zurich ,ZH,"Sep 20, 2021",990,enterprise
+C-10021,AMARA,MARTIN,Amara.Martin21@Example.COM,+41 79 121 21 63,BASEL,bs,2021-10-03,1027,growth
+C-10022,luca,müller,Luca.Müller22@Example.COM,+41 79 122 22 66,bern,BE,10/16/2021,1064,core
+C-10023,Sofia,Okafor,Sofia.Okafor23@Example.COM,+41 79 123 23 69,Geneva,ge,"Oct 29, 2021",1101,enterprise
+C-10024, AVERY , CHEN , Avery.Chen24@Example.COM ,+41 79 124 24 72, LAUSANNE ,VD,2021-11-11,1138,growth
+C-10025,maya,rossi,Maya.Rossi25@Example.COM,+41 79 125 25 75,zurich,zh,11/24/2021,"1,175",core
+C-10026,Jonas,Silva,Jonas.Silva26@Example.COM,+41 79 126 26 78,Basel,BS,"Dec 07, 2021",1212,enterprise
+C-10027,ELENA,PATEL,Elena.Patel27@Example.COM,+41 79 127 27 81,BERN,be,2021-12-20,1249,growth
+C-10028, noah , brown , Noah.Brown28@Example.COM ,+41 79 128 28 84, geneva ,GE,01/02/2022,1286,core
+C-10029,Amara,Martin,Amara.Martin29@Example.COM,+41 79 129 29 87,Lausanne,vd,"Jan 15, 2022",1323,enterprise
+C-10030,LUCA,MÜLLER,Luca.Müller30@Example.COM,+41 79 130 30 90,ZURICH,ZH,2022-01-28,"1,360",growth
+C-10031,sofia,okafor,Sofia.Okafor31@Example.COM,+41 79 131 31 93,basel,bs,02/10/2022,1397,core
+C-10032, Avery , Chen , Avery.Chen32@Example.COM ,+41 79 132 32 96, Bern ,BE,"Feb 23, 2022",1434,enterprise
+C-10033,MAYA,ROSSI,Maya.Rossi33@Example.COM,+41 79 133 33 99,GENEVA,ge,2022-03-08,1471,growth
+C-10034,jonas,silva,Jonas.Silva34@Example.COM,,lausanne,VD,03/21/2022,1508,core
+C-10035,Elena,Patel,Elena.Patel35@Example.COM,+41 79 135 35 05,Zurich,zh,"Apr 03, 2022","1,545",enterprise
+C-10036, NOAH , BROWN , Noah.Brown36@Example.COM ,+41 79 136 36 08, BASEL ,BS,2022-04-16,1582,growth
+C-10037,amara,martin,Amara.Martin37@Example.COM,+41 79 137 37 11,bern,be,04/29/2022,1619,core
+C-10038,Luca,Müller,Luca.Müller38@Example.COM,+41 79 138 38 14,Geneva,GE,"May 12, 2022",1656,enterprise
+C-10039,SOFIA,OKAFOR,Sofia.Okafor39@Example.COM,+41 79 139 39 17,LAUSANNE,vd,2022-05-25,1693,growth
+C-10040, avery , chen , Avery.Chen40@Example.COM ,+41 79 140 40 20, zurich ,ZH,06/07/2022,"1,730",core

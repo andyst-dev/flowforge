@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FlowForge — reusable data-cleaning workflows for CSV and Excel files.">
+    <title>FlowForge · Data workflow studio</title>
+    <link rel="icon" href="{{ url_for('static', path='/favicon.svg') }}" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/app.css') }}">
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="FlowForge home">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>FLOW<span>FORGE</span></span>
+      </a>
+      <div class="topbar-status"><span class="pulse"></span> Local workspace</div>
+      <a class="docs-link" href="/docs">API docs <span>↗</span></a>
+    </header>
+
+    <main class="shell">
+      <section class="hero reveal">
+        <div>
+          <div class="eyebrow">DATA WORKFLOW / 001</div>
+          <h1>Turn messy tables into<br><em>repeatable workflows.</em></h1>
+        </div>
+        <p>Upload a CSV or Excel file, stack precise cleaning rules, inspect every change, then save the workflow for next time.</p>
+      </section>
+
+      <section class="workspace reveal delay-1">
+        <aside class="rail">
+          <div class="rail-label">WORKFLOW</div>
+          <nav aria-label="Workflow steps">
+            <button class="step is-active" data-step-target="upload"><b>01</b><span>Source file<small>CSV or XLSX</small></span></button>
+            <button class="step" data-step-target="recipe"><b>02</b><span>Recipe<small>Cleaning rules</small></span></button>
+            <button class="step" data-step-target="preview"><b>03</b><span>Preview<small>Verify output</small></span></button>
+            <button class="step" data-step-target="export"><b>04</b><span>Export<small>Ship clean data</small></span></button>
+          </nav>
+          <div class="rail-footer">
+            <span>ENGINE</span>
+            <strong>PANDAS / 2.x</strong>
+          </div>
+        </aside>
+
+        <div class="stage">
+          <section class="panel is-visible" id="panel-upload">
+            <div class="panel-head">
+              <div><span class="kicker">01 / INGEST</span><h2>Choose a source file</h2></div>
+              <span class="limit">MAX 15 MB</span>
+            </div>
+            <label class="dropzone" id="dropzone" for="file-input">
+              <input id="file-input" type="file" accept=".csv,.xlsx" hidden>
+              <span class="upload-icon" aria-hidden="true">↥</span>
+              <strong>Drop a table here</strong>
+              <span>or click to browse your machine</span>
+              <small>.CSV &nbsp;·&nbsp; .XLSX</small>
+            </label>
+            <div class="file-card" id="file-card" hidden>
+              <div class="file-badge" id="file-type">CSV</div>
+              <div><strong id="file-name"></strong><small id="file-meta"></small></div>
+              <span class="check">✓</span>
+            </div>
+            <div class="panel-actions"><span class="hint">Your data stays in this local workspace.</span><button class="button primary" id="to-recipe" disabled>Configure recipe <span>→</span></button></div>
+          </section>
+
+          <section class="panel" id="panel-recipe">
+            <div class="panel-head recipe-head">
+              <div><span class="kicker">02 / CONFIGURE</span><h2>Build the cleaning recipe</h2></div>
+              <div class="recipe-picker"><label for="saved-recipes">SAVED</label><select id="saved-recipes"><option value="">New recipe</option></select></div>
+            </div>
+            <div class="rule-list" id="rule-list"></div>
+            <button class="add-rule" id="add-rule"><span>＋</span> Add transformation</button>
+            <div class="save-strip">
+              <div><label for="recipe-name">RECIPE NAME</label><input id="recipe-name" placeholder="e.g. Clean customer export" maxlength="80"></div>
+              <button class="button ghost" id="save-recipe">Save recipe</button>
+            </div>
+            <div class="panel-actions"><button class="button text" data-back="upload">← Back</button><button class="button primary" id="run-preview">Run preview <span>→</span></button></div>
+          </section>
+
+          <section class="panel" id="panel-preview">
+            <div class="panel-head">
+              <div><span class="kicker">03 / INSPECT</span><h2>Transformation report</h2></div>
+              <span class="run-status"><i></i> Complete</span>
+            </div>
+            <div class="stats-grid" id="stats-grid"></div>
+            <div class="compare-tabs" role="tablist">
+              <button class="is-active" data-table="after">Clean output</button>
+              <button data-table="before">Original input</button>
+            </div>
+            <div class="table-shell"><table><thead id="preview-head"></thead><tbody id="preview-body"></tbody></table></div>
+            <div class="panel-actions"><button class="button text" data-back="recipe">← Adjust recipe</button><button class="button primary" id="to-export">Approve output <span>→</span></button></div>
+          </section>
+
+          <section class="panel" id="panel-export">
+            <div class="panel-head">
+              <div><span class="kicker">04 / DELIVER</span><h2>Export clean data</h2></div>
+            </div>
+            <div class="export-card">
+              <div class="export-stamp">READY</div>
+              <h3>Your transformed dataset is ready.</h3>
+              <p>Choose a format. The export includes every processed row and column shown in the preview.</p>
+              <div class="format-grid">
+                <button class="format-option is-selected" data-format="csv"><span>CSV</span><small>Universal · lightweight</small><i>●</i></button>
+                <button class="format-option" data-format="xlsx"><span>XLSX</span><small>Excel workbook</small><i>○</i></button>
+              </div>
+              <button class="button primary download" id="download">Download export <span>↓</span></button>
+            </div>
+            <div class="panel-actions"><button class="button text" data-back="preview">← Back to preview</button><button class="button ghost" id="new-run">Start new workflow</button></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="lower-grid reveal delay-2">
+        <div class="history-card">
+          <div class="section-title"><div><span class="kicker">RUN LOG</span><h2>Recent jobs</h2></div><button id="refresh-jobs" class="icon-button" aria-label="Refresh jobs">↻</button></div>
+          <div id="job-list" class="job-list"><div class="empty-state">No jobs yet. Your completed runs will appear here.</div></div>
+        </div>
+        <div class="principles-card">
+          <span class="kicker">BUILT FOR REPEATABILITY</span>
+          <blockquote>“Cleaning data once is a task.<br>Saving the rules is a system.”</blockquote>
+          <div class="principle-list"><span><b>01</b> Local-first</span><span><b>02</b> Inspectable</span><span><b>03</b> Reusable</span></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <template id="rule-template">
+      <div class="rule-row">
+        <span class="drag" aria-hidden="true">⠿</span>
+        <span class="rule-number"></span>
+        <div class="rule-field operation-field"><label>OPERATION</label><select class="operation-select"></select></div>
+        <div class="rule-options"></div>
+        <button class="remove-rule" aria-label="Remove rule">×</button>
+      </div>
+    </template>
+    <script src="{{ url_for('static', path='/js/app.js') }}" defer></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "Customer export cleanup",
+  "description": "Normalizes CRM exports, rejects invalid lifetime values, and removes duplicate customers.",
+  "operations": [
+    {"type": "trim_whitespace"},
+    {"type": "lowercase", "columns": ["first_name", "last_name", "email", "city"]},
+    {"type": "uppercase", "columns": ["state"]},
+    {"type": "normalize_dates", "column": "signup_date", "date_format": "%Y-%m-%d", "invalid": "empty"},
+    {"type": "convert_numeric", "column": "lifetime_value", "invalid": "drop"},
+    {"type": "fill_missing", "column": "phone", "value": "Not provided"},
+    {"type": "drop_duplicates"}
+  ]
+}
