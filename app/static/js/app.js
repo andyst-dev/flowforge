@@ -60,8 +60,8 @@ function goTo(step) {
   });
 }
 
-async function handleFile(file) {
-  if (!file) return;
+async function handleFile(file, announce = true) {
+  if (!file) return false;
   const form = new FormData();
   form.append("file", file);
   $("#dropzone").classList.add("is-loading");
@@ -76,12 +76,44 @@ async function handleFile(file) {
     $("#file-meta").textContent = `${data.total_rows.toLocaleString()} rows · ${data.columns.length} columns`;
     $("#file-type").textContent = data.filename.split(".").pop().toUpperCase();
     $("#dropzone").hidden = true;
+    $("#demo-strip").hidden = true;
     $("#file-card").hidden = false;
     $("#to-recipe").disabled = false;
     refreshAllColumnSelects();
-    toast("Source file loaded and profiled.");
-  } catch (error) { toast(error.message, true); }
+    if (announce) toast("Source file loaded and profiled.");
+    return true;
+  } catch (error) { toast(error.message, true); return false; }
   finally { $("#dropzone").classList.remove("is-loading"); }
+}
+
+async function tryDemo() {
+  const button = $("#try-demo");
+  const originalLabel = button.innerHTML;
+  button.disabled = true;
+  button.classList.add("is-loading");
+  button.textContent = "Loading demo…";
+  try {
+    const [sampleResponse, recipeResponse] = await Promise.all([
+      fetch(button.dataset.sampleUrl),
+      fetch(button.dataset.recipeUrl),
+    ]);
+    if (!sampleResponse.ok || !recipeResponse.ok) throw new Error("Demo assets are unavailable.");
+    const [sampleBlob, recipe] = await Promise.all([sampleResponse.blob(), recipeResponse.json()]);
+    const sampleFile = new File([sampleBlob], "customer_data_dirty.csv", { type: "text/csv" });
+    if (!await handleFile(sampleFile, false)) return;
+
+    $("#rule-list").innerHTML = "";
+    recipe.operations.forEach(addRule);
+    $("#recipe-name").value = recipe.name;
+    goTo("recipe");
+    if (await runPreview()) toast("Demo ready — compare the clean and original tables.");
+  } catch (error) {
+    toast(error.message, true);
+  } finally {
+    button.disabled = false;
+    button.classList.remove("is-loading");
+    button.innerHTML = originalLabel;
+  }
 }
 
 function optionsHtml(values, selected = "") {
@@ -226,9 +258,9 @@ async function saveRecipe() {
 }
 
 async function runPreview() {
-  if (!state.uploadId) return toast("Upload a source file first.", true);
+  if (!state.uploadId) { toast("Upload a source file first.", true); return false; }
   const rules = currentOperations();
-  if (!rules.length) return toast("Add at least one transformation.", true);
+  if (!rules.length) { toast("Add at least one transformation.", true); return false; }
   const button = $("#run-preview");
   button.classList.add("is-loading");
   button.textContent = "Processing…";
@@ -245,7 +277,8 @@ async function runPreview() {
     $$(".compare-tabs button").forEach((tab) => tab.classList.toggle("is-active", tab.dataset.table === "after"));
     goTo("preview");
     loadJobs();
-  } catch (error) { toast(error.message, true); }
+    return true;
+  } catch (error) { toast(error.message, true); return false; }
   finally { button.classList.remove("is-loading"); button.innerHTML = "Run preview <span>→</span>"; }
 }
 
@@ -302,6 +335,7 @@ function reset() {
   Object.assign(state, { uploadId: null, filename: null, columns: [], resultId: null, preview: null, exportFormat: "csv" });
   $("#file-input").value = "";
   $("#dropzone").hidden = false;
+  $("#demo-strip").hidden = false;
   $("#file-card").hidden = true;
   $("#to-recipe").disabled = true;
   $("#recipe-name").value = "";
@@ -333,6 +367,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadJobs();
 
   $("#file-input").addEventListener("change", (event) => handleFile(event.target.files[0]));
+  $("#try-demo").addEventListener("click", tryDemo);
   const dropzone = $("#dropzone");
   ["dragenter", "dragover"].forEach((name) => dropzone.addEventListener(name, (event) => { event.preventDefault(); dropzone.classList.add("is-dragging"); }));
   ["dragleave", "drop"].forEach((name) => dropzone.addEventListener(name, (event) => { event.preventDefault(); dropzone.classList.remove("is-dragging"); }));

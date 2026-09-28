@@ -58,6 +58,19 @@
               <span>or click to browse your machine</span>
               <small>.CSV &nbsp;·&nbsp; .XLSX</small>
             </label>
+            <div class="demo-strip" id="demo-strip">
+              <div>
+                <span>NO FILE READY?</span>
+                <strong>Explore the complete customer cleanup</strong>
+                <small>1,253 rows · 7-step recipe · under one minute</small>
+              </div>
+              <button
+                class="button demo-button"
+                id="try-demo"
+                data-sample-url="{{ url_for('samples', path='/customer_data_dirty.csv') }}"
+                data-recipe-url="{{ url_for('samples', path='/customer_cleanup_recipe.json') }}"
+              >Try demo data <span>→</span></button>
+            </div>
             <div class="file-card" id="file-card" hidden>
               <div class="file-badge" id="file-type">CSV</div>
               <div><strong id="file-name"></strong><small id="file-meta"></small></div>

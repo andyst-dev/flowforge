@@ -1,9 +1,13 @@
 from __future__ import annotations
 
 import io
+import tomllib
+from pathlib import Path
 
 import pandas as pd
 from fastapi.testclient import TestClient
+
+from app import __version__
 
 
 def upload_csv(client: TestClient) -> dict[str, object]:
@@ -24,9 +28,30 @@ def test_health_and_dashboard(client: TestClient) -> None:
     assert response.status_code == 200
     assert "Turn messy tables" in response.text
     assert "MAX 2 MB" in response.text
+    assert "Try demo data" in response.text
     assert response.headers["x-content-type-options"] == "nosniff"
     assert response.headers["x-frame-options"] == "DENY"
     assert "default-src 'self'" in response.headers["content-security-policy"]
+
+
+def test_demo_assets_are_served_from_the_existing_samples(client: TestClient) -> None:
+    dataset = client.get("/samples/customer_data_dirty.csv")
+    recipe = client.get("/samples/customer_cleanup_recipe.json")
+
+    assert dataset.status_code == 200
+    assert len(dataset.text.splitlines()) == 1_254
+    assert recipe.status_code == 200
+    assert recipe.json()["name"] == "Customer export cleanup"
+    assert len(recipe.json()["operations"]) == 7
+
+
+def test_version_is_consistent_across_package_metadata_and_api(client: TestClient) -> None:
+    root = Path(__file__).resolve().parent.parent
+    project = tomllib.loads((root / "pyproject.toml").read_text(encoding="utf-8"))
+
+    assert __version__ == "1.0.0"
+    assert project["project"]["version"] == __version__
+    assert client.get("/openapi.json").json()["info"]["version"] == __version__
 
 
 def test_upload_preview_export_and_history(client: TestClient) -> None:

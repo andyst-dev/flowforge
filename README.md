@@ -88,7 +88,7 @@ HTTP routes, persistence, file handling, schemas, and transformation logic live 
 | Data engine | Pandas + OpenPyXL |
 | Interface | Jinja2, semantic HTML, CSS, lightweight vanilla JavaScript |
 | Persistence | SQLite |
-| Quality | pytest, HTTPX2, Ruff, coverage |
+| Quality | pytest, Ruff, coverage |
 | Delivery | Docker, Docker Compose, GitHub Actions |
 
 ## Quick start

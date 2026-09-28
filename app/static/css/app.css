@@ -127,6 +127,16 @@ button:focus-visible, a:focus-visible, .dropzone:focus-within {
 .dropzone strong { font-size: 17px; }
 .dropzone > span:not(.upload-icon) { color: var(--muted); font-size: 12px; margin-top: 6px; }
 .dropzone small { margin-top: 25px; font: 9px var(--mono); color: var(--muted); letter-spacing: .12em; }
+.demo-strip { margin-top: 10px; padding: 14px 15px; border: 1px solid var(--navy); background: var(--navy); color: white; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+.demo-strip[hidden] { display: none; }
+.demo-strip > div { min-width: 0; display: grid; gap: 3px; }
+.demo-strip > div > span { color: #97a2b1; font: 9px var(--mono); letter-spacing: .11em; }
+.demo-strip strong { font-size: 12px; font-weight: 700; }
+.demo-strip small { color: #aab3bf; font: 9px var(--mono); }
+.button.demo-button { flex: none; min-height: 40px; border-color: #526073; background: transparent; color: white; }
+.button.demo-button span { color: var(--accent); font-size: 14px; }
+.button.demo-button:hover { border-color: var(--accent); background: var(--accent); box-shadow: none; }
+.button.demo-button:hover span { color: white; }
 .file-card { border: 1px solid var(--line); padding: 18px; align-items: center; gap: 16px; }
 .file-card:not([hidden]) { display: flex; }
 .file-badge { width: 49px; height: 49px; display: grid; place-items: center; background: var(--navy); color: white; font: 10px var(--mono); }
@@ -262,6 +272,8 @@ tr:nth-child(even) td { background: #f4f3ee; }
   .panel-head { display: block; }
   .recipe-picker { margin-top: 16px; }
   .dropzone { min-height: 270px; }
+  .demo-strip { align-items: stretch; display: grid; }
+  .demo-button { width: 100%; }
   .save-strip, .format-grid { grid-template-columns: 1fr; display: grid; }
   .panel-actions .hint { display: none; }
 }

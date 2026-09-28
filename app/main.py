@@ -15,6 +15,7 @@ from app.routes import api, pages
 from app.services.files import cleanup_expired_files
 
 APP_DIR = Path(__file__).resolve().parent
+SAMPLES_DIR = APP_DIR.parent / "samples"
 
 
 def create_app(settings: Settings | None = None) -> FastAPI:
@@ -61,6 +62,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return response
 
     application.mount("/static", StaticFiles(directory=APP_DIR / "static"), name="static")
+    application.mount("/samples", StaticFiles(directory=SAMPLES_DIR), name="samples")
     application.include_router(pages.router)
     application.include_router(api.router)
     return application
