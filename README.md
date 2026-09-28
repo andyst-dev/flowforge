@@ -15,8 +15,8 @@
 </p>
 
 <p align="center">
-  <a href="https://render.com/deploy?repo=https://github.com/andyst-dev/flowforge">
-    <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+  <a href="https://flowforge-gcvn.onrender.com">
+    <img src="https://img.shields.io/badge/OPEN_LIVE_DEMO-157f61?style=for-the-badge" alt="Open the FlowForge live demo">
   </a>
 </p>
 
@@ -116,7 +116,7 @@ The Compose volume preserves recipes and job history between container runs. The
 
 ### Free portfolio deployment
 
-Use the **Deploy to Render** button above to create a free public demo directly from this repository.
+The public demo runs at [flowforge-gcvn.onrender.com](https://flowforge-gcvn.onrender.com).
 The included `render.yaml` configures Docker, the health check, and temporary application storage.
 Free Render services spin down after inactivity and use an ephemeral filesystem, so saved recipes and
 job history can reset between visits. Use a paid persistent disk for durable production data.
