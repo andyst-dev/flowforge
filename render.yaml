@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: flowforge
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: FLOWFORGE_DATA_DIR
+        value: /tmp/flowforge
+      - key: FLOWFORGE_DATABASE_PATH
+        value: /tmp/flowforge/flowforge.db
+      - key: FLOWFORGE_MAX_UPLOAD_MB
+        value: 15
+      - key: FLOWFORGE_PREVIEW_ROWS
+        value: 12

@@ -14,6 +14,12 @@
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-6f716b?style=flat-square"></a>
 </p>
 
+<p align="center">
+  <a href="https://render.com/deploy?repo=https://github.com/andyst-dev/flowforge">
+    <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+  </a>
+</p>
+
 ![FlowForge workflow workspace](docs/assets/dashboard.png)
 
 FlowForge is a compact, production-shaped data workflow app for the cleanup jobs that otherwise live in one-off notebooks and fragile spreadsheet macros. Upload a table, compose transformations, compare the result, save the recipe, and apply it to the next compatible export.
@@ -107,6 +113,13 @@ docker compose up --build
 ```
 
 The Compose volume preserves recipes and job history between container runs. The app is then available on port `8000`.
+
+### Free portfolio deployment
+
+Use the **Deploy to Render** button above to create a free public demo directly from this repository.
+The included `render.yaml` configures Docker, the health check, and temporary application storage.
+Free Render services spin down after inactivity and use an ephemeral filesystem, so saved recipes and
+job history can reset between visits. Use a paid persistent disk for durable production data.
 
 ## Example workflow
 
