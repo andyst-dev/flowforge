@@ -34,7 +34,7 @@
         <aside class="rail">
           <div class="rail-label">WORKFLOW</div>
           <nav aria-label="Workflow steps">
-            <button class="step is-active" data-step-target="upload"><b>01</b><span>Source file<small>CSV or XLSX</small></span></button>
+            <button class="step is-active" data-step-target="upload" aria-current="step"><b>01</b><span>Source file<small>CSV or XLSX</small></span></button>
             <button class="step" data-step-target="recipe"><b>02</b><span>Recipe<small>Cleaning rules</small></span></button>
             <button class="step" data-step-target="preview"><b>03</b><span>Preview<small>Verify output</small></span></button>
             <button class="step" data-step-target="export"><b>04</b><span>Export<small>Ship clean data</small></span></button>
@@ -120,7 +120,7 @@
         </div>
         <div class="principles-card">
           <span class="kicker">DATA HANDLING</span>
-          <blockquote>Files are processed on<br>this FlowForge instance.</blockquote>
+          <p class="data-heading">Files are processed on<br>this FlowForge instance.</p>
           <p class="data-note">On the public demo, saved recipes and job history are shared and temporary. Do not upload sensitive data.</p>
           <div class="principle-list"><span><b>01</b> Inspectable</span><span><b>02</b> Reusable</span><span><b>03</b> Self-hostable</span></div>
         </div>
@@ -131,7 +131,7 @@
     <template id="rule-template">
       <div class="rule-row">
         <span class="rule-number"></span>
-        <div class="rule-field operation-field"><label>OPERATION</label><select class="operation-select"></select></div>
+        <label class="rule-field operation-field"><span>OPERATION</span><select class="operation-select"></select></label>
         <div class="rule-options"></div>
         <button class="remove-rule" aria-label="Remove rule">×</button>
       </div>

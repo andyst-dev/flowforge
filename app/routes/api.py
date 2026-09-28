@@ -21,6 +21,7 @@ from app.schemas import (
 )
 from app.services.files import (
     FileValidationError,
+    cleanup_expired_files,
     dataframe_preview,
     get_upload_filename,
     load_result,
@@ -51,14 +52,15 @@ async def upload_file(
     settings = request.app.state.settings
     max_bytes = settings.max_upload_mb * 1024 * 1024
     content = await file.read(max_bytes + 1)
+    cleanup_expired_files((settings.uploads_dir, settings.results_dir), settings.file_ttl_hours)
     try:
-        upload_id, frame = validate_and_save_upload(
+        upload_id, filename, frame = validate_and_save_upload(
             file.filename, content, settings.uploads_dir, settings.max_upload_mb
         )
     except FileValidationError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
     preview = dataframe_preview(frame, settings.preview_rows)
-    return {"upload_id": upload_id, "filename": file.filename, **preview}
+    return {"upload_id": upload_id, "filename": filename, **preview}
 
 
 @router.post("/preview", response_model=TransformResponse)

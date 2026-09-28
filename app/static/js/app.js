@@ -30,6 +30,8 @@ const escapeHtml = (value) => String(value ?? "")
 function toast(message, error = false) {
   const el = $("#toast");
   el.textContent = message;
+  el.setAttribute("role", error ? "alert" : "status");
+  el.setAttribute("aria-live", error ? "assertive" : "polite");
   el.classList.toggle("is-error", error);
   el.classList.add("is-visible");
   clearTimeout(toast.timer);
@@ -89,9 +91,9 @@ function optionsHtml(values, selected = "") {
 
 function field(label, className, content, type = "select") {
   if (type === "input") {
-    return `<div class="rule-field"><label>${label}</label><input class="${className}" value="${content}"></div>`;
+    return `<label class="rule-field"><span>${label}</span><input class="${className}" value="${content}"></label>`;
   }
-  return `<div class="rule-field"><label>${label}</label><select class="${className}">${content}</select></div>`;
+  return `<label class="rule-field"><span>${label}</span><select class="${className}">${content}</select></label>`;
 }
 
 function updateFilterValueVisibility(row) {
@@ -147,7 +149,10 @@ function addRule(values = {}) {
 }
 
 function renumberRules() {
-  $$(".rule-row").forEach((row, index) => $(".rule-number", row).textContent = String(index + 1).padStart(2, "0"));
+  $$(".rule-row").forEach((row, index) => {
+    $(".rule-number", row).textContent = String(index + 1).padStart(2, "0");
+    $(".remove-rule", row).setAttribute("aria-label", `Remove rule ${index + 1}`);
+  });
 }
 
 function refreshAllColumnSelects() {

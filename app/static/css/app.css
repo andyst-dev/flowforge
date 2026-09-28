@@ -215,7 +215,7 @@ tr:nth-child(even) td { background: #f4f3ee; }
 .empty-state { color: var(--muted); font-size: 11px; padding: 30px 0; border-top: 1px solid var(--line); }
 .principles-card { background: var(--accent); border-color: var(--accent); color: white; }
 .principles-card .kicker { color: #ffd2c3; }
-.principles-card blockquote { font-size: 23px; font-weight: 600; letter-spacing: -.035em; line-height: 1.35; margin: 29px 0; }
+.data-heading { font-size: 23px; font-weight: 600; letter-spacing: -.035em; line-height: 1.35; margin: 29px 0; }
 .data-note { margin: -12px 0 21px; max-width: 390px; color: #fff4ef; font-size: 10px; line-height: 1.55; }
 .principle-list { display: flex; gap: 20px; border-top: 1px solid rgb(255 255 255 / 35%); padding-top: 17px; }
 .principle-list span { font-size: 10px; }

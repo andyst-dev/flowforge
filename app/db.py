@@ -4,6 +4,7 @@ import json
 import sqlite3
 from collections.abc import Iterator
 from contextlib import contextmanager
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -38,8 +39,9 @@ class Database:
 
     @contextmanager
     def connect(self) -> Iterator[sqlite3.Connection]:
-        connection = sqlite3.connect(self.path)
+        connection = sqlite3.connect(self.path, timeout=10)
         connection.row_factory = sqlite3.Row
+        connection.execute("PRAGMA busy_timeout = 10000")
         connection.execute("PRAGMA foreign_keys = ON")
         try:
             yield connection
@@ -49,6 +51,8 @@ class Database:
 
     def initialize(self) -> None:
         with self.connect() as connection:
+            connection.execute("PRAGMA journal_mode = WAL")
+            connection.execute("PRAGMA synchronous = NORMAL")
             connection.executescript(SCHEMA)
 
     def create_recipe(
@@ -126,8 +130,6 @@ class Database:
 
     @staticmethod
     def _recipe_from_row(row: sqlite3.Row) -> RecipeRecord:
-        from datetime import datetime
-
         return RecipeRecord(
             id=row["id"],
             name=row["name"],
@@ -139,8 +141,6 @@ class Database:
 
     @staticmethod
     def _job_from_row(row: sqlite3.Row) -> JobRecord:
-        from datetime import datetime
-
         return JobRecord(
             id=row["id"],
             input_filename=row["input_filename"],

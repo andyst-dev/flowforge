@@ -88,7 +88,7 @@ HTTP routes, persistence, file handling, schemas, and transformation logic live 
 | Data engine | Pandas + OpenPyXL |
 | Interface | Jinja2, semantic HTML, CSS, lightweight vanilla JavaScript |
 | Persistence | SQLite |
-| Quality | pytest, HTTPX, Ruff, coverage |
+| Quality | pytest, HTTPX2, Ruff, coverage |
 | Delivery | Docker, Docker Compose, GitHub Actions |
 
 ## Quick start
@@ -98,15 +98,18 @@ Requirements: Python 3.12 or newer.
 ```bash
 git clone https://github.com/andyst-dev/flowforge.git
 cd flowforge
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
-pip install -e ".[dev]"
-make dev
+python -m pip install -e ".[dev]"
+python -m uvicorn app.main:app --reload
 ```
 
 Open [http://localhost:8000](http://localhost:8000). Interactive API documentation is available at [http://localhost:8000/docs](http://localhost:8000/docs).
 
-The defaults work without configuration. To override storage paths, the upload limit, or preview size, copy `.env.example` to `.env`; `make dev` loads it automatically.
+On Windows, create the environment with `py -3.12 -m venv .venv` and activate it with
+`.venv\Scripts\activate`. The defaults work without configuration. To use the optional `make dev`
+shortcut or override storage paths, upload limits, preview size, and file retention, copy
+`.env.example` to `.env`; the Make target loads it automatically.
 
 ## Docker
 
@@ -193,7 +196,11 @@ flowforge/
 
 ## Operational notes
 
-- Uploaded files and generated previews are stored under `storage/` and excluded from Git.
+- Uploaded files and generated previews are stored under `storage/` and excluded from Git. They
+  become eligible for removal after 24 hours by default; cleanup runs at startup and before each
+  new upload.
+- XLSX archives are limited to 100 MB after decompression to guard against unexpectedly large
+  workbooks.
 - Spreadsheet formulas are read as cached cell values; FlowForge does not execute macros.
 - Text beginning with a spreadsheet formula prefix is escaped during export to prevent formula injection.
 - Processing is synchronous and intentionally sized for small-to-medium files (15 MB by default).

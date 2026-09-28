@@ -4,7 +4,7 @@ import pytest
 from pydantic import ValidationError
 
 from app.config import Settings
-from app.schemas import Operation, RecipeCreate
+from app.schemas import Operation, RecipeCreate, TransformRequest
 
 
 def test_recipe_name_is_trimmed_and_cannot_be_blank() -> None:
@@ -27,6 +27,15 @@ def test_parameterized_operations_require_meaningful_values() -> None:
 
     operation = Operation(type="filter_rows", column="email", operator="is_empty")
     assert operation.value is None
+
+
+def test_recipe_and_preview_requests_limit_operation_count() -> None:
+    operations = [Operation(type="drop_duplicates") for _ in range(51)]
+
+    with pytest.raises(ValidationError, match="at most 50 items"):
+        RecipeCreate(name="Too many steps", operations=operations)
+    with pytest.raises(ValidationError, match="at most 50 items"):
+        TransformRequest(upload_id="abc.csv", operations=operations)
 
 
 def test_settings_reject_non_positive_limits(tmp_path) -> None:

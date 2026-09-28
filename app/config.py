@@ -15,12 +15,15 @@ class Settings:
     )
     max_upload_mb: int = int(os.getenv("FLOWFORGE_MAX_UPLOAD_MB", "15"))
     preview_rows: int = int(os.getenv("FLOWFORGE_PREVIEW_ROWS", "12"))
+    file_ttl_hours: int = int(os.getenv("FLOWFORGE_FILE_TTL_HOURS", "24"))
 
     def __post_init__(self) -> None:
         if self.max_upload_mb < 1:
             raise ValueError("FLOWFORGE_MAX_UPLOAD_MB must be at least 1")
         if self.preview_rows < 1:
             raise ValueError("FLOWFORGE_PREVIEW_ROWS must be at least 1")
+        if self.file_ttl_hours < 1:
+            raise ValueError("FLOWFORGE_FILE_TTL_HOURS must be at least 1")
 
     @property
     def uploads_dir(self) -> Path:

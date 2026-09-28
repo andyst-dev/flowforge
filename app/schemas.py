@@ -76,7 +76,7 @@ class Operation(BaseModel):
 class RecipeCreate(BaseModel):
     name: str = Field(min_length=1, max_length=80)
     description: str = Field(default="", max_length=300)
-    operations: list[Operation] = Field(min_length=1)
+    operations: list[Operation] = Field(min_length=1, max_length=50)
 
     @field_validator("name")
     @classmethod
@@ -134,7 +134,7 @@ class JobResponse(BaseModel):
 
 class TransformRequest(BaseModel):
     upload_id: str
-    operations: list[Operation] | None = None
+    operations: list[Operation] | None = Field(default=None, max_length=50)
     recipe_id: int | None = None
 
     @model_validator(mode="after")

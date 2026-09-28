@@ -12,6 +12,7 @@ from app import __version__
 from app.config import Settings
 from app.db import Database
 from app.routes import api, pages
+from app.services.files import cleanup_expired_files
 
 APP_DIR = Path(__file__).resolve().parent
 
@@ -22,6 +23,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @asynccontextmanager
     async def lifespan(application: FastAPI):
         app_settings.ensure_directories()
+        cleanup_expired_files(
+            (app_settings.uploads_dir, app_settings.results_dir), app_settings.file_ttl_hours
+        )
         application.state.database.initialize()
         yield
 

@@ -14,3 +14,5 @@ services:
         value: 15
       - key: FLOWFORGE_PREVIEW_ROWS
         value: 12
+      - key: FLOWFORGE_FILE_TTL_HOURS
+        value: 24
