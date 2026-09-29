@@ -1,6 +1,6 @@
 [project]
 name = "flowforge"
-version = "1.0.0"
+version = "1.1.0"
 description = "Reusable data-cleaning workflows for CSV and Excel files."
 readme = "README.md"
 requires-python = ">=3.12"

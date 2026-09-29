@@ -119,7 +119,7 @@ def test_version_is_consistent_across_package_metadata_and_api(client: TestClien
     root = Path(__file__).resolve().parent.parent
     project = tomllib.loads((root / "pyproject.toml").read_text(encoding="utf-8"))
 
-    assert __version__ == "1.0.0"
+    assert __version__ == "1.1.0"
     assert project["project"]["version"] == __version__
     assert client.get("/openapi.json").json()["info"]["version"] == __version__
 
